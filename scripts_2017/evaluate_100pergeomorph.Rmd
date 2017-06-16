@@ -1,0 +1,80 @@
+---
+title: "GEOeinheiten Parameterauswahl"
+author: "fabian gruber"
+date: "April 24, 2017"
+output: html_document
+---
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 22px;
+  color: DarkBlue;
+}
+h2 { /* Header 2 */
+    font-size:20px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 8px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
+Die Erebgenisse der neuesten Berechnungen (OSTERN 2017)
+style: body ist der text ausserhalbb der chunks
+       td hier sieht man keine Änderung, sind also nicht meine Tabellen..
+      h1.title ist die überschrift ganz oben
+      h1 keine ahnung
+      h2 ist mit ##
+      code.r kommt anscheinend nicht vor
+      
+```{r,include=FALSE}
+library(RCurl)
+library(rgrass7)
+library(repmis)
+require(xtable)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+source_data("https://github.com/fernstgruber/PROJECTP2/raw/master/data2017/classesandparamsets.RData")
+
+```
+
+
+
+  
+```{r}
+base="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
+classes <- classes[-c(2,18)]
+p=paramsetnames[1]
+for(p in paramsetnames){
+  mydir=paste(base,"svm_2017_1against1_5foldgeomorph_",p,"_100pg_t10",sep="")
+  cl=classes[1]
+  for(cl in classes){
+    newclasses <- classes[!(classes %in% cl)]
+    newclass=newclasses[1]
+    for(newclass in newclasses){
+      modelclasses <- c(cl,newclass)
+      mynewdir = paste(mydir,"/",cl,"_vs_",newclass,sep="")
+      print(paste(cl,"_vs_",newclass,sep=""))
+      try(evaluateforwardCV_anyerror(mypath=mynewdir,kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1)))
+}
+}
+}
+```
