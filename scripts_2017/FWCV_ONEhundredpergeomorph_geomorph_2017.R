@@ -21,7 +21,7 @@ paramsets[[4]] <- paramsets[[4]][-c(5,8,10,13,15,18,20,23,25,28,30,33,35,38,40,4
                                     111,113,116,118,121,123,126,128,131,133,136,138,141,143,146,148,151,153,156,158,161,163,164,165,168,170,173,175,178,180,183,185)]
 paramsets[[4]] <- paramsets[[4]][-c(44)]
 #########################################################################################
-psets <- c(1:8)
+psets <- c(5)
 classes <-  levels(modeldata[[dependent]])
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
