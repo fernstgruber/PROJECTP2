@@ -70,17 +70,17 @@
 
 \section{Introduction}
 \paragraph{general introduction}
-Geologic maps have always been an important aid in soil survey as parent material is an important factor in soil formation \citep{Jenny1941}. The importance of this relationship is highlighted by the fact that, vice versa, soil maps have themselves been applied to support and improve geologic mapping \citep{Brevik2015}. 
+Geologic maps have always been an important aid in soil survey as parent material is a decisive factor in soil formation \citep{Jenny1941}. The importance of this relationship is highlighted by the fact that, vice versa, soil maps have themselves been applied to support and improve geologic mapping \citep{Brevik2015}. 
 
 Geological maps at various scales have been used as an environmental variable in digital soil mapping (DSM), representing the soil forming factor parent material, or simply 'p', for instance in the 'scorpan' framework of inferring soil information \citep{McBratney2003}. How this important variable is classified, however, will vary greatly depending on the the available data, the soil classification sytem used, the specific mapping guidelines applied, and most importantly the particular geologic and geomorphologic setting of the investigated area. In its guidelines for soil description, the Food and Agriculture Organization of the United Nations \citep{FAO2006}...(HIER kommt die Beschreibung wie bei der FAO und in {\"O}sterreich/Tirol das Ausgangsmaterial eingeteilt wird)
 
 Hier vielleicth Juilleret und so für die wichtigkeit des ausgansgsmaterials. Herbst zitat??
 
-Situation in the Alps bez{\"u}glich boden und geologie w{\"a}re auch noch interessant
+ {Situation in the Alps bez{\"u}glich boden und geologie w{\"a}re auch noch interessant}
 
 
 
-A second, immensely important soil forming factor is topography or relief. It is considered in traditional soil survey, for instance by mapping landscape position and local slope and curvature \citep{FAO2006}, and also DSM, where the representing variables implemented in a given model can be chosen from a wide set of available parameters. Examples of such terrain parameters can be found, amongst others, in \cite{Boehner2009},\cite{Gallant2000} and \cite{Olaya2009141} . Regarding the geomorphometric characterisation of geologic or soil parent material units, a number of considerations have to be taken into account when choosing which parameter groups to investigate. While regional parameters well describe the, hydrologically relevant, relative position in the landscape, they, as well as absolute and relative height-related parameters, are strongly correlated to the underlying geological structure of a given region. Local parameters such as slope and curvature are often used to infer soil properties and give insight into local dynamics, but may also vary strongly within a map unit. To characterise parent material units, especially with regard to topographic, and as a result, soil, variability, an intermediate terrain parameter describing a unit's land surface is of particular interest. Researchers have long investigated ways to quantify the roughness or ruggedness of terrain, from the analysis of field data and topographic maps to computing roughness indices on raster grids. Geology, geomorphology as well as habitat modelling and wildlife management have been the main scientific research areas in which such investigations were performed on land surfaces.  \cite{Hobson1972} presented three different roughness values and applied them to field measurements, correlating them to rock type. In another early study aimed at quantifying roughness, \cite{Beasom1983} presented the land surface ruggedness index, which is based on the total length of contour lines per area. Similarily analysing topographic maps, \cite{Nellemann1994} describe the calculation of a terrain ruggedness index based on the variability of contour lines along transects, which they correlate with caribou forage availability. Regarding field methods, they calculate microtopographic diversity by analysing the horizontal distance of a chain laid on the ground in their study plots. \cite{Riley1999} proposed the topographic ruggedness index (TRI), which compares the elevation of a central pixel to the elevations of cells within a given search window. In an attempt to decorrelate roughness from slope, \cite{Sappington2007} expanded on the work of \cite{Hobson1972} to introduce vector ruggedness measure (VRM), which is calculated based on the orientation of vectors normal to the surface in a given area. \citep{Grohmann2010} analysed several roughness measures at different resolutions and window sizes with regard to their ability to depict terrain features. They highlight the ability of VRM to detect fine-scale roughness features and attribute low roughness values to steep but smooth slopes, but also acknowledge its inability to delimit slope breaks and identify regional relief. The Melton ruggedness index, which relates  the elevation difference of a basin to the drainage area, was applied by \cite{Marchi2005} to investigate sediment transport, however compared to VRM  it is more of a measure of general relief than roughness. Similar to VRM, roughness measures based on eigenvalue ratios of an orientation matrix have been used in geology to describe land surfaces, especially of bedrock. \cite{Coblentz2014} combined such a roughness measures with parameters representing the drainage network of the investigated geologic units  to create terrain characterisation types to distinguish various lithologies, with emphasis on discriminating soft and hard rock areas.
+A second, immensely important soil forming factor is topography or relief. It is considered in traditional soil survey, for instance by mapping landscape position and local slope and curvature \citep{FAO2006}, and also DSM, where the representing variables implemented in a given model can be chosen from a wide set of available parameters. Examples of such terrain parameters can be found, amongst others, in \cite{Boehner2009},\cite{Gallant2000} and \cite{Olaya2009141} . Regarding the geomorphometric characterisation of geologic or soil parent material units, a number of considerations have to be taken into account when choosing which parameter groups to investigate. While regional parameters well describe the, hydrologically relevant, relative position in the landscape, they, as well as absolute and relative height-related parameters, are strongly correlated to the underlying geological structure of a given region. Local parameters such as slope and curvature are often used to infer soil properties and give insight into local dynamics, but may also vary strongly within a map unit. To characterise parent material units, especially with regard to topographic, and as a result, soil, variability, an intermediate terrain parameter describing a unit's land surface is of particular interest. Researchers have long investigated ways to quantify the roughness or ruggedness of terrain, from the analysis of field data and topographic maps to computing roughness indices on raster grids. Geology, geomorphology as well as habitat modelling and wildlife management have been the main scientific research areas in which such investigations were performed on land surfaces.  \cite{Hobson1972} presented three different roughness values and applied them to field measurements, correlating them to rock type. In another early study aimed at quantifying roughness, \cite{Beasom1983} presented the land surface ruggedness index, which is based on the total length of contour lines per area. Similarily analysing topographic maps, \cite{Nellemann1994} describe the calculation of a terrain ruggedness index based on the variability of contour lines along transects, which they correlate with caribou forage availability. Regarding field methods, they calculate microtopographic diversity by analysing the horizontal distance of a chain laid on the ground in their study plots. \cite{Riley1999} proposed the topographic ruggedness index (TRI), which compares the elevation of a central pixel to the elevations of cells within a given search window. In an attempt to decorrelate roughness from slope, \cite{Sappington2007} expanded on the work of \cite{Hobson1972} to introduce vector ruggedness measure (VRM), which is calculated based on the orientation of vectors normal to the surface in a given area. \citep{Grohmann2010} analysed several roughness measures at different resolutions and window sizes with regard to their ability to depict terrain features. They highlight the ability of VRM to detect fine-scale roughness features and attribute low roughness values to steep but smooth slopes, but also acknowledge its inability to delimit slope breaks and identify regional relief. The Melton ruggedness index, which relates  the elevation difference of a basin to the drainage area, was applied by \cite{Marchi2005} to investigate sediment transport, however compared to VRM  it is more of a measure of general relief than roughness. Similar to VRM, roughness measures based on eigenvalue ratios of an orientation matrix have been used in geology to describe land surfaces, especially bedrock fabric. \cite{Coblentz2014} combined such a roughness measures with parameters representing the drainage network of the investigated geologic units  to create terrain characterisation types to distinguish various lithologies, with emphasis on discriminating soft and hard rock areas.
 
 \paragraph{overview of intention and aims}
 In a first step we analyse how well the geologic units of the high resolution geologic map correspond to the parent material identified by the soil surveyor, thus evaluating the performance and reliability of geologic maps to support soil survey in South Tyrol. This requires generalisation of the geologic units into surficial geology units (SGUs) that can be compared to the parent material units used in the soil (or forestry) surveys, called  The result is a confusion matrix that shows to which extent geologic units are in accordance with the parent material mapped by the surveyor.  We highlight those units that are often confused or show overlap, and which should consequently be surveyed with greater detail and in consideration of relevant topographic information.
@@ -104,7 +104,7 @@ The steep slopes of the Mendola-Ro\`en-Ridge are dominated by various Dolomite u
  
 The study area comprises two map sheets of the new geologic map of Italy, sheet Eppan,  which covers the northern and major part of the area, as well as sheet Mezzo-Lombardo in the southern part. The sheets were published at a scale of 1\,:\,50,000 in 2007 and 2012, respectively. Mapping was performed at a scale of 1\,:\,10,000, this information was kindly provided by the Department of Geology and Building Material Tests of the Autonomous Province Bolzano, South Tyrol, in shapefile format and used for the analysis performed in this study.
  
-As means for simplification of the analysis and data harmonisation, the geologic map units were generalised to the 15 SGUs described in Table \ref{table:geounits}, that allow for comparison with the parent material units described and identified by the soil surveyors in the field.
+As means for simplification of the analysis and data harmonisation, the geologic map units were generalised to the 16 SGUs described in Table \ref{table:geounits}, that allow for comparison with the parent material units described and identified by the soil surveyors in the field.
 \begin{table}[ht]
 \centering
 \small
@@ -186,34 +186,66 @@ Textur-Substratboden & {Regosol, Arenosol, Vertisol} & {strong influence of text
 \subsubsection{general methodology}
 \clearpage
 \section{Results}
+\subsection{Comparison of soil parent material at soil profile sites with geologic map units}
 \begin{table}[ht]
 \centering
+\tabcolsep=0.06cm
+\begin{tabular}{ccccccccccccccccc}
+  \hline
+ & AD & CBD & CD & CSR & DC & GLD & IMS & ISR & LD & LT & MrD & MxD & SB & SD & SSR & TG \\ 
+  \hline
+AD &   7 &   0 &   0 &   0 &   4 &   0 &   1 &   0 &   0 &   1 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  CBD &   0 &   4 &   0 &   0 &   0 &   0 &   0 &   0 &   1 &   0 &   0 &   0 &   1 &   3 &   0 &   0 \\ 
+  CD &   0 &   0 &   3 &   1 &   3 &   0 &   0 &   0 &   0 &   0 &   0 &   1 &   1 &   0 &   0 &   0 \\ 
+  CSR &   0 &   0 &   0 &   2 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   2 &   0 &   1 \\ 
+  DC &   0 &   0 &   0 &   0 &   5 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   1 &   0 &   0 \\ 
+  GLD &   1 &   0 &   0 &   0 &   0 &   5 &   0 &   0 &   0 &   1 &   2 &   0 &   2 &   0 &   0 &   0 \\ 
+  IMS &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  ISR &   0 &   0 &   1 &   7 &   2 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   1 &   4 &   2 &   3 \\ 
+  LD &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  LT &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  MrD &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   1 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  MxD &   0 &   0 &   0 &   1 &   0 &   0 &   0 &   0 &   0 &   2 &   0 &   0 &   2 &   0 &   1 &   3 \\ 
+  SB &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   2 &   0 &   0 &   0 &  14 &   4 &   0 &   0 \\ 
+  SD &   1 &   8 &   1 &  13 &  20 &   0 &   0 &   3 &   0 &   1 &   0 &   6 &   3 &  55 &   3 &   8 \\ 
+  SSR &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   0 &   1 &   0 &   3 &   0 \\ 
+  TG &   3 &   2 &   0 &  12 &   2 &   2 &   0 &   0 &   0 &  40 &   1 &   1 &  24 &  15 &   1 &  48 \\ 
+   \hline
+\end{tabular}
+\caption{Tabular comparison of parent material geounits as observed by soil surveyor (rows) and in the geologic map (columns).} 
+\label{kartiergegenkarte}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\tabcolsep=0.06cm
 \small
-\begin{tabular}{p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}
-p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}}
+\begin{tabular}{cccccccccccccccc}
   \hline
- & AD & CD & CSR & DC & GD & IMS & ISR & MrD & MxD & SB & SC & SD & SGT & SSR & TG \\ 
+ & CBD & CD & CSR & DC & GLD & IMS & ISR & LD & LT & MrD & MxD & SB & SD & SSR & TG \\ 
   \hline
-AD &  & 1.96 & 0.00 & 2.19 & 1.37 & 0.23 & 0.00 & 2.29 & 1.01 & 0.53 & 0.01 & 1.18 & 31.49 & 0.02 & 1.05 \\ 
-  CD &  &  & 0.12 & 1.63 & 0.89 & 0.26 & 0.00 & 0.06 & 0.93 & 0.54 & 0.05 & 0.37 & 0.59 & 0.00 & 1.18 \\ 
-  CSR &  &  &  & 1.10 & 0.00 & 0.00 & 0.51 & 0.00 & 0.12 & 0.06 & 0.57 & 3.89 & 0.07 & 0.47 & 2.06 \\ 
-  DC &  &  &  &  & 0.23 & 0.05 & 0.07 & 0.58 & 1.62 & 0.88 & 0.79 & 2.41 & 0.72 & 0.15 & 3.05 \\ 
-  GD &  &  &  &  &  & 0.20 & 0.00 & 0.00 & 0.31 & 0.03 & 0.00 & 0.03 & 0.27 & 0.00 & 0.24 \\ 
-  IMS &  &  &  &  &  &  & 0.00 & 0.00 & 0.05 & 0.06 & 0.00 & 0.03 & 0.09 & 0.00 & 0.09 \\ 
-  ISR &  &  &  &  &  &  &  & 0.00 & 0.00 & 0.00 & 0.10 & 0.40 & 0.00 & 0.00 & 0.04 \\ 
-  MrD &  &  &  &  &  &  &  &  & 0.02 & 0.11 & 0.05 & 0.05 & 0.17 & 0.00 & 0.01 \\ 
-  MxD &  &  &  &  &  &  &  &  &  & 0.25 & 0.14 & 0.25 & 0.93 & 0.01 & 0.82 \\ 
-  SB &  &  &  &  &  &  &  &  &  &  & 0.94 & 10.18 & 2.03 & 0.41 & 4.14 \\ 
-  SC &  &  &  &  &  &  &  &  &  &  &  & 0.90 & 0.12 & 0.09 & 0.73 \\ 
-  SD &  &  &  &  &  &  &  &  &  &  &  &  & 0.79 & 0.77 & 3.80 \\ 
-  SGT &  &  &  &  &  &  &  &  &  &  &  &  &  & 0.12 & 0.70 \\ 
-  SSR &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0.20 \\ 
-  TG &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+AD & 0.2 & 21.1 & 0.0 & 23.6 & 14.8 & 2.5 & 0.0 & 1.2 & 33.9 & 22.2 & 10.9 & 5.7 & 12.7 & 0.2 & 11.3 \\ 
+  CBD &  & 0.5 & 6.1 & 8.5 & 0.0 & 0.0 & 1.1 & 0.9 & 1.3 & 0.5 & 1.5 & 10.1 & 9.7 & 0.9 & 7.8 \\ 
+  CD &  &  & 1.3 & 17.6 & 10.7 & 2.8 & 0.0 & 0.6 & 18.4 & 0.7 & 10.0 & 5.8 & 4.0 & 0.0 & 12.7 \\ 
+  CSR &  &  &  & 11.8 & 0.0 & 0.0 & 5.5 & 0.8 & 1.5 & 0.0 & 1.3 & 0.6 & 40.7 & 5.0 & 21.6 \\ 
+  DC &  &  &  &  & 2.5 & 0.6 & 0.7 & 2.4 & 7.7 & 5.9 & 17.4 & 9.3 & 25.6 & 1.6 & 32.9 \\ 
+  GLD &  &  &  &  &  & 2.2 & 0.0 & 0.2 & 3.5 & 0.8 & 3.4 & 0.4 & 0.5 & 0.0 & 3.5 \\ 
+  IMS &  &  &  &  &  &  & 0.0 & 0.0 & 0.1 & 0.0 & 0.6 & 0.7 & 0.4 & 0.0 & 1.0 \\ 
+  ISR &  &  &  &  &  &  &  & 0.2 & 0.0 & 0.0 & 0.0 & 0.0 & 4.3 & 0.0 & 0.4 \\ 
+  LD &  &  &  &  &  &  &  &  & 0.0 & 0.0 & 0.1 & 1.4 & 3.7 & 0.5 & 4.2 \\ 
+  LT &  &  &  &  &  &  &  &  &  & 1.8 & 10.0 & 21.8 & 8.5 & 1.3 & 7.8 \\ 
+  MrD &  &  &  &  &  &  &  &  &  &  & 0.2 & 1.2 & 0.6 & 0.0 & 0.1 \\ 
+  MxD &  &  &  &  &  &  &  &  &  &  &  & 2.7 & 2.7 & 0.1 & 9.5 \\ 
+  SB &  &  &  &  &  &  &  &  &  &  &  &  & 109.3 & 4.4 & 45.6 \\ 
+  SD &  &  &  &  &  &  &  &  &  &  &  &  &  & 8.3 & 41.9 \\ 
+  SSR &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 4.2 \\ 
    \hline
 \end{tabular}
 \caption{Length in kilometers of the borders of adjacent SGUs} 
 \label{table:borderlength}
 \end{table}
+
 \subsection{Geomorphometric analysis of geologic map units}
 \subsection{Distribution of soils with regard to geologic units}
 

@@ -51,9 +51,11 @@ borderlength <- as.data.frame(tapply(X=geounits_neighbors$length, INDEX=geounits
 
 #####inzwischen in excel bearbeiten und summen der geoeinheiten berechnen, dann
 
-bordertable <- geolegendeng <- read.table(text=getURL("https://raw.githubusercontent.com/fernstgruber/p2/master/data2017/geolegendeng.txt"),sep="\t",header=T)
+bordertable <-  read.table(text=getURL("https://raw.githubusercontent.com/fernstgruber/PROJECTP2/master/results_2017/SGU_borderlengthfromshape.txt"),sep="\t",header=T,row.names=1)
 bordertable <- bordertable/1000
+bordertable <- bordertable[,2:16]
 percentable <- bordertable/sum(bordertable,na.rm=T)*100
+percentable <- percentable[,2:16]
 require(xtable)
 xtable(bordertable,caption = "Length in kilometers of the borders of adjacent SGUs",label = "table:borderlength",digits = 1)
 xtable(percentable,caption = "Percent of the borders of adjacent SGUs",label = "table:borderlength",digits = 2)
