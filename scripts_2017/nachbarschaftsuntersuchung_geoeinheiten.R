@@ -50,7 +50,8 @@ borderlength <- as.data.frame(tapply(X=geounits_neighbors$length, INDEX=geounits
 #write.table(borderlength,file="/home/fabs/Downloads/p2-master/results_2017/borderlength_newshape_16uhr.txt",sep="\t",row.names=T)
 
 #####inzwischen in excel bearbeiten und summen der geoeinheiten berechnen, dann
-bordertable <- read.table("/home/fabs/Data/paper2_lenny/results_2017/sgu_borderlengths.txt",sep="\t",header=T,row.names = 1)
+
+bordertable <- geolegendeng <- read.table(text=getURL("https://raw.githubusercontent.com/fernstgruber/p2/master/data2017/geolegendeng.txt"),sep="\t",header=T)
 bordertable <- bordertable/1000
 percentable <- bordertable/sum(bordertable,na.rm=T)*100
 require(xtable)
