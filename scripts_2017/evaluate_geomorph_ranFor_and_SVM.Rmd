@@ -1,0 +1,138 @@
+---
+title: "GEOeinheiten Parameterauswahl für 100pergeomorph"
+author: "fabian gruber"
+date: "April 24, 2017"
+output: html_document
+---
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 22px;
+  color: DarkBlue;
+}
+h2 { /* Header 2 */
+    font-size:20px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 8px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
+      
+```{r,include=FALSE}
+library(RCurl)
+library(rgrass7)
+library(repmis)
+require(xtable)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+source_data("https://github.com/fernstgruber/PROJECTP2/raw/master/data2017/classesandparamsets.RData")
+base="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
+```
+
+##ALL TERRAIN 
+### SVM n=100
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### SVM n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+##LOCAL TERRAIN 
+###SVM n=100
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_localterrain_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+###SVM n=200
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_localterrain_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_localterrain_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_localterrain_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+##REGIONAL TERRAIN 
+### SVM n=100
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### SVM n=200 
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+##ROUGHNESS
+###SVM n=100
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### SVM n=200 
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+##RLI
+### SVM n=100
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### SVM n=200
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_4p_geomorphologie_beschreibung_rlicols_200pg/",kk = 1:5,endround = 4,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
