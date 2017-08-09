@@ -43,10 +43,16 @@ library(RCurl)
 library(rgrass7)
 library(repmis)
 require(xtable)
+require(e1071)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 source_data("https://github.com/fernstgruber/PROJECTP2/raw/master/data2017/classesandparamsets.RData")
 base="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
+source_data("https://github.com/fernstgruber/p2/blob/master/data2017/geotopodata_twohundredpergeomorph_2017.RData?raw=true")
+twohundred <- modeldata
+source_data("https://github.com/fernstgruber/p2/blob/master/data2017/modeldata_onehundredpergeomorph.RData?raw=true")
+onehundred <- modeldata
+rm(modeldata)
 ```
 
 ##ALL TERRAIN 
@@ -54,19 +60,55 @@ base="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
 ```{r, echo=FALSE}
 evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
+```{r,echo=F}
+predict_radial_full(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Modified_Catchment_Area","VerticalDistancetoChannelNetwork","Catchment_slope","Topographic_Wetness_Index","TPI_i0m_o400m","Convexity"))
+```
+
 ### SVM n=200
 ```{r,echo=FALSE}
 evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+```{r,echo=F}
+predict_radial_full(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Modified_Catchment_Area","VerticalDistancetoChannelNetwork","Catchment_slope","Topographic_Wetness_Index","TPI_i0m_o400m","Convexity"))
 ```
 ### RandomForest n=100
 ```{r,echo=F}
 evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
+```{r}
+importance_ranfor_pset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=1,altdata=twohundred)
+
+modeldata=onehundred;dependent="geomorphologie_beschreibung";pset=1;altdata=twohundred
+  require(randomForest)
+  fullmodel <- randomForest(as.formula(paste(dependent,"~.")),na.omit(modeldata[c(dependent,paramsets[[pset]])]))
+print(paste("OBB error with all predictors of ",paramsetnames[pset], "is ",fullmodel$err.rate[nrow(fullmodel$err.rate),1]))
+ importance <- as.data.frame(fullmodel$importance)
+importance$parameters <- row.names(importance)
+importance <- importance[order(importance$MeanDecreaseGini,decreasing = T),]
+print(importance[1:10,])
+  altmodeldata <- na.omit(altdata[c(dependent,paramsets[[pset]])])
+  altpreddata<-altmodeldata[paramsets[[pset]]]
+  altpreds <- predict(fullmodel,altpreddata)
+  ACM <- table(altpreds, altmodeldata[[dependent]])
+  print(ACM)
+  print(paste("classification error rate with altdata: ",mean(altpreds != altmodeldata[[dependent]])))
+```
+
+
+```{r}
+predict_ranfor_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Catchment_Area2","VerticalDistancetoChannelNetwork","Convexity"),pset=1,altdata=twohundred)
+```
+
+
 ### RandomForest n=200
 ```{r,echo=FALSE}
 evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
-
+```{r}
+predict_ranfor_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Catchment_Area2","VerticalDistancetoChannelNetwork","Convexity"),pset=1,altdata=onehundred)
+```
 ##LOCAL TERRAIN 
 ###SVM n=100
 ```{r, echo=FALSE}
@@ -126,7 +168,7 @@ evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/s
 ```
 ### SVM n=200
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_4p_geomorphologie_beschreibung_rlicols_200pg/",kk = 1:5,endround = 4,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
 ### RandomForest n=100
 ```{r,echo=FALSE}
@@ -136,3 +178,45 @@ evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/r
 ```{r,echo=FALSE}
 evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
+## HEIGHTS
+### SVM n=100
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### SVM n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+## ALLGEOMS
+### SVM n=100
+```{r, echo=FALSE}
+#evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### SVM n=200
+```{r,echo=FALSE}
+#evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=100
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+
+
+
+
+
