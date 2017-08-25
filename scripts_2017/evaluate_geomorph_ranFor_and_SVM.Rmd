@@ -47,7 +47,7 @@ require(e1071)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 source_data("https://github.com/fernstgruber/PROJECTP2/raw/master/data2017/classesandparamsets.RData")
-base="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
+base="/home/fabs/Data/paper2data/RDATA/"
 source_data("https://github.com/fernstgruber/p2/blob/master/data2017/geotopodata_twohundredpergeomorph_2017.RData?raw=true")
 twohundred <- modeldata
 source_data("https://github.com/fernstgruber/p2/blob/master/data2017/modeldata_onehundredpergeomorph.RData?raw=true")
@@ -60,8 +60,14 @@ geolegendeng <- geolegendeng[,c(2,1,3,4,5)]
 
 ##ALL TERRAIN 
 ### SVM n=100
+
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=1,altdata=twohundred,legend=geolegendeng)
+```
+
+
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
 
 ```{r,echo=F}
@@ -70,7 +76,7 @@ predict_radial_newlegend_full(modeldata=onehundred, dependent="geomorphologie_be
 
 ### SVM n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
 
 ```{r,echo=F}
@@ -79,174 +85,293 @@ predict_radial_newlegend_full(modeldata=twohundred, dependent="geomorphologie_be
 ### RandomForest n=100
 
 ```{r}
-importance_ranfor_pset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=1,altdata=twohundred)
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=1,altdata=twohundred,legend=geolegendeng)
 ```
 
 ```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
 
 ```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Catchment_Area2","VerticalDistancetoChannelNetwork","Convexity"),pset=1,altdata=twohundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Catchment_Area2","VerticalDistancetoChannelNetwork","Convexity"),altdata=twohundred,legend=geolegendeng)
 ```
 
 
 ### RandomForest n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_allterraincols_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
 
 ```{r}
-predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Catchment_Area2","VerticalDistancetoChannelNetwork","Convexity"),pset=1,altdata=onehundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","slope_DTM_50m_avg_ws7","Texture","ChannelNetworkBaseLevel", "Catchment_Area2","VerticalDistancetoChannelNetwork","Convexity"),altdata=onehundred,legend=geolegendeng)
 ```
 ##LOCAL TERRAIN 
 ###SVM n=100
-```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_localterrain_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=2,altdata=twohundred,legend=geolegendeng)
 ```
+
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_localterrain_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
 ```{r,echo=F}
-predict_radial_newlegend_full(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("slope_DTM_50m_avg_ws7","Convexity","profc_DTM_50m_avg_ws7","planc_DTM_50m_avg_ws7","maxic_DTM_50m_avg_ws5"),legend=geolegendeng)
+predict_radial_newlegend_full(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("slope_DTM_50m_avg_ws7","Convexity","profc_DTM_50m_avg_ws7","planc_DTM_50m_avg_ws7","maxic_DTM_50m_avg_ws5"),legend=geolegendeng,altdata=onehundred)
 ```
 
 ###SVM n=200
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_localterrain_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_localterrain_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
 ```{r,echo=F}
 predict_radial_newlegend_full(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("slope_DTM_50m_avg_ws7","Convexity","Longitudinal_Curvature","slope_ws11","crosc_DTM_50m_avg_ws7"),legend=geolegendeng,altdata=twohundred)
 ```
 
 ### RandomForest n=100
-```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_localterrain_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
-```
 ```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=twohundred,legend=geolegendeng)
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=2,altdata=twohundred,legend=geolegendeng)
 ```
 
-### RandomForest n=200
-```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_localterrain_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_localterrain_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
 ```{r}
-predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=onehundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("slope_DTM_50m_avg_ws7","profc_DTM_50m_avg_ws7","Convexity","Slope","Total_Curvature","crosc_DTM_50m_avg_ws7"),altdata=twohundred,legend=geolegendeng)
+```
+
+### RandomForest n=200,
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_localterrain_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r}
+predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("slope_DTM_50m_avg_ws7","longc_DTM_50m_avg_ws7","Convexity","crosc_DTM_50m_avg_ws7","slope_ws11"),altdata=onehundred,legend=geolegendeng)
 ```
 ##REGIONAL TERRAIN 
 ### SVM n=100
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=3,altdata=twohundred,legend=geolegendeng)
+```
+
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_100pg/",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r,echo=F}
+predict_radial_newlegend_full(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("Channel_Network_Base_Level","Catchment_slope","Topographic_Wetness_Index","Modified_Catchment_Area","LS_Factor","sagaTopographic_Wetness_Index"),legend=geolegendeng,altdata=twohundred)
 ```
 ### SVM n=200 
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
-### RandomForest n=100
-```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
-```
-```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=twohundred,legend=geolegendeng)
-```
-### RandomForest n=200
-```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
-```
-```{r}
-predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=onehundred,legend=geolegendeng)
-```
-##ROUGHNESS
-###SVM n=100
-```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
-```
-### SVM n=200 
-```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/paper2_lenny_JUNE13/data_paper2/data2017/svm_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
-```
-### RandomForest n=100
 ```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+predict_radial_newlegend_full(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("Channel_Network_Base_Level","Catchment_slope","Topographic_Wetness_Index","Modified_Catchment_Area","LS_Factor","sagaTopographic_Wetness_Index"),legend=geolegendeng,altdata=onehundred)
 ```
+
+### RandomForest n=100
+
 ```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=twohundred,legend=geolegendeng)
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=3,altdata=twohundred,legend=geolegendeng)
 ```
-### RandomForest n=200
-```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
 
 ```{r}
-predict_ranfor_newlegend_full(modeldata=twohundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=onehundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","Catchment_slope","Topographic_Wetness_Index","RelativeSlopePosition","LS_Factor"),altdata=twohundred,legend=geolegendeng)
+```
+
+
+
+
+### RandomForest n=200
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_regionalterrain_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r}
+predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("Channel_Network_Base_Level","Catchment_slope","Topographic_Wetness_Index","RelativeSlopePosition","LS_Factor"),altdata=onehundred,legend=geolegendeng)
+```
+
+
+##ROUGHNESS
+###SVM n=100
+
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=5,altdata=twohundred,legend=geolegendeng)
+```
+
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("TRI_hr_ws26","Texture","fischerk_ws59","terraintexture_hr_ws57_tp25","vectorruggedness_hr_ws59"),legend=geolegendeng,altdata=twohundred)
+```
+
+### SVM n=200 
+```{r, echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("TRI_hr_ws26","Texture","fischerk_ws59","terraintexture_hr_ws57_tp25","vectorruggedness_hr_ws59"),legend=geolegendeng,altdata=onehundred)
+```
+
+
+### RandomForest n=100    
+
+```{r}
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=5,altdata=twohundred,legend=geolegendeng)
+```
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r}
+predict_ranfor_newlegend_full_naproblem(modeldata=onehundred,dependent="geomorphologie_beschreibung",predictors=c("TRI_hr_ws24","Texture","vectorruggedness_hr_ws57","vectorstrength_hr_ws59","terraintexture_hr_ws53_tp25"),altdata=twohundred,legend=geolegendeng)
+```
+
+### RandomForest n=200
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_roughnesscols_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r}
+predict_ranfor_newlegend_full_naproblem(modeldata=onehundred,dependent="geomorphologie_beschreibung",predictors=c("TRI_hr_ws26","Texture","vectorruggedness_hr_ws57","fischerk_ws61","terraintexture_hr_ws53_tp25"),altdata=twohundred,legend=geolegendeng)
 ```
 
 ##RLI
 ### SVM n=100
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("geom_hr_L3_fl10_r_li_richness_UE_hr_20cells","geom_hr_L50m_fl1_r_li_edgedensity_UE_hr_20cells","geom_hr_L3_fl10_r_li_dominance_UE_hr_40cells"),legend=geolegendeng,altdata=twohundred)
 ```
 ### SVM n=200
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg/",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("geom_hr_L3_fl10_r_li_richness_UE_hr_20cells","geom_hr_L50m_fl1_r_li_edgedensity_UE_hr_20cells","geom_hr_L3_fl10_r_li_dominance_UE_hr_40cells"),legend=geolegendeng,altdata=onehundred)
+```
+
 ### RandomForest n=100
-```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
-```
 ```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=twohundred,legend=geolegendeng)
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=4,altdata=twohundred,legend=geolegendeng)
+```
+
+```{r,echo=FALSE}
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+```{r}
+predict_ranfor_newlegend_full_naproblem(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("geom_hr_L3_fl10_r_li_richness_UE_hr_20cells","geom_hr_L3_fl1_r_li_dominance_UE_hr_20cells"),altdata=twohundred,legend=geolegendeng)
 ```
 ### RandomForest n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_rlicols_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
 ```{r}
-predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=onehundred,legend=geolegendeng)
+predict_ranfor_newlegend_full_naproblem(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("geom_hr_L3_fl10_r_li_richness_UE_hr_20cells","geom_hr_L3_fl1_r_li_dominance_UE_hr_20cells"),altdata=onehundred,legend=geolegendeng)
 ```
 ## HEIGHTS
 ### SVM n=100
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("Maximum_Height_hr","ValleyDepth","Vertical_Distance_to_Channel_Network","SlopeHeight","Valley_Depth_hr","Normalized_Height"),legend=geolegendeng,altdata=twohundred)
+```
+
 ### SVM n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
-### RandomForest n=100
 ```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+predict_radial_newlegend_full_naproblem(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("Maximum_Height_hr","ValleyDepth","Vertical_Distance_to_Channel_Network","SlopeHeight","Valley_Depth_hr","Normalized_Height"),legend=geolegendeng,altdata=onehundred)
+```
+
+### RandomForest n=100
+
+```{r}
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=6,altdata=twohundred,legend=geolegendeng)
 ```
 ```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=twohundred,legend=geolegendeng)
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+with same predictors as svm
+```{r}
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("Maximum_Height_hr","ValleyDepth","Vertical_Distance_to_Channel_Network","SlopeHeight","Valley_Depth_hr","Normalized_Height"),altdata=twohundred,legend=geolegendeng)
+```
+
+with own predictors:
+```{r}
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("Vertical_Distance_to_Channel_Network","Maximum_Height_hr","Relative_Slope_Position","Standardized_Height","Slope_Height","ValleyDepth"),altdata=twohundred,legend=geolegendeng)
+```
+
 ### RandomForest n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_heights_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
 ```{r}
-predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=onehundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("Vertical_Distance_to_Channel_Network","Maximum_Height_hr","Relative_Slope_Position","Standardized_Height","Slope_Height","ValleyDepth"),altdata=onehundred,legend=geolegendeng)
 ```
 ## ALLGEOMS
 ### SVM n=100
 ```{r, echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=onehundred, dependent="geomorphologie_beschreibung", predictors=c("geom_DTM_50m_avg_fl1_L1500m","geom_DTM_50m_avg_fl10_L150m"),legend=geolegendeng,altdata=twohundred)
+```
+
+
 ### SVM n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/svm_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_200pg_v2",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_200pg_v2",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+```
+
+
+
+
+```{r,echo=F}
+predict_radial_newlegend_full_naproblem(modeldata=twohundred, dependent="geomorphologie_beschreibung", predictors=c("geom_DTM_50m_avg_fl1_L1500m","geom_DTM_50m_avg_fl10_L150m"),legend=geolegendeng,altdata=onehundred)
+```
+```{r}
+importance_ranfor_pset_newlegend(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=7,altdata=twohundred,legend=geolegendeng)
 ```
 ### RandomForest n=100
 ```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_100pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
 ```{r}
-predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=twohundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("geom_DTM_50m_avg_fl1_L1500m","geom_DTM_50m_avg_fl10_L400m"),altdata=twohundred,legend=geolegendeng)
 ```
+Für höchste importance:
+```{r}
+predict_ranfor_newlegend_full(modeldata =onehundred,dependent="geomorphologie_beschreibung",predictors=c("geom_10m_fl10_L3","geom_DTM_50m_avg_fl10_L200m"),altdata=twohundred,legend=geolegendeng)
+```
+
 ### RandomForest n=200
 ```{r,echo=FALSE}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/ranfor_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_200pg",kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
+evaluateforwardCV_anyerror(mypath=paste(base,"ranfor_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_200pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
+
 ```{r}
-predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c(),pset=1,altdata=onehundred,legend=geolegendeng)
+predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_beschreibung",predictors=c("geom_DTM_50m_avg_fl1_L1300m","geom_DTM_50m_avg_fl10_L1500m"),altdata=onehundred,legend=geolegendeng)
 ```
 
 
