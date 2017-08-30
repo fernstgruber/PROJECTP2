@@ -47,7 +47,7 @@ require(e1071)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 source_data("https://github.com/fernstgruber/PROJECTP2/raw/master/data2017/classesandparamsets.RData")
-base="/home/fabs/Data/paper2data/RDATA/"
+base="/media/fabs/Volume/01_PAPERZEUG/paper2data/RDATA/"
 source_data("https://github.com/fernstgruber/p2/blob/master/data2017/geotopodata_twohundredpergeomorph_2017.RData?raw=true")
 twohundred <- modeldata
 source_data("https://github.com/fernstgruber/p2/blob/master/data2017/modeldata_onehundredpergeomorph.RData?raw=true")
@@ -247,6 +247,11 @@ predict_ranfor_newlegend_full_naproblem(modeldata=onehundred,dependent="geomorph
 
 ##RLI
 ### SVM n=100
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=4,altdata=twohundred,legend=geolegendeng)
+```
+
+
 ```{r, echo=FALSE}
 evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_rlicols_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
@@ -285,6 +290,11 @@ predict_ranfor_newlegend_full_naproblem(modeldata =twohundred,dependent="geomorp
 ```
 ## HEIGHTS
 ### SVM n=100
+
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=6,altdata=twohundred,legend=geolegendeng)
+```
+
 ```{r, echo=FALSE}
 evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_heights_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
@@ -329,6 +339,11 @@ predict_ranfor_newlegend_full(modeldata =twohundred,dependent="geomorphologie_be
 ```
 ## ALLGEOMS
 ### SVM n=100
+```{r}
+predict_radial_newlegend_fullparamset(modeldata=onehundred,dependent="geomorphologie_beschreibung",pset=7,altdata=twohundred,legend=geolegendeng)
+```
+
+
 ```{r, echo=FALSE}
 evaluateforwardCV_anyerror(mypath=paste(base,"svm_fw_5fold_10p_geomorphologie_beschreibung_allgeoms_100pg",sep=""),kk = 1:5,endround = 10,error = "cverror",geheim="geheimerprederror",yrange=c(0,1))
 ```
