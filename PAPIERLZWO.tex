@@ -73,6 +73,10 @@
 Geologic maps have always been an important aid in soil survey as parent material is a decisive factor in soil formation \citep{Jenny1941}. The importance of this relationship is highlighted by the fact that, vice versa, soil maps have themselves been applied to support and improve geologic mapping \citep{Brevik2015}. 
 
 Geological maps at various scales have been used as an environmental variable in digital soil mapping (DSM), representing the soil forming factor parent material, or simply 'p', for instance in the 'scorpan' framework of inferring soil information \citep{McBratney2003}. How this important variable is classified, however, will vary greatly depending on the the available data, the soil classification sytem used, the specific mapping guidelines applied, and most importantly the particular geologic and geomorphologic setting of the investigated area. In its guidelines for soil description, the Food and Agriculture Organization of the United Nations \citep{FAO2006}...(HIER kommt die Beschreibung wie bei der FAO und in {\"O}sterreich/Tirol das Ausgangsmaterial eingeteilt wird)
+Hier vielleicth Juilleret und so für die wichtigkeit des ausgansgsmaterials. Herbst zitat??
+
+A number of studies have compared the information from soil surveys with geologic maps. HERE SOME LITERATURE. While most of the previously mentioned studies analyse the possibility of using soil survey information for mapping surficial geology, the aim of the presented study is to highlight those geologic units of the study area where the soil parent material cannot be simply derived from the detailed geologic map.
+
 
 Hier vielleicth Juilleret und so für die wichtigkeit des ausgansgsmaterials. Herbst zitat??
 
@@ -83,9 +87,9 @@ Hier vielleicth Juilleret und so für die wichtigkeit des ausgansgsmaterials. He
 A second, immensely important soil forming factor is topography or relief. It is considered in traditional soil survey, for instance by mapping landscape position and local slope and curvature \citep{FAO2006}, and also DSM, where the representing variables implemented in a given model can be chosen from a wide set of available parameters. Examples of such terrain parameters can be found, amongst others, in \cite{Boehner2009},\cite{Gallant2000} and \cite{Olaya2009141} . Regarding the geomorphometric characterisation of geologic or soil parent material units, a number of considerations have to be taken into account when choosing which parameter groups to investigate. While regional parameters well describe the, hydrologically relevant, relative position in the landscape, they, as well as absolute and relative height-related parameters, are strongly correlated to the underlying geological structure of a given region. Local parameters such as slope and curvature are often used to infer soil properties and give insight into local dynamics, but may also vary strongly within a map unit. To characterise parent material units, especially with regard to topographic, and as a result, soil, variability, an intermediate terrain parameter describing a unit's land surface is of particular interest. Researchers have long investigated ways to quantify the roughness or ruggedness of terrain, from the analysis of field data and topographic maps to computing roughness indices on raster grids. Geology, geomorphology as well as habitat modelling and wildlife management have been the main scientific research areas in which such investigations were performed on land surfaces.  \cite{Hobson1972} presented three different roughness values and applied them to field measurements, correlating them to rock type. In another early study aimed at quantifying roughness, \cite{Beasom1983} presented the land surface ruggedness index, which is based on the total length of contour lines per area. Similarily analysing topographic maps, \cite{Nellemann1994} describe the calculation of a terrain ruggedness index based on the variability of contour lines along transects, which they correlate with caribou forage availability. Regarding field methods, they calculate microtopographic diversity by analysing the horizontal distance of a chain laid on the ground in their study plots. \cite{Riley1999} proposed the topographic ruggedness index (TRI), which compares the elevation of a central pixel to the elevations of cells within a given search window. In an attempt to decorrelate roughness from slope, \cite{Sappington2007} expanded on the work of \cite{Hobson1972} to introduce vector ruggedness measure (VRM), which is calculated based on the orientation of vectors normal to the surface in a given area. \citep{Grohmann2010} analysed several roughness measures at different resolutions and window sizes with regard to their ability to depict terrain features. They highlight the ability of VRM to detect fine-scale roughness features and attribute low roughness values to steep but smooth slopes, but also acknowledge its inability to delimit slope breaks and identify regional relief. The Melton ruggedness index, which relates  the elevation difference of a basin to the drainage area, was applied by \cite{Marchi2005} to investigate sediment transport, however compared to VRM  it is more of a measure of general relief than roughness. Similar to VRM, roughness measures based on eigenvalue ratios of an orientation matrix have been used in geology to describe land surfaces, especially bedrock fabric. \cite{Coblentz2014} combined such a roughness measures with parameters representing the drainage network of the investigated geologic units  to create terrain characterisation types to distinguish various lithologies, with emphasis on discriminating soft and hard rock areas.
 
 \paragraph{overview of intention and aims}
-In a first step we analyse how well the geologic units of the high resolution geologic map correspond to the parent material identified by the soil surveyor, thus evaluating the performance and reliability of geologic maps to support soil survey in South Tyrol. This requires generalisation of the geologic units into surficial geology units (SGUs) that can be compared to the parent material units used in the soil (or forestry) surveys.  The result is a confusion matrix that shows to which extent geologic units are in accordance with the parent material mapped by the surveyor.  We highlight those units that are often confused or show overlap, and which should consequently be surveyed with greater detail and in consideration of relevant topographic information.
+In a first step we analyse how well the geologic units of the high resolution geologic map correspond to the parent material identified by the soil surveyor, thus evaluating the performance and reliability of geologic maps to support soil survey in South Tyrol. This requires generalisation of the geologic units into surficial geology units (SGUs) that can be compared to the parent material units used in the soil (or forestry) surveys.  The result is a confusion matrix that shows to which extent geologic units are in accordance with the parent material mapped by the surveyor. We highlight those units that are often confused or show overlap, and which should consequently be surveyed with greater detail and in consideration of relevant topographic information.
 
-The next step is to perform a morphometric characterisation of the geological units. To better understand the topographic characteristics of a geologic unit, a data mining approach using random forest classification is performed. Application of a forward stepwise feature selection as well as the analysis of the parameter 'mean decrease Gini', we then identify which terrain parameters best separate geologic units and discuss how they can be related to and interpreted with regard to soil formation and the distribution of soil units.
+The next step is to perform a morphometric characterisation of the geological units. To better understand the topographic characteristics of a geologic unit, a data mining approach using random forest classification is performed. Application of a forward stepwise feature selection as well as the analysis of the parameter 'mean decrease Gini', which quantifies the importance of a variable in the prediction procedure, we then identify which terrain parameters best separate geologic units and discuss how they can be related to and interpreted with regard to soil formation and the distribution of soil units. This data mining procedure was applied to several groups of terrain parameters. One group included all computed terrain parameters, while other groups focus either on local or regional terrain parameters, or parameters related to surface roughness. In this study, this analysis is presented only for the areawise most relevant geologic units, and the focus is on seperating those units which share common borders.
 
 The connection between the two important soil forming factors, parent material and topography, on the one hand, and soil as the result of theses factors on the other, is then investigated by analysing the diversity and distribution of soils for each geologic unit. This is performed from two points of view: the soil type distribution is done for profile sites per geologic unit, but also per parent material unit as attributed by the soil surveyor. This gives insight into how the surveyors' soil landscape model relates specific parent material units to specific soil types, especially when applying a morphologic-genetic classification such as the Austrian soil classification \citep{Nestroy2011}. The synthesis of this information then leads to a geologic-topographic characterisation (GTC) that describes each geologic unit. 
 
@@ -135,8 +139,9 @@ till in general & TG & undifferentiated glacial sediment &\raisebox{0ex}{10.1} \
 \end{table}
 
 \subsubsection{Soils}
-\paragraph{Overview of soils in study area}
 \paragraph{Soil profile data}
+
+The soil classification scheme applied in this study is the Austrian system \citep{Nestroy2011}, as most of the soil profile descriptions available for this study apply this systen, and die International Union of Soil Sciences (IUSS) also recommend the use of local systems for large-scale mapping. Additionally, not all available soil profile data, especially those from points investigated only with augering, included sufficient information for deriving the reference soil group according to the Worlr Reference Base for soil resources(
 \begin{table}[ht]
 \centering
 \small
@@ -178,12 +183,13 @@ Textur-Substratboden & {Regosol, Arenosol, Vertisol} & {strong influence of text
 \caption{Table relating the Austrian soil types to WRB reference groups along with a simplified description, based on \cite{kilian2015}.} 
 \label{soilunits}
 \end{table}
-\paragraph{•}
+\paragraph{Overview of soils in study area}
 \subsubsection{Digital elevation data}
 \subsection{Methods}
+
 \subsubsection{Terrain parameters with emphasis on roughness measures}
 \citep{Riley1999}
-\subsubsection{general methodology}
+\subsubsection{Random Forest classification}
 \clearpage
 \section{Results}
 \subsection{Comparison of soil parent material at soil profile sites with geologic map units}
@@ -252,8 +258,9 @@ AD & 0.2 & 21.1 & 0.0 & 23.6 & 14.8 & 2.5 & 0.0 & 1.2 & 33.9 & 22.2 & 10.9 & 5.7
 
 \section{Discussion}
 \subsection{Differences between geologic survey and parent material from profile site descriptions}
+
 \subsubsection{Differences with regard to mapping purpose}
-Between the two different frameworks of mapping, geology on the one hand and soil on the other, it is important to acknowledge the main focus of attention of each branch of research. There may exist a difference with regard to how pronounced a certain feature or characteristic must be in order to considered for mapping. 
+Between the two different frameworks of mapping, geology on the one hand and soil on the other, it is important to acknowledge the main focus of attention of each branch of research. There may exist a difference with regard to how pronounced a certain feature or characteristic must be in order to considered for mapping. \cite{Miller2015a} note that the resulting maps of the two sciences try to communicate different aspects. While geology refers to geologican matierals and general landform regions, soil science is concerned more with soil properties with regard to land use and management decisions.
 
 A typical example is...
 
@@ -266,6 +273,8 @@ A typical example is...
 \subsection{Distribution of soil types with regard to geologic unit as well as parent material unit}
 
 \subsection{Influence of the Alpine environment on interpretability of geologic units as parent material units}
+\cite{Heung2014} note that while traditional geologic maps focusing on bed rock are a valuable input for DSM when the residual materials form the soil parent material, but less so in areas distinguished by glaciation and hgih geomorphodynamics. Similarily, in their comparison of surficial geology maps derived from Soil Survey maps on the one hand and the Geologic Survey on the other, \cite{Miller2015a} point out that the level of aggreement was lower for areas with complicated geologic histories.
+
 \subsubsection{High relief areas and multilayering}
 Are there thresholds regarding terrain parameters?
 \subsubsection{thin cover layers of till - an essential new parentmaterial unit?}

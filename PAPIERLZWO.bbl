@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -85,6 +85,17 @@
 \newblock \bibinfo{journal}{IEEE Transactions on Geoscience and Remote Sensing}
   \bibinfo{volume}{PP}, \bibinfo{pages}{1 -- 14}.
 \newblock \DOIprefix\doi{10.1109/TGRS.2010.2053546}.
+%Type = Article
+\bibitem[{Heung et~al.(2014)Heung, Bulmer and Schmidt}]{Heung2014}
+\bibinfo{author}{Heung, B.}, \bibinfo{author}{Bulmer, C.E.},
+  \bibinfo{author}{Schmidt, M.G.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Predictive soil parent material mapping at a
+  regional-scale: A random forest approach}.
+\newblock \bibinfo{journal}{Geoderma} \bibinfo{volume}{214–215},
+  \bibinfo{pages}{141 -- 154}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0016706113003443},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.geoderma.2013.09.016}.
 %Type = Inbook
 \bibitem[{Hobson(1972)}]{Hobson1972}
 \bibinfo{author}{Hobson, R.D.}, \bibinfo{year}{1972}.
@@ -122,6 +133,15 @@
 \newblock \bibinfo{title}{On digital soil mapping}.
 \newblock \bibinfo{journal}{Geoderma} \bibinfo{volume}{117}, \bibinfo{pages}{3
   -- 52}.
+%Type = Article
+\bibitem[{Miller and Lee~Burras(2015)}]{Miller2015a}
+\bibinfo{author}{Miller, B.A.}, \bibinfo{author}{Lee~Burras, C.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Comparison of surficial geology maps based on soil
+  survey and in depth geological survey}.
+\newblock \bibinfo{journal}{Soil Horizons} \bibinfo{volume}{56}.
+\newblock \URLprefix \url{http://dx.doi.org/10.2136/sh14-05-0005},
+  \DOIprefix\doi{10.2136/sh14-05-0005}.
 %Type = Article
 \bibitem[{Nellemann and Thomsen(1994)}]{Nellemann1994}
 \bibinfo{author}{Nellemann, C.}, \bibinfo{author}{Thomsen, M.G.},
