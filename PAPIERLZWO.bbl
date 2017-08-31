@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -103,6 +103,14 @@
   \bibinfo{publisher}{Harper and Row, New York}. chapter
   \bibinfo{chapter}{Surface roughness in topography: quantitative approach}.
 \newblock pp. \bibinfo{pages}{221--245}.
+%Type = Techreport
+\bibitem[{{IUSS Working Group WRB}(2015)}]{wrb}
+\bibinfo{author}{{IUSS Working Group WRB}}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{World Reference Base for Soil Resources 2014, update
+  2015 International soil classification system for naming soils and creating
+  legends for soil maps.}
+\newblock \bibinfo{type}{World Soil Resources Reports} \bibinfo{number}{106}.
+  {FAO, Rome}. \bibinfo{address}{Rome}.
 %Type = Book
 \bibitem[{Jenny(1941)}]{Jenny1941}
 \bibinfo{author}{Jenny, H.}, \bibinfo{year}{1941}.
