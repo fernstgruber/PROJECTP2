@@ -46,8 +46,8 @@ mymodeldata <- na.omit(modeldata[c(dependent,predset)])
 folds = sample(rep(1:5, length = nrow(mymodeldata)))
 
 predset=preds
-tt=1:10 #number of best parameters in combination
-mydir=paste("RanFor_2017_1against1_5fold","geomorph_",predset_name,"_100pg_t10",sep="")
+tt=1:5 #number of best parameters in combination
+mydir=paste("RanFor_2017_1against1_5fold","geomorph_",predset_name,"_100pg_t5",sep="")
 dir.create(mydir)
 cl=classes[1]
 for(cl in classes){
