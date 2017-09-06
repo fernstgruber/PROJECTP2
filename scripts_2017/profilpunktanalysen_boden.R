@@ -71,6 +71,13 @@ summary(geomorphologieundboden$geomorphologieklasse_kurz_kartiert)
 #geomorphologieundboden$geomorphologieklasse_kurz_gk <- droplevels(geomorphologieundboden$geomorphologieklasse_kurz_gk) 
 #levels(geomorphologieundboden$geomorphologieklasse_kurz_gk) <- c("AD","CBD","CD",  "CSR", "DC",  "GLD", "IMS", "ISR", "LD",  "LT",  "MrD", "MxD", "SB","SD","SSR","TG")
 kartierergegenkarte<-  as.data.frame.matrix(table(geomorphologieundboden$geomorphologieklasse_kurz_kartiert,geomorphologieundboden$geomorphologieklasse_kurz_gk))
-kartierergegenkarte <-kartierergegenkarte[-c(2,18),-c(2,18)]
+kartierergegenkarte <-kartierergegenkarte[-c(2,17),-c(2,17)]
 xtable(kartierergegenkarte,caption = "Tabular comparison of parent material geounits as observed by soil surveyor (rows) and in the geologic map (columns).",label = "kartiergegenkarte",)
 # hier dann vielleicht \tabcolsep=0.10cm unter \centering einfügen
+####
+CM <- kartierergegenkarte
+print(summary.kappa(kappa(CM)))
+mean(geomorphologieundboden$geomorphologieklasse_kurz_kartiert==geomorphologieundboden$geomorphologieklasse_kurz_gk,na.rm=T)
+### without differentiation of Till into LD and TG: NICHT MEHR AKTUELL
+#testdf <- geomorphologieundboden
+#testdf[testdf$geomorphologieklasse_kurz_kartiert=="LT","geomorphologieklasse_kurz_kartiert"] <- as.factor("TG")

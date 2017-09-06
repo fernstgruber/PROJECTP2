@@ -6,7 +6,7 @@ eval(parse(text = myfunctions))
 source_data("https://github.com/fernstgruber/p2/blob/master/data2017/geotopodata_twohundredpergeomorph_2017.RData?raw=true")
 rm(modeldata)
 source_data("https://github.com/fernstgruber/p2/blob/master/data2017/modeldata_onehundredpergeomorph.RData?raw=true")
-setwd("/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/")
+setwd("/home/fabs/PROJECTP2/temporlarge/")
 origmodeldata <- modeldata
 origmodeldata$Festgestein <- ifelse(is.na(origmodeldata$Festgestein),yes = 0,no = 1)
 origmodeldata$Festgestein <- as.factor(origmodeldata$Festgestein)
@@ -21,8 +21,18 @@ paramsets[[3]] <- paramsets[[3]][-c(2,15)]
 paramsets[[4]] <- paramsets[[4]][-c(5,8,10,13,15,18,20,23,25,28,30,33,35,38,40,43,45,48,50,53,55,58,60,63,65,68,70,72,73,76,78,81,83,86,88,91,93,96,98,101,103,106,108,
                                     111,113,116,118,121,123,126,128,131,133,136,138,141,143,146,148,151,153,156,158,161,163,164,165,168,170,173,175,178,180,183,185)]
 paramsets[[4]] <- paramsets[[4]][-c(44)]
+
+goodroughness <- vector()
+for (i in paramsets[[5]]){
+  if(summary(origmodeldata[[i]])[3]>0){
+    goodroughness <- c(goodroughness,i)
+  }
+}
+
+
+paramsets[[5]] <- goodroughness
 #########################################################################################
-psets <- c(1:7)
+psets <- c(5:7)
 classes <-  levels(origmodeldata[[dependent]])
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
@@ -42,7 +52,7 @@ badones <-vector()
 #  }
 #}
 predset=preds[!(preds %in% badones)]
-mymodeldata <- na.omit(modeldata[c(dependent,predset)])
+mymodeldata <- na.omit(origmodeldata[c(dependent,predset)])
 folds = sample(rep(1:5, length = nrow(mymodeldata)))
 
 predset=preds
@@ -125,5 +135,4 @@ for(cl in classes){
 
 n=n+1
 }
-
 
