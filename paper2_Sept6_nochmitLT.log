@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  6 SEP 2017 17:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  6 SEP 2017 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**PAPIERLZWO.tex
-(./PAPIERLZWO.tex
+**paper2_Sept6_nochmitLT.tex
+(./paper2_Sept6_nochmitLT.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 9 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
@@ -87,7 +87,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@enLab=\toks16
 \@sep=\skip43
 \@@sep=\skip44
- (./PAPIERLZWO.spl)
+
+(./paper2_Sept6_nochmitLT.spl)
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
@@ -96,7 +97,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count94
 )
 \splwrite=\write3
-\openout3 = `PAPIERLZWO.spl'.
+\openout3 = `paper2_Sept6_nochmitLT.spl'.
 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
@@ -232,8 +233,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
-(./PAPIERLZWO.aux)
-\openout1 = `PAPIERLZWO.aux'.
+(./paper2_Sept6_nochmitLT.aux)
+\openout1 = `paper2_Sept6_nochmitLT.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
@@ -293,9 +294,9 @@ LaTeX Info: Redefining \ref on input line 40.
 LaTeX Info: Redefining \pageref on input line 40.
 LaTeX Info: Redefining \nameref on input line 40.
 
-(./PAPIERLZWO.out) (./PAPIERLZWO.out)
+(./paper2_Sept6_nochmitLT.out) (./paper2_Sept6_nochmitLT.out)
 \@outlinefile=\write4
-\openout4 = `PAPIERLZWO.out'.
+\openout4 = `paper2_Sept6_nochmitLT.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 67.
@@ -314,50 +315,130 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
  [2] [3] [4] [5]
-Overfull \hbox (4.38112pt too wide) in paragraph at lines 119--140
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 119.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]\OT1/cmr/m/n/10.95 calcareous sed-i-men-tary
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 130--130
+[]\OT1/cmr/m/n/10.95 intermediate sed-i-men-tary
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 134--134
+[]\OT1/cmr/m/n/10.95 Pleistocene de-posits from de-bris
+ []
+
+
+Overfull \hbox (27.98987pt too wide) in paragraph at lines 119--141
  [][] 
  []
 
 [6]
-Underfull \hbox (badness 3861) in paragraph at lines 171--171
-[]\OT1/cmr/m/n/6 Cambisol, Flu-vi-sol, Lu-vi-sol,
+Underfull \hbox (badness 3919) in paragraph at lines 169--169
+[]\OT1/cmr/m/n/10.95 Cambisol, Flu-vi-sol,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+\OT1/cmr/m/n/10.95 Lu-vi-sol, Um-brisol,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]\OT1/cmr/m/n/10.95 Farb-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]\OT1/cmr/m/n/10.95 Feinmaterial-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]\OT1/cmr/m/n/10.95 Leptosol, Regosol,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 175--175
-[]\OT1/cmr/m/n/6 Feinmaterial-
+[]\OT1/cmr/m/n/10.95 Grobmaterial-
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 175--175
-[]\OT1/cmr/m/n/6 Leptosol, Regosol, His-tosol,
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\OT1/cmr/m/n/10.95 Leptosol, Regosol,
  []
 
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 177--177
-[]\OT1/cmr/m/n/6 Grobmaterial-
- []
-
-Missing character: There is no Ã in font cmr6!
-Missing character: There is no ¤ in font cmr6!
-
-Underfull \hbox (badness 1748) in paragraph at lines 189--189
-[]\OT1/cmr/m/n/6 Leptosol, Regosol, Um-brisol,
+[]\OT1/cmr/m/n/10.95 Haftnsse-
  []
 
 
-Overfull \hbox (15.8858pt too wide) in paragraph at lines 167--202
+Overfull \hbox (2.81117pt too wide) in paragraph at lines 179--179
+[]\OT1/cmr/m/n/10.95 Kalkbraunlehm| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[]\OT1/cmr/m/n/10.95 Kalklehm-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]\OT1/cmr/m/n/10.95 Leptosol, Regosol,
+ []
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 187--188
+[]\OT1/cmr/m/n/10.95 with or-ganic hori-zon on car-bon-atic
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 189--189
+[]\OT1/cmr/m/n/10.95 Leptosol, Um-brisol,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+[]\OT1/cmr/m/n/10.95 with or-ganic hori-zon on cal-care-ous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]\OT1/cmr/m/n/10.95 Textur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]\OT1/cmr/m/n/10.95 Regosol, Arenosol,
+ []
+
+
+Overfull \hbox (15.8858pt too wide) in paragraph at lines 165--200
  [][] 
  []
 
-[7] [8]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 254.
+[7] [8] [9]
+Overfull \hbox (13.778pt too wide) in paragraph at lines 219--241
+ [][] 
+ []
+
+
+Overfull \hbox (1.44641pt too wide) in paragraph at lines 250--271
+ [][] 
+ []
+
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ² in font cmr12!
- [9
+[10
 
-] [10] [11] (./PAPIERLZWO.bbl
+] [11] [12] (./paper2_Sept6_nochmitLT.bbl
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -394,11 +475,11 @@ Underfull \hbox (badness 1147) in paragraph at lines 54--66
  com / science / article / pii /
  []
 
-[12]
+[13]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [13]
+ [14]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -407,7 +488,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no – in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no – in font cmr12!
- [14]
+ [15]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 
@@ -423,41 +504,41 @@ Underfull \hbox (badness 1052) in paragraph at lines 235--242
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
- (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
-Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+ (./paper2_Sept6_nochmitLT.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
+Package rerunfilecheck Info: File `paper2_Sept6_nochmitLT.out' has not changed.
+
 (rerunfilecheck)             Checksum: B25EBDDAFDF2F8617FEA5AA95D5D0E8D;2344.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 322.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
  ) 
 Here is how much of TeX's memory you used:
- 6064 strings out of 494935
- 88187 string characters out of 6178122
- 187952 words of memory out of 5000000
- 9167 multiletter control sequences out of 15000+600000
+ 6065 strings out of 494935
+ 88397 string characters out of 6178122
+ 189965 words of memory out of 5000000
+ 9168 multiletter control sequences out of 15000+600000
  10267 words of font info for 36 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 34i,11n,34p,3917b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,34p,3929b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (15 pages, 223231 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on paper2_Sept6_nochmitLT.pdf (16 pages, 205087 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
+ 402 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
  82 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

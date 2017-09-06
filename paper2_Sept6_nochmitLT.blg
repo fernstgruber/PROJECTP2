@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper2_Sept6_nochmitLT.aux
+The style file: model2-names.bst.bst
+Database file #1: P2.bib.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--can't use both author and editor fields in Gallant2000
+Warning--can't use both author and editor fields in Hobson1972
+You've used 24 entries,
+            2990 wiz_defined-function locations,
+            927 strings with 11936 characters,
+and the built_in function-call counts, 16682 in all, are:
+= -- 1268
+> -- 630
+< -- 23
++ -- 247
+- -- 217
+* -- 1845
+:= -- 2382
+add.period$ -- 83
+call.type$ -- 24
+change.case$ -- 191
+chr.to.int$ -- 24
+cite$ -- 26
+duplicate$ -- 1270
+empty$ -- 1236
+format.name$ -- 289
+if$ -- 3169
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 245
+newline$ -- 146
+num.names$ -- 100
+pop$ -- 426
+preamble$ -- 1
+purify$ -- 167
+quote$ -- 0
+skip$ -- 389
+stack$ -- 0
+substring$ -- 630
+swap$ -- 952
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 204
+warning$ -- 2
+while$ -- 94
+width$ -- 0
+write$ -- 390
+(There were 2 warnings)

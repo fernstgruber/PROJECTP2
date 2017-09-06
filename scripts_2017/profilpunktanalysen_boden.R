@@ -70,7 +70,7 @@ summary(geomorphologieundboden$geomorphologieklasse_kurz_kartiert)
 #levels(geomorphologieundboden$geomorphologieklasse_kurz_kartiert) <- c("AD","CBD","CD",  "CSR", "DC",  "GLD", "IMS", "ISR", "LD",  "LT",  "MrD", "MxD", "SB","SD","SSR","TG")
 #geomorphologieundboden$geomorphologieklasse_kurz_gk <- droplevels(geomorphologieundboden$geomorphologieklasse_kurz_gk) 
 #levels(geomorphologieundboden$geomorphologieklasse_kurz_gk) <- c("AD","CBD","CD",  "CSR", "DC",  "GLD", "IMS", "ISR", "LD",  "LT",  "MrD", "MxD", "SB","SD","SSR","TG")
-kartierergegenkarte<-  as.data.frame.matrix(table(geomorphologieundboden$geomorphologieklasse_kurz_kartiert,geomorphologieundboden$geomorphologieklasse_kurz_gk))
+kartierergegenkarte<-  as.data.frame.matrix(table(geomorphologieundboden$geomorphologieklasse_kurz_gk,geomorphologieundboden$geomorphologieklasse_kurz_kartiert))
 kartierergegenkarte <-kartierergegenkarte[-c(2,17),-c(2,17)]
 xtable(kartierergegenkarte,caption = "Tabular comparison of parent material geounits as observed by soil surveyor (rows) and in the geologic map (columns).",label = "kartiergegenkarte",)
 # hier dann vielleicht \tabcolsep=0.10cm unter \centering einfügen
