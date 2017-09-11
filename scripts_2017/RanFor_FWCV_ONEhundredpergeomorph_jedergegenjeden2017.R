@@ -32,14 +32,14 @@ for (i in paramsets[[5]]){
 
 paramsets[[5]] <- goodroughness
 #########################################################################################
-psets <- c(3:4)
+psets <- c(7)
 classes <-  levels(origmodeldata[[dependent]])
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
 
 n=1
-p=paramsets[2]
+
 
 for (p in paramsets){
   predset_name <- paramsetnames[n]
