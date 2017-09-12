@@ -40,7 +40,7 @@ paramsets = paramsets[psets]
 
 n=1
 
-
+p=paramsets[1]
 for (p in paramsets){
   predset_name <- paramsetnames[n]
 preds <- unlist(p)

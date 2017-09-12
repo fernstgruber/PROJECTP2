@@ -1,0 +1,113 @@
+---
+title: "Alluvial deposits"
+author: "fabian gruber"
+date: "September 12, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(randomForest)
+require(RCurl)
+require(repmis)
+load("/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/classesandparamsets.RData")
+geolegendeng <- read.table(text=getURL("https://raw.githubusercontent.com/fernstgruber/p2/master/data2017/geolegendeng.txt"),sep="\t",header=T)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+basedir="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
+parameterfolders <- c("/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_allterraincols_200pg_t10/","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_localterrain_100pg_t5/","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_regionalterrain_100pg_t5","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_roughnesscols_100pg_t5/","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_rlicols_100pg_t5","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_heights_100pg_t5/")
+```
+##Allterraincols
+```{r , echo =F}
+cl=classes[1]
+  newclasses <- classes[!(classes %in% cl)]
+  newclass=newclasses[1]
+  for(newclass in newclasses){
+  path=parameterfolders[1]
+    for (path in parameterfolders)
+    mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
+    print(paste(cl,"_vs_",newclass,sep=""))
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+
+  }
+```
+
+##Local terrain
+
+```{r , echo =F}
+cl=classes[1]
+  newclasses <- classes[!(classes %in% cl)]
+  newclass=newclasses[1]
+  for(newclass in newclasses){
+  path=parameterfolders[2]
+    for (path in parameterfolders)
+    mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
+    print(paste(cl,"_vs_",newclass,sep=""))
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+
+  }
+```
+
+##Regional terrain
+
+```{r , echo =F}
+cl=classes[1]
+  newclasses <- classes[!(classes %in% cl)]
+  newclass=newclasses[1]
+  for(newclass in newclasses){
+  path=parameterfolders[3]
+    for (path in parameterfolders)
+    mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
+    print(paste(cl,"_vs_",newclass,sep=""))
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+
+  }
+```
+
+
+##roughness
+
+```{r , echo =F}
+cl=classes[1]
+  newclasses <- classes[!(classes %in% cl)]
+  newclass=newclasses[1]
+  for(newclass in newclasses){
+  path=parameterfolders[4]
+    for (path in parameterfolders)
+    mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
+    print(paste(cl,"_vs_",newclass,sep=""))
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+
+  }
+```
+
+##RLIcols
+
+```{r , echo =F}
+cl=classes[1]
+  newclasses <- classes[!(classes %in% cl)]
+  newclass=newclasses[1]
+  for(newclass in newclasses){
+  path=parameterfolders[5]
+    for (path in parameterfolders)
+    mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
+    print(paste(cl,"_vs_",newclass,sep=""))
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+
+  }
+```
+
+##Heights
+
+```{r , echo =F}
+cl=classes[1]
+  newclasses <- classes[!(classes %in% cl)]
+  newclass=newclasses[1]
+  for(newclass in newclasses){
+  path=parameterfolders[6]
+    for (path in parameterfolders)
+    mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
+    print(paste(cl,"_vs_",newclass,sep=""))
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+
+  }
+```
