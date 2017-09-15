@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -94,6 +94,27 @@
   \bibinfo{publisher}{John Wiley \& Sons, Inc.}. chapter
   \bibinfo{chapter}{Primary Topographic Attributes}.
 \newblock pp. \bibinfo{pages}{51--85}.
+%Type = Incollection
+\bibitem[{Geitner et~al.(2017)Geitner, Baruck, Freppaz, Godone, Grashey-Jansen,
+  Gruber, Heinrich, Papritz, Simon, Stanchi, Traidl, von Albertini and
+  Vrščaj}]{Geitner2017}
+\bibinfo{author}{Geitner, C.}, \bibinfo{author}{Baruck, J.},
+  \bibinfo{author}{Freppaz, M.}, \bibinfo{author}{Godone, D.},
+  \bibinfo{author}{Grashey-Jansen, S.}, \bibinfo{author}{Gruber, F.E.},
+  \bibinfo{author}{Heinrich, K.}, \bibinfo{author}{Papritz, A.},
+  \bibinfo{author}{Simon, A.}, \bibinfo{author}{Stanchi, S.},
+  \bibinfo{author}{Traidl, R.}, \bibinfo{author}{von Albertini, N.},
+  \bibinfo{author}{Vrščaj, B.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Chapter 8 - soil and land use in the
+  alps—challenges and examples of soil-survey and soil-data use to support
+  sustainable development}, in: \bibinfo{editor}{Pereira, P.},
+  \bibinfo{editor}{Brevik, E.C.}, \bibinfo{editor}{Muñoz-Rojas, M.},
+  \bibinfo{editor}{Miller, B.A.} (Eds.), \bibinfo{booktitle}{Soil Mapping and
+  Process Modeling for Sustainable Land Use Management}.
+  \bibinfo{publisher}{Elsevier}, pp. \bibinfo{pages}{221 -- 292}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/B9780128052006000086},
+  \DOIprefix\doi{http://doi.org/10.1016/B978-0-12-805200-6.00008-6}.
 %Type = Article
 \bibitem[{Grohmann et~al.(2010)Grohmann, Smith and Riccomini}]{Grohmann2010}
 \bibinfo{author}{Grohmann, C.H.}, \bibinfo{author}{Smith, M.J.},
@@ -135,6 +156,21 @@
 \newblock \bibinfo{title}{Factors of Soil Formation - A System of Quantitative
   Pedology}.
 \newblock \bibinfo{publisher}{Dover Publications, Inc. New York}.
+%Type = Article
+\bibitem[{Juilleret et~al.(2016)Juilleret, Dondeyne, Vancampenhout, Deckers and
+  Hissler}]{Juilleret2016}
+\bibinfo{author}{Juilleret, J.}, \bibinfo{author}{Dondeyne, S.},
+  \bibinfo{author}{Vancampenhout, K.}, \bibinfo{author}{Deckers, J.},
+  \bibinfo{author}{Hissler, C.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Mind the gap: A classification system for integrating
+  the subsolum into soil surveys}.
+\newblock \bibinfo{journal}{Geoderma} \bibinfo{volume}{264, Part B},
+  \bibinfo{pages}{332 -- 339}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0016706115300604},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.geoderma.2015.08.031}.
+  \bibinfo{note}{soil mapping, classification, and modelling: history and
+  future directions}.
 %Type = Book
 \bibitem[{Kilian(2015)}]{kilian2015}
 \bibinfo{author}{Kilian, W.}, \bibinfo{year}{2015}.

@@ -13,17 +13,13 @@ varlist <- c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convexity",
              "crosc_DTM_50m_avg_ws7","geom_dtm_10m_hyd_fl5_L30","geom_hr_L3_fl1_r.li.simpson_UE_hr_40cells",
              "hoehenstufen","longc_DTM_50m_avg_ws7","profc_DTM_50m_avg_ws7","slope_DTM_50m_avg_ws3",
              "slope_DTM_50m_avg_ws7","slope_ws15","slope_ws15_hr")
-#numericlist <-  c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convexity","Longitudinal_Curvature",
-       #           "Maximum_Height_hr","Normalized_Height","TPI_i0m_o500m","TRI_hr_ws26","Texture",
-      #            "VerticalDistancetoChannelNetwork","aspect_ws15_hr","crosc_DTM_50m_avg_ws3",
-      #            "crosc_DTM_50m_avg_ws7","geom_dtm_10m_hyd_fl5_L30","geom_hr_L3_fl1_r.li.simpson_UE_hr_40cells",
-      #            "longc_DTM_50m_avg_ws7","profc_DTM_50m_avg_ws7","slope_DTM_50m_avg_ws3",
-      #            "slope_DTM_50m_avg_ws7","slope_ws15","slope_ws15_hr")
-numericlist <-  c("Texture",
+numericlist <-  c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convexity","Longitudinal_Curvature",
+                  "Maximum_Height_hr","Normalized_Height","TPI_i0m_o500m","TRI_hr_ws26","Texture",
                   "VerticalDistancetoChannelNetwork","aspect_ws15_hr","crosc_DTM_50m_avg_ws3",
                   "crosc_DTM_50m_avg_ws7","geom_dtm_10m_hyd_fl5_L30","geom_hr_L3_fl1_r.li.simpson_UE_hr_40cells",
                   "longc_DTM_50m_avg_ws7","profc_DTM_50m_avg_ws7","slope_DTM_50m_avg_ws3",
                   "slope_DTM_50m_avg_ws7","slope_ws15","slope_ws15_hr")
+
 load(file="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/temporlarge/sgu_df_base_ordered.RData")
 
 gisBase="/usr/local/src/grass70_release/dist.x86_64-unknown-linux-gnu"
