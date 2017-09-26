@@ -1,0 +1,38 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
+#######################load libraries################################
+import os
+import subprocess
+import sys
+import timeit
+##testvariables
+vector = '100m_grid_SGU_south'
+mapset = 'res10m_saga'
+pattern = '*'		
+exclude = ''
+
+#########################Set variables############################
+if len(sys.argv)<5:
+	sys.exit('Something is wrong! The command shoud be of the form \n getRastervalues vectorname mapset pattern exclude')
+vector = str(sys.argv[1])
+mapset = str(sys.argv[2])
+pattern = str(sys.argv[3])		
+exclude = str(sys.argv[4])
+rastorvect = "rast"
+###import shapefile
+os.system('v.in.ogr input=%s.shp output=%s_%s'%(vector,mapset,vector))
+vectorname = '%s_%s'%(mapset,vector)
+##MAKE LIST OF rasterdata
+os.system("g.list  mapset=%s type=%s pattern=%s exclude=%s > rast_temp.txt"%(mapset,rastorvect,pattern,exclude))
+with open('rast_temp.txt','r') as f:
+	text=f.readlines()
+ll=[line.strip() for line in text]
+
+for l in ll:
+	column="%s"%(l)
+	os.system('v.db.addcolumn map=%s columns="%s DOUBLE PRECISION"'%(vectorname,column))
+	os.system('v.what.rast map=%s raster=%s@%s column=%s'%(vectorname,l,mapset,column))
+	
+
+
