@@ -15,6 +15,7 @@ myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/mas
 eval(parse(text = myfunctions))
 basedir="/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/"
 parameterfolders <- c("/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_allterraincols_200pg_t10/","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_localterrain_100pg_t5/","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_regionalterrain_100pg_t5","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_roughnesscols_100pg_t5/","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_rlicols_100pg_t5","/media/fabs/Volume/01_PAPERZEUG/newstuff_p2/RanFor_2017_1against1_5foldgeomorph_heights_100pg_t5/")
+classes <- classes[c(1,13,15,9,10,16,7)]
 ```
 ##Allterraincols
 ```{r , echo =F}
@@ -23,10 +24,9 @@ cl=classes[1]
   newclass=newclasses[1]
   for(newclass in newclasses){
   path=parameterfolders[1]
-    for (path in parameterfolders)
     mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
     print(paste(cl,"_vs_",newclass,sep=""))
-    evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
+    evaluateforwardCV_anyerror(mypath=mynewdir,endround=10,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
 
   }
 ```
@@ -39,7 +39,6 @@ cl=classes[1]
   newclass=newclasses[1]
   for(newclass in newclasses){
   path=parameterfolders[2]
-    for (path in parameterfolders)
     mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
     print(paste(cl,"_vs_",newclass,sep=""))
     evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
@@ -55,7 +54,6 @@ cl=classes[1]
   newclass=newclasses[1]
   for(newclass in newclasses){
   path=parameterfolders[3]
-    for (path in parameterfolders)
     mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
     print(paste(cl,"_vs_",newclass,sep=""))
     evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
@@ -72,7 +70,6 @@ cl=classes[1]
   newclass=newclasses[1]
   for(newclass in newclasses){
   path=parameterfolders[4]
-    for (path in parameterfolders)
     mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
     print(paste(cl,"_vs_",newclass,sep=""))
     evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
@@ -88,7 +85,6 @@ cl=classes[1]
   newclass=newclasses[1]
   for(newclass in newclasses){
   path=parameterfolders[5]
-    for (path in parameterfolders)
     mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
     print(paste(cl,"_vs_",newclass,sep=""))
     evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
@@ -104,7 +100,6 @@ cl=classes[1]
   newclass=newclasses[1]
   for(newclass in newclasses){
   path=parameterfolders[6]
-    for (path in parameterfolders)
     mynewdir = paste(path,"/",cl,"_vs_",newclass,sep="")
     print(paste(cl,"_vs_",newclass,sep=""))
     evaluateforwardCV_anyerror(mypath=mynewdir,endround=5,kk=1:5,yrange = c(0,1),error="cverror",geheim="geheimerprederror")
