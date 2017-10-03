@@ -1,0 +1,28 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
+
+#########################Set variables############################
+mapset= str(sys.argv[1])
+pattern = str(sys.argv[2])
+exclude=str(sys.argv[3])
+rastorvect="rast"
+output_folder="/media/fabs/Volume/Data/outrast_%s"%mapset
+#imagetype="Float64"
+imagetype="UInt16"
+#######################load libraries################################
+import os
+import sys
+import timeit
+###############
+if len(sys.argv)<4:
+	sys.exit('Something is wrong! The command shoud be of the form \n export_pattern mapset pattern exclude')
+#######################export as UInt16.tif######################
+os.system("g.list  mapset=%s type=%s pattern=%s exclude=%s > rast_temp.txt"%(mapset,rastorvect,pattern,exclude))
+with open('rast_temp.txt','r') as f:
+	text=f.readlines()
+ll=[line.strip() for line in text]
+os.system('mkdir %s'%output_folder)
+for l in ll:
+	os.system('r.out.gdal in=%s out=%s/%s.tif type=%s createopt="PROFILE=GEOTIFF,TFW=YES"'%(l,output_folder,l,imagetype))
+os.system('rm rast_temp.txt')
