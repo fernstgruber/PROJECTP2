@@ -24,22 +24,6 @@ bbundhoehe <-  read.table(text=getURL("https://raw.githubusercontent.com/fernstg
 bbundhoehe <- bbundhoehe[c("ID","bodenbedeckung","hoehenstufen")]
 boden<- merge(boden,bbundhoehe,by="ID",all.x=T )
 summary(boden)
-#################################################################################################################                                                          
-#ERSTELLEN VON KONTINGENZTABELLEN                                                                               # 
-#################################################################################################################
-tabelle_bodentypen_red_vs_geomorph <- as.data.frame.matrix(table(boden$geomorphologie_beschreibung,boden$TYP)) #
-#write.table(tabelle_bodentypen_red_vs_geomorph,file="tabelle_bodentyp_red_vs_geomorph")                        #
-#                                                                                                               #
-tabelle_bodentypen_diff_vs_geomorph <- as.matrix(table(boden$geomorphologie_beschreibung,boden$TYP))           #
-#write.table(tabelle_bodentypen_diff_vs_geomorph,file="tabelle_bodentyp_diff_vs_geomorph")                      #
-#                                                                                                               #
-tabelle_bodentypen_detailliert <- as.matrix(table(boden$Beschreibung,boden$TYP))                               #
-#write.table(tabelle_bodentypen_detailliert,file="tabelle_bodentypen_detailliert",sep=";")                      #
-tabelle_bodentypen_detailliert#                                                                                                               #  
-####add substrate data and cover layer where available/existent for wlmpoints                                   #
-
-
-#boden <- merge(boden,wlm_subst,by.x="ID",by.y="IDENT",all.x=T)                                                 #
 #################################################################################################################
 boden <- merge(boden,forstdb_AGM,by.x="ID",by.y="AufID",all.x=T)
 boden <- merge(boden,wlm_AGM,by.x="ID",by.y="IDENT",all.x=T)
@@ -56,9 +40,10 @@ boden[kartiert_thal,"geomorphologie_kartiert"] <- as.character(boden$geomorpholo
 boden$geomorphologie_kartiert <- as.factor(boden$geomorphologie_kartiert)
 levels(boden$geomorphologie_kartiert)
 levels(boden$geomorphologie_beschreibung)
+
 levels(boden$geomorphologie_kartiert) %in% levels(boden$geomorphologie_beschreibung)
 summary(boden$geomorphologie_kartiert)
-
+summary(boden$geomorphologie_beschreibung)
 geomorphologieundboden <- boden[c("ID","geomorphologie_kartiert","geomorphologie_beschreibung")]
 #legende_kartierer_gegen_karte <- read.table("legede_kartierer_gegen_karte.txt",sep="\t",header=T)
 geomorphologieundboden <- merge(geomorphologieundboden,geolegendeng,by.x="geomorphologie_kartiert",by.y="geomorphologie_deutsch",all.x=T)
@@ -78,6 +63,20 @@ xtable(kartierergegenkarte,caption = "Tabular comparison of parent material geou
 CM <- kartierergegenkarte
 print(summary.kappa(kappa(CM)))
 mean(geomorphologieundboden$geomorphologieklasse_kurz_kartiert==geomorphologieundboden$geomorphologieklasse_kurz_gk,na.rm=T)
-### without differentiation of Till into LD and TG: NICHT MEHR AKTUELL
-#testdf <- geomorphologieundboden
-#testdf[testdf$geomorphologieklasse_kurz_kartiert=="LT","geomorphologieklasse_kurz_kartiert"] <- as.factor("TG")
+###############################################################################################################################
+### without differentiation of Till into LD and TG: NICHT MEHR AKTUELL                                                        #
+#testdf <- geomorphologieundboden                                                                                             #  
+#testdf[testdf$geomorphologieklasse_kurz_kartiert=="LT","geomorphologieklasse_kurz_kartiert"] <- as.factor("TG")              #
+###############################################################################################################################
+###ANALYSE DER BODENVERTEILUNG
+levels(boden$geomorphologie_kartiert)
+levels(boden$geomorphologie_beschreibung)
+boden_rein <- boden 
+boden_rein <- merge(boden_rein,geolegendeng,by.x="geomorphologie_kartiert",by.y="geomorphologie_deutsch",all.x=T)
+boden_rein <- boden_rein[,c(1:24,26)]
+names(boden_rein)[25] <- "SGU_kartiert"
+boden_rein <- merge(boden_rein,geolegendeng,by.x="geomorphologie_beschreibung",by.y="geomorphologie_deutsch",all.x=T)
+boden_rein <- boden_rein[,c(1:25,27)]
+names(boden_rein)[26] <- "SGU_gk"
+boden_SGU <- boden_rein
+save(boden_SGU,file="/home/fabs/PROJECTP2/data2017/boden_SGU.RData")

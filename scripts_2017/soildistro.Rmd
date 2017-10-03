@@ -1,0 +1,24 @@
+---
+title: "soil distribution from both viewpoints"
+author: "fabian gruber"
+date: "October 3, 2017"
+output: html_document
+---
+```{r,include=F}
+library(knitr)
+load("/home/fabs/PROJECTP2/data2017/boden_SGU.RData")
+boden_SGU <- boden_SGU[boden_SGU$KLASSE != "",]
+boden_SGU <- boden_SGU[boden_SGU$TYP != "",]
+boden_SGU <- boden_SGU[boden_SGU$SUBTYP != "",]
+boden_SGU <- droplevels(boden_SGU)
+```
+
+
+
+```{r,echo=FALSE}
+kable(as.data.frame.matrix(table(boden_SGU$TYP,boden_SGU$SGU_gk)),caption="Distribution of the soil typ classes on the SGUs of the geological map")
+```
+
+```{r,echo=FALSE}
+kable(as.data.frame.matrix(table(boden_SGU$TYP,boden_SGU$SGU_kartiert)),caption="Distribution of the soil typ classes on the SGUs as interpreted by the surveyor")
+```
