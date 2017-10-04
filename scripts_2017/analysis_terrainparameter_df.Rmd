@@ -30,6 +30,8 @@ load(file="/home/fabs/PROJECTP2/temporlarge/sgu_df_base_ordered.RData")
 
 ```
 
+"ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convexity","Longitudinal_Curvature"
+
 ```{r,echo=F}
 gisBase="/usr/local/src/grass70_release/dist.x86_64-unknown-linux-gnu"
 gisDbase =  "/home/fabs/Data/GRASSDATA/"
@@ -37,14 +39,15 @@ location="EPPAN_vhr"
 mapset="paper3data_masktest"
 initGRASS(gisBase = gisBase,gisDbase = gisDbase,location=location,mapset=mapset,override = TRUE)
 num=numericlist[1]
-for (num in numericlist){
+for (num in numericlist[1:4]){
+  print(num)
   stats_df <- data.frame(groups <- levels(sgu_df$Abbrev.))
   names(stats_df) <- "SGU"
   sgu_df[[num]] <- readRAST(num)@data[[num]]
-stats_df$mean <- aggregate(sgu_df[[num]],by=list(sgu_df$"Abbrev."),FUN=mean,na.rm=T)$x
-stats_df$stdevs <- aggregate(sgu_df[[num]],by=list(sgu_df$"Abbrev."),FUN=sd,na.rm=T)$x#
-boxplot <- boxplot(data=sgu_df,as.formula(paste(num,"~","Abbrev.")),las=2)
- save(stats_df,boxplot,file=paste("/home/fabs/PROJECTP2/temporlarge/",num,"_stats.RData",sep=""))
+#stats_df$mean <- aggregate(sgu_df[[num]],by=list(sgu_df$"Abbrev."),FUN=mean,na.rm=T)$x
+#stats_df$stdevs <- aggregate(sgu_df[[num]],by=list(sgu_df$"Abbrev."),FUN=sd,na.rm=T)$x
+boxplot(data=sgu_df,as.formula(paste(num,"~","Abbrev.")),las=2)
+ #save(stats_df,boxplot,file=paste("/home/fabs/PROJECTP2/temporlarge/",num,"_stats.RData",sep=""))
 }
 ```
 
