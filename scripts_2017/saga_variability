@@ -24,7 +24,7 @@ import math
 
 allTime = time.time()
 
-ingrid = "dtm_hr_eppan"
+ingrid = "dtm_hr_eppan.sgrd"
 
 # define search radii to compute morphometric parameters for
 radius = [30,20,10,5]

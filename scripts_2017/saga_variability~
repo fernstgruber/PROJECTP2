@@ -45,12 +45,12 @@ for i in radius:
 #    cmd = "saga_cmd ta_morphometry 16 -DEM %s -TRI dtm_vhr_TRI_r_%scells -RADIUS %s" % (ingrid,i,i)
 #    os.system (cmd)
 
- Terrain Surface Convexity
-    cmd = "saga_cmd ta_morphometry 21 -DEM %s -CONVEX dtm_eze_CONVEX_r_%scells -RADIUS %s" % (ingrid,i,i)
+#Terrain Surface Convexity
+    cmd = "saga_cmd ta_morphometry 21 -DEM %s -CONVEX dtm_hr_CONVEX_r%s -RADIUS %s" % (ingrid,i,i)
     os.system (cmd)
 
- Terrain Surface Texture
-    cmd = "saga_cmd ta_morphometry 20 -DEM %s -TEXTURE dtm_vhr_TEXTURE_r_%scells -RADIUS %s" % (ingrid,i,i)
+#Terrain Surface Texture
+    cmd = "saga_cmd ta_morphometry 20 -DEM %s -TEXTURE dtm_hr_TEXTURE_r%s -RADIUS %s" % (ingrid,i,i)
     os.system (cmd)
 
 # Vector Ruggedness Measure
