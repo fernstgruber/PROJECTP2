@@ -1,0 +1,21 @@
+---
+title: "Terrainanalysis of profile points"
+author: "fabian gruber"
+date: "October 5, 2017"
+output: html_document
+---
+```{r,echo=F}
+require(knitr)
+load( file="/home/fabs/PROJECTP2/data2017/bodenmittopo_Oct5.RData")
+numericlist <-  c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convexity","Longitudinal_Curvature",
+                  "Maximum_Height_hr","Normalized_Height","TPI_i0m_o500m","TRI_hr_ws26","Texture",
+                  "VerticalDistancetoChannelNetwork","aspect_ws15_hr","crosc_DTM_50m_avg_ws3",
+                  "crosc_DTM_50m_avg_ws7","geom_dtm_10m_hyd_fl5_L30","geom_hr_L3_fl1_r.li.simpson_UE_hr_40cells",
+                 "longc_DTM_50m_avg_ws7","profc_DTM_50m_avg_ws7","slope_DTM_50m_avg_ws3",
+                  "slope_DTM_50m_avg_ws7","slope_ws15","slope_ws15_hr")
+newlist <- numericlist[-15]
+importantinfo <- bodenmittopo[names(bodenmittopo) %in% c("ID","boden_SG23","boden_SG24","boden_SG_6","boden_SG_7","boden_SG_8",newlist)]
+names(importantinfo)[1:6] <- c("ID","Class","Type", "Subtype","SGU_kartiert","SGU_gk")
+kable(importantinfo)
+```
+
