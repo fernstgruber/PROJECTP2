@@ -1,0 +1,80 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
+
+
+#################################################################################################
+#                                                                                               #
+# saga_roughness.py                                                                      #
+#                                                                                               #
+# author: Fabian Gruber                                                                         #
+# date: 28/08/2016                                                                              #
+#                                                                                               #
+# Calculates Convergence Index (CI) and Terrain Ruggedness Index (TRI) for various search radii #
+# on a raster using the SAGA module library ta_morphometry.                                     #
+#                          expanded by Fabian                                                   #
+#################################################################################################
+
+
+
+import sys
+import os
+import time
+import math
+
+allTime = time.time()
+
+ingrid = "dtm_hr_eppan"
+
+# define search radii to compute morphometric parameters for
+radius = [30,20,10,5]
+
+#################################################################################################
+
+# Convergence Index and Terrain Ruggedness Index
+
+for i in radius:
+
+    ModuleTime = time.time()
+
+# Convergence Index
+#    cmd = "saga_cmd ta_morphometry 2 -ELEVATION %s -CONVERGENCE dtm_eze_CI_r_%scells -RADIUS %s -DIFFERENCE 0" % (ingrid,i,i)
+#    os.system (cmd)
+
+# Terrain Ruggedness Index
+#    cmd = "saga_cmd ta_morphometry 16 -DEM %s -TRI dtm_vhr_TRI_r_%scells -RADIUS %s" % (ingrid,i,i)
+#    os.system (cmd)
+
+#Terrain Surface Convexity
+    cmd = "saga_cmd ta_morphometry 21 -DEM %s -CONVEX dtm_hr_CONVEX_r%s -RADIUS %s" % (ingrid,i,i)
+    os.system (cmd)
+
+#Terrain Surface Texture
+    cmd = "saga_cmd ta_morphometry 20 -DEM %s -TEXTURE dtm_hr_TEXTURE_r%s -RADIUS %s" % (ingrid,i,i)
+    os.system (cmd)
+
+# Vector Ruggedness Measure
+#    cmd = "saga_cmd ta_morphometry 17 -DEM %s -VRM dtm_vhr_VRM_r_%scells -RADIUS %s" % (ingrid,i,i)
+#    os.system (cmd)
+
+
+
+    Now = time.time()
+    min = int(math.floor((Now-ModuleTime)/60))
+    sec = (Now-ModuleTime)-(min*60)
+    print "\nElapsed time [Variability measures for a search radius of", i, "cells]: ", min, " minutes // ", sec , " seconds!"
+
+
+######################################################################################################################
+# elapsed time of whole morphometric analysis
+Now = time.time()
+min = int(math.floor((Now-allTime)/60))
+sec = (Now-allTime)-(min*60)
+print "\nElapsed time [Variability measures for all search radii]: ", min, " minutes // ", sec , " seconds!"
+print "Done!"
+
+
+
+
+
+
