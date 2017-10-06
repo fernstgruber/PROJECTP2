@@ -16,6 +16,11 @@ numericlist <-  c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convex
 newlist <- numericlist[-15]
 importantinfo <- bodenmittopo[names(bodenmittopo) %in% c("ID","boden_SG23","boden_SG24","boden_SG_6","boden_SG_7","boden_SG_8",newlist)]
 names(importantinfo)[1:6] <- c("ID","Class","Type", "Subtype","SGU_kartiert","SGU_gk")
-kable(importantinfo)
+#kable(importantinfo)
 ```
 
+profile sites on aLluvial deposits as indicated on geological map
+
+
+
+profile sites on alluvial deposits recognized by surveyor 

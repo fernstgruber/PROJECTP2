@@ -5,7 +5,7 @@ date: "September 15, 2017"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r, include=FALSE}
 varlist <- c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convexity","Longitudinal_Curvature",
              "Maximum_Height_hr","Normalized_Height","TPI_i0m_o500m","TRI_hr_ws26","Texture",
              "VerticalDistancetoChannelNetwork","aspect_ws15_hr","bodenbedeckung","crosc_DTM_50m_avg_ws3",
@@ -25,27 +25,7 @@ numericlist <-  c("ChannelNetworkBaseLevel","Channel_Network_Base_Level","Convex
 ```{r,echo=FALSE}
 load(file="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/temporlarge/SGU_df_bis8.RData")
 num=numericlist[1]
-for (num in numericlist[1:8]){
-  print(paste(num))
-  boxplot(data=sgu_df,as.formula(paste(num,"~","Abbrev.")),las=2,main=as.character(num))
-}
-rm(sgu_df)
-```
-
-```{r,echo=FALSE}
-load(file="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/temporlarge/SGU_df_9bis16.RData")
-num=numericlist[1]
-for (num in numericlist[9:16]){
-  print(paste(num))
-  boxplot(data=sgu_df,as.formula(paste(num,"~","Abbrev.")),las=2,main=as.character(num))
-}
-rm(sgu_df)
-```
-
-```{r,echo=FALSE}
-load(file="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/temporlarge/SGU_df_17bis21.RData")
-num=numericlist[1]
-for (num in numericlist[17:21]){
+for (num in numericlist[1]){
   print(paste(num))
   boxplot(data=sgu_df,as.formula(paste(num,"~","Abbrev.")),las=2,main=as.character(num))
 }
