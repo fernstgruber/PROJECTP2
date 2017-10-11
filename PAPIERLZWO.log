@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  9 OCT 2017 11:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  11 OCT 2017 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,7 +370,7 @@ Missing character: There is no ² in font cmr12!
  [11]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¤ in font cmr12!
- [12] [13] [14] (./PAPIERLZWO.bbl
+ [12] [13] [14] [15] (./PAPIERLZWO.bbl
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -407,7 +407,7 @@ Underfull \hbox (badness 1147) in paragraph at lines 54--66
  com / science / article / pii /
  []
 
-[15]
+[16]
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -426,7 +426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--119
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-[16]
+[17]
 Underfull \hbox (badness 4927) in paragraph at lines 162--175
 \OT1/cmr/m/n/12 C., 2016.  Mind the gap: A clas-si-fi-ca-tion sys-tem for in-te
 -
@@ -452,7 +452,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no – in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no – in font cmr12!
-[17]
+[18]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 
@@ -468,24 +468,24 @@ Underfull \hbox (badness 1052) in paragraph at lines 271--278
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
-(rerunfilecheck)             Checksum: 6190E17D4B0604FCD4686D6478DA1274;2364.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
+(rerunfilecheck)             Checksum: 36D2DD51526F4E3071E302661AF61681;2593.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 6075 strings out of 493304
- 88362 string characters out of 6139871
+ 6082 strings out of 493304
+ 88489 string characters out of 6139871
  185066 words of memory out of 5000000
- 9399 multiletter control sequences out of 15000+600000
+ 9402 multiletter control sequences out of 15000+600000
  10267 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,11n,34p,3917b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,34p,3917b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
@@ -499,10 +499,10 @@ cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (18 pages, 232363 bytes).
+Output written on PAPIERLZWO.pdf (19 pages, 234697 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

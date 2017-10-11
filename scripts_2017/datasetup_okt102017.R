@@ -1,0 +1,96 @@
+require(randomForest)
+require(RCurl)
+require(repmis)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+source_data("https://github.com/fernstgruber/p2/blob/master/data2017/geotopodata_twohundredpergeomorph_2017.RData?raw=true")
+rm(modeldata)
+dependent=""
+preds <- allpreds
+####################paramsets##
+paramsetnames
+paramsets[[1]] <- paramsets[[1]][-c(156,162:163,196)]
+paramsets[[5]] <- paramsets[[5]][-c(80:82,84:93,95:102)]
+paramsets[[2]] <- paramsets[[2]][-c(132:133)]
+paramsets[[3]] <- paramsets[[3]][-c(2,15)]
+paramsets[[4]] <- paramsets[[4]][-c(5,8,10,13,15,18,20,23,25,28,30,33,35,38,40,43,45,48,50,53,55,58,60,63,65,68,70,72,73,76,78,81,83,86,88,91,93,96,98,101,103,106,108,
+                                    111,113,116,118,121,123,126,128,131,133,136,138,141,143,146,148,151,153,156,158,161,163,164,165,168,170,173,175,178,180,183,185)]
+paramsets[[4]] <- paramsets[[4]][-c(44)]
+#################get new data################
+#basedata
+south <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res10m_dtmtransfer_100m_grid_SGU_south")
+south <- south[,c(2,8)]
+south$NorS <- "south"
+north <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res10m_dtmtransfer_100m_grid_SGU_north")
+north <- north[,c(2,8)]
+north$NorS <- "north"
+basedata<- rbind(south,north)
+profilesites <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "Profilpunkte",vector = "res10m_dtmtransfer_Profilpunktemitboden_UTM")
+base_profilesites <- profilesites[,c(4,37:41,45,55:56)]
+names(base_profilesites) <- c("ID","bodenorig","Class","Type", "Subtype","variation","CARG","SGU_kartiert","SGU_gk")
+#res10m localterrain
+cols <- c(13:22,28:43,45:57)
+south <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res10m_dtmtransfer_100m_grid_SGU_south")
+south <- south[,c(2,cols)]
+north <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res10m_dtmtransfer_100m_grid_SGU_north")
+north <- north[,c(2,cols)]
+paramscale_10m <- rbind(north,south)
+names(paramscale_10m) <- paste(names(paramscale_10m),"_10m",sep="")
+profilesites <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "Profilpunkte",vector = "res10m_dtmtransfer_Profilpunktemitboden_UTM")
+profilesites <-profilesites[,c(4,cols+46)]
+profilesites_paramscale_10m <- profilesites
+names(profilesites_paramscale_10m) <- paste(names(profilesites_paramscale_10m),"_10m",sep="")
+#res10m saga
+cols <- c(13:14,18,21,23:24,27,30:32,34,36:42,44:46,49:52)
+north <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res10m_saga_100m_grid_SGU_north")
+north <- north[,c(2,cols)]
+south <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res10m_saga_100m_grid_SGU_south")
+south <- south[,c(2,cols)]
+saga_10m <- rbind(north,south)
+names(saga_10m) <- paste(names(saga_10m),"_10m",sep="")
+profilesites <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "Profilpunkte",vector = "res10m_saga_Profilpunktemitboden_UTM")
+profilesites <-profilesites[,c(4,cols+46)]
+profilesites_saga_10m <- profilesites
+names(profilesites_saga_10m) <- paste(names(profilesites_saga_10m),"_10m",sep="")
+#res50m saga
+cols <- c(12:15,17:32,34:38,41,44:45,48:87)
+north <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res50m_mitsaga_100m_grid_SGU_north")
+north <- north[,c(2,cols)]
+south <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "paper2_samplevectors",vector = "res50m_mitsaga_100m_grid_SGU_south")
+south <- south[,c(2,cols)]
+saga_50m <- rbind(north,south)
+names(saga_50m) <- paste(names(saga_50m),"_50m",sep="")
+profilesites <- sqliteGRASS(location = "SUEDTIROL_DTM_NEU", mapset= "Profilpunkte",vector = "res50m_mitsaga_Profilpunktemitboden_UTM")
+profilesites <-profilesites[,c(4,cols+46)]
+profilesites_saga_50m <- profilesites
+names(profilesites_saga_50m) <- paste(names(profilesites_saga_50m),"_50m",sep="")
+#####################
+#hr_localterrain
+cols <- c(21:31,35:94)
+south <- sqliteGRASS(location = "EPPAN_vhr", mapset= "p2_samplevectors",vector = "dtm_hr_100m_grid_SGU_south")
+south <- south[,c(2,cols)]
+north <- sqliteGRASS(location = "EPPAN_vhr", mapset= "p2_samplevectors",vector = "dtm_hr_100m_grid_SGU_north")
+north <- north[,c(2,cols)]
+paramscale_hr <- rbind(north,south)
+names(paramscale_hr) <- paste(names(paramscale_hr),"_hr",sep="")
+profilesites <- sqliteGRASS(location = "EPPAN_vhr", mapset= "profilpunkte",vector = "dtm_hr_Profilpunktemitboden_UTM")
+profilesites <-profilesites[,c(4,cols+46)]
+profilesites_paramscale_hr<- profilesites
+names(profilesites_paramscale_hr) <- paste(names(profilesites_paramscale_hr),"_hr",sep="")
+############
+#####################
+#hr_rli
+cols <- c(11:35,41:85,91:135,141:185,191: 210)
+south <- sqliteGRASS(location = "EPPAN_vhr", mapset= "p2_samplevectors",vector = "dtm_hr_rli_100m_grid_SGU_south")
+south <- south[,c(2,cols)]
+north <- sqliteGRASS(location = "EPPAN_vhr", mapset= "p2_samplevectors",vector = "dtm_hr_rli_100m_grid_SGU_north")
+north <- north[,c(2,cols)]
+rli_hr <- rbind(north,south)
+names(rli_hr) <- paste(names(rli_hr),"_hr",sep="")
+profilesites <- sqliteGRASS(location = "EPPAN_vhr", mapset= "profilpunkte",vector = "dtm_hr_rli_Profilpunktemitboden_UTM")
+profilesites <-profilesites[,c(4,cols+46)]
+profilesites_paramscale_hr<- profilesites
+names(profilesites_rli_hr) <- paste(names(profilesites_paramscale_hr),"_hr",sep="")
+############
+
+fullmodelcols <- c(dependent,preds)
