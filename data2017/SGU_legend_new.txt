@@ -1,0 +1,17 @@
+SGU	SGUcode
+AD	1
+CBD	2
+CD	3
+CSR	4
+DC	5
+GLD	6
+IMS	7
+ISR	8
+LD	9
+MrD	10
+MxD	11
+SB	12
+SD	13
+SSR	14
+TG	15
+

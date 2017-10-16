@@ -1,0 +1,3 @@
+ r.neighbors input=SGU output=SGU_diversity_n3 size=3 method=diversity
+r.mapcalc 'borders = if(SGU_diversity_n3 > 1, 1, null())'
+r.grow.distance input=borders distance=distancetodifferentunit

@@ -1,0 +1,50 @@
+---
+title: "Predicting parentmaterial - first attempts and investigations"
+author: "fabian gruber"
+date: "October 16, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(e1071)
+require(randomForest)
+require(RCurl)
+require(repmis)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
+paramsets <- list(localterrain,regionalterrain,roughness,heights)
+paramsetnames <- c("localterrain","regionalterrain","roughness","heights")
+dependent="SGU_kartiert"
+allpreds <- c("SGU_gk",localterrain,regionalterrain,roughness,heights)
+allpreds <- c(allpreds[allpreds %in% names(profiledata)])
+nadata <- na.omit(profiledata)
+problempunkte <- profiledata[!(profiledata$ID %in% nadata$ID),]
+badones <-vector()
+  for(pp in allpreds){
+    if(nrow(profiledata[is.na(profiledata[[pp]]),]) > 0) {
+      badones <-c(badones,pp)
+    }
+  }
+allpreds=allpreds[!(allpreds %in% badones)]
+modeldata <- profiledata[names(profiledata) %in% c(dependent,allpreds)]
+
+```
+
+## with only the geological map
+#randomForest
+```{r}
+ f <- paste(dependent,"~.")
+ fit <- do.call("randomForest",list(as.formula(f),data=modeldata[c(dependent,"SGU_gk")]))
+ print(fit$confusion)
+```
+
+#with all predictors
+```{r}
+ f <- paste(dependent,"~.")
+ fit <- do.call("randomForest",list(as.formula(f),data=modeldata))
+ print(fit$confusion)
+ fit <- randomForest(profiledata[c(dependent,preds)],SGU_kartiert ~ .)
+ nrow(na.omit(profiledata))
+```
+
