@@ -36,6 +36,7 @@ modeldata <- profiledata[names(profiledata) %in% c(dependent,allpreds)]
 ```{r}
  f <- paste(dependent,"~.")
  fit <- do.call("randomForest",list(as.formula(f),data=modeldata[c(dependent,"SGU_gk")]))
+ print(fit)
  print(fit$confusion)
 ```
 
@@ -45,6 +46,7 @@ modeldata <- profiledata[names(profiledata) %in% c(dependent,allpreds)]
  fit <- do.call("randomForest",list(as.formula(f),data=modeldata))
  print(fit$confusion)
  fit <- randomForest(profiledata[c(dependent,preds)],SGU_kartiert ~ .)
- nrow(na.omit(profiledata))
+ print(fit)
+
 ```
 
