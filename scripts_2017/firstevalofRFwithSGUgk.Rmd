@@ -1,0 +1,35 @@
+---
+title: "Untitled"
+author: "fabian gruber"
+date: "October 19, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(e1071)
+require(RCurl)
+require(repmis)
+require(randomForest)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/temporlarge/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_roughness",kk=1:4,endround = 5,error = "cverror",geheim = "geheimerprederror")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

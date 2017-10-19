@@ -4,7 +4,7 @@ require(repmis)
 require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
-load("/home/fabs/Data/paper2data/sampledata_100mgrid.RData")
+load("/media/fabs/Volume/01_PAPERZEUG/paper2data/sampledata_100mgrid.RData")
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
@@ -23,11 +23,11 @@ roughness <- roughness[!(roughness %in% badones)]
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 #########################################################################################
-psets <- c(1:2)
+psets <- c(3,1,5)
 classes <-  levels(origmodeldata[[dependent]])
-classes <- classes[!(classes %in% c("Ant","WB"))]
+classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
-analysisclasses <- c("AD","SB")
+analysisclasses <- c("TG","SD","CSR","DC")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
 
