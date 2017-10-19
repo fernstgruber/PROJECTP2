@@ -7,46 +7,65 @@ output: html_document
 
 ```{r setup, include=FALSE}
 require(e1071)
-require(randomForest)
 require(RCurl)
 require(repmis)
+require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
-load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
-paramsets <- list(localterrain,regionalterrain,roughness,heights)
-paramsetnames <- c("localterrain","regionalterrain","roughness","heights")
+load("/home/fabs/Data/paper2data/profiledata.RData")
+allpreds <- c(localterrain,regionalterrain,roughness,heights)
+paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
+paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
 dependent="SGU_kartiert"
-allpreds <- c("SGU_gk",localterrain,regionalterrain,roughness,heights)
+allpreds <- c(localterrain,regionalterrain,roughness,heights)
 allpreds <- c(allpreds[allpreds %in% names(profiledata)])
 nadata <- na.omit(profiledata)
 problempunkte <- profiledata[!(profiledata$ID %in% nadata$ID),]
+profiledata <- profiledata[profiledata$ID != "12884", ]
 badones <-vector()
-  for(pp in allpreds){
-    if(nrow(profiledata[is.na(profiledata[[pp]]),]) > 0) {
-      badones <-c(badones,pp)
-    }
+for(pp in allpreds){
+  if(nrow(profiledata[is.na(profiledata[[pp]]),]) > 0) {
+    badones <-c(badones,pp)
   }
+}
 allpreds=allpreds[!(allpreds %in% badones)]
-modeldata <- profiledata[names(profiledata) %in% c(dependent,allpreds)]
+paramsets[[5]] <- allpreds
+origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
 
 ```
 
 ## with only the geological map
-#randomForest
+###randomForest
 ```{r}
  f <- paste(dependent,"~.")
- fit <- do.call("randomForest",list(as.formula(f),data=modeldata[c(dependent,"SGU_gk")]))
- print(fit)
+ fit <- do.call("randomForest",list(as.formula(f),data=origmodeldata[c(dependent,"SGU_gk")]))
  print(fit$confusion)
+ print(paste("OOB-error = ",fit$err.rate[nrow(fit$err.rate),1],sep=""))
 ```
-
-#with all predictors
+###support vector machine
 ```{r}
  f <- paste(dependent,"~.")
- fit <- do.call("randomForest",list(as.formula(f),data=modeldata))
+ fit <- do.call("svm",list(as.formula(f),data=origmodeldata[c(dependent,"SGU_gk")],cross=5))
+ preds <- predict(fit,newdata=origmodeldata)
+ table(preds,origmodeldata$SGU_kartiert)
+ print(paste("cv_error = ",1-(fit$tot.accuracy)/100),sep="")
+```
+
+##with all predictors
+### random forest
+```{r}
+ f <- paste(dependent,"~.")
+ fit <- do.call("randomForest",list(as.formula(f),data=origmodeldata))
  print(fit$confusion)
- fit <- randomForest(profiledata[c(dependent,preds)],SGU_kartiert ~ .)
- print(fit)
+ print(paste("OOB-error = ",fit$err.rate[nrow(fit$err.rate),1],sep=""))
 
 ```
 
+###support vector machine
+```{r}
+ f <- paste(dependent,"~.")
+ fit <- do.call("svm",list(as.formula(f),data=origmodeldata,cross=5))
+ preds <- predict(fit,newdata=origmodeldata)
+ print(table(preds,origmodeldata$SGU_kartiert))
+ print(paste("cv_error = ",1-(fit$tot.accuracy)/100),sep="")
+```

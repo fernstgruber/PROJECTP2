@@ -1,0 +1,24 @@
+---
+title: "surveyor vs. geol. map"
+author: "fabian gruber"
+date: "October 18, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(knitr)
+library(RCurl)
+library(repmis)
+require(xtable)
+geolegendeng <- read.table(text=getURL("https://raw.githubusercontent.com/fernstgruber/p2/master/data2017/geolegendeng.txt"),sep="\t",header=T)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+load(file="/home/fabs/PROJECTP2/data2017/confusionmatrixsoilprofiles.RData")
+```
+
+```{r,echo=FALSE}
+kable(CM)
+print(summary.kappa(kappa(CM)))
+
+```
+

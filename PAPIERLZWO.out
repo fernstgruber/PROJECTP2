@@ -7,7 +7,7 @@
 \BOOKMARK [2][-]{subsection.2.2}{Methods}{section.2}% 7
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Terrain parameters with emphasis on roughness measures}{subsection.2.2}% 8
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Random Forest classification}{subsection.2.2}% 9
-\BOOKMARK [1][-]{section.3}{Results}{}% 10
+\BOOKMARK [1][-]{section.3}{Results and discussion}{}% 10
 \BOOKMARK [2][-]{subsection.3.1}{Comparison of soil parent material at soil profile sites with geologic map units}{section.3}% 11
 \BOOKMARK [2][-]{subsection.3.2}{Random forest classification of SGUs based on topography}{section.3}% 12
 \BOOKMARK [2][-]{subsection.3.3}{Geologic-topographic characterisation of the predominant SGUs}{section.3}% 13
@@ -15,14 +15,18 @@
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Siliceous bedrock}{subsection.3.3}% 15
 \BOOKMARK [3][-]{subsubsection.3.3.3}{Till in general}{subsection.3.3}% 16
 \BOOKMARK [3][-]{subsubsection.3.3.4}{Slope debris}{subsection.3.3}% 17
-\BOOKMARK [1][-]{section.4}{Discussion}{}% 18
-\BOOKMARK [2][-]{subsection.4.1}{Differences between geologic survey and parent material from profile site descriptions}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Differences with regard to mapping purpose}{subsection.4.1}% 20
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Nomenclatural differences and overlaping classes}{subsection.4.1}% 21
-\BOOKMARK [2][-]{subsection.4.2}{Pedologic interpretation of terrain parameters that best seperate the geological units}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.3}{Distribution of soil types with regard to geologic unit as well as parent material unit}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.4}{Influence of the Alpine environment on interpretability of geologic units as parent material units}{section.4}% 24
-\BOOKMARK [3][-]{subsubsection.4.4.1}{High relief areas and multilayering}{subsection.4.4}% 25
-\BOOKMARK [3][-]{subsubsection.4.4.2}{thin cover layers of till - an essential new parentmaterial unit?}{subsection.4.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.4.3}{Is the morphodynamic background of deposits a necessary distinctive attribute from a pedological point of view?}{subsection.4.4}% 27
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Calcareous sedimentary rock}{subsection.3.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.3.6}{Debris cones}{subsection.3.3}% 19
+\BOOKMARK [3][-]{subsubsection.3.3.7}{Intermediate sedimentary rock and siliceous sedimentary rock}{subsection.3.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.3.8}{MxD,LD,CD}{subsection.3.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.3.9}{GLD, IMS, MrD}{subsection.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.4}{Differences between geologic survey and parent material from profile site descriptions}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Differences with regard to mapping purpose}{subsection.3.4}% 24
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Nomenclatural differences and overlaping classes}{subsection.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.5}{Pedologic interpretation of terrain parameters that best seperate the geological units}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.6}{Distribution of soil types with regard to geologic unit as well as parent material unit}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.7}{Influence of the Alpine environment on interpretability of geologic units as parent material units}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.7.1}{High relief areas and multilayering}{subsection.3.7}% 29
+\BOOKMARK [3][-]{subsubsection.3.7.2}{thin cover layers of till - an essential new parentmaterial unit?}{subsection.3.7}% 30
+\BOOKMARK [3][-]{subsubsection.3.7.3}{Is the morphodynamic background of deposits a necessary distinctive attribute from a pedological point of view?}{subsection.3.7}% 31
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 32

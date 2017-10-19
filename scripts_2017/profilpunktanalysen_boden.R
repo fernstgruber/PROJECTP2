@@ -63,6 +63,7 @@ xtable(kartierergegenkarte,caption = "Tabular comparison of parent material geou
 CM <- kartierergegenkarte
 print(summary.kappa(kappa(CM)))
 mean(geomorphologieundboden$geomorphologieklasse_kurz_kartiert==geomorphologieundboden$geomorphologieklasse_kurz_gk,na.rm=T)
+save(CM, file="/home/fabs/PROJECTP2/data2017/confusionmatrixsoilprofiles.RData")
 ###############################################################################################################################
 ### without differentiation of Till into LD and TG: NICHT MEHR AKTUELL                                                        #
 #testdf <- geomorphologieundboden                                                                                             #  
