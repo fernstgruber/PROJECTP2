@@ -14,7 +14,8 @@ allpreds <- c(allpreds[allpreds %in% names(profiledata)])
 nadata <- na.omit(profiledata)
 problempunkte <- profiledata[!(profiledata$ID %in% nadata$ID),]
 profiledata <- profiledata[profiledata$ID != "12884", ]
-profiledata <- profiledata[!(profiledata[[dependent]] %in% c("MrD"))]
+profiledata <- profiledata[!(profiledata[[dependent]] %in% c("MrD")),]
+profiledata[[dependent]] <- droplevels(profiledata[[dependent]]) 
 badones <-vector()
 for(pp in allpreds){
   if(nrow(profiledata[is.na(profiledata[[pp]]),]) > 0) {
@@ -33,7 +34,7 @@ allpreds <- allpreds[allpreds %in% names(profiledata[names(profiledata) %in% c(d
 origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
 
 #########################################################################################
-psets <- c(1)
+psets <- c(3)
 classes <-  levels(origmodeldata[[dependent]])
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
@@ -93,7 +94,7 @@ for (p in paramsets){
       result_df[t,"cverror"] <- predictions_metrics[predictions_metrics$index == minindex,"cverror"]
       keepers[t] <-as.character(minindex)
       modelcols <- c(dependent,keepers)
-      modeldata <- modeldata <- kmodeldata[names(kmodeldata) %in% modelcols]
+      modeldata <-  kmodeldata[names(kmodeldata) %in% modelcols]
       modeldata <- na.omit(modeldata)
       set.seed(seed)
       fit <- do.call("randomForest",list(as.formula(f),modeldata))

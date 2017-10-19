@@ -4,7 +4,7 @@ require(repmis)
 require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
-load("/home/fabs/Data/paper2data/profiledata.RData")
+load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
@@ -24,9 +24,13 @@ allpreds=allpreds[!(allpreds %in% badones)]
 paramsets[[5]] <- allpreds
 localterrain <- localterrain[localterrain %in% allpreds]
 paramsets[[1]] <- localterrain
+roughness <- roughness[localterrain %in% allpreds]
+paramsets[[3]] <- roughness
+allpreds <- c(localterrain,regionalterrain,roughness,heights)
+allpreds <- allpreds[allpreds %in% names(profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)])]
 origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
 #########################################################################################
-psets <- c(1:5)
+psets <- c(3,5)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("MrD"))]
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
