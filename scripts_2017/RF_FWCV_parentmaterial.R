@@ -1,39 +1,5 @@
 require(e1071)
-require(RCurl)
-require(repmis)
-require(randomForest)
-myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
-eval(parse(text = myfunctions))
-load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
-allpreds <- c(localterrain,regionalterrain,roughness,heights)
-paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
-paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
-dependent="SGU_kartiert"
-allpreds <- c(localterrain,regionalterrain,roughness,heights)
-allpreds <- c(allpreds[allpreds %in% names(profiledata)])
-nadata <- na.omit(profiledata)
-problempunkte <- profiledata[!(profiledata$ID %in% nadata$ID),]
-profiledata <- profiledata[profiledata$ID != "12884", ]
-profiledata <- profiledata[!(profiledata[[dependent]] %in% c("MrD")),]
-profiledata[[dependent]] <- droplevels(profiledata[[dependent]]) 
-badones <-vector()
-for(pp in allpreds){
-  if(nrow(profiledata[is.na(profiledata[[pp]]),]) > 0) {
-    badones <-c(badones,pp)
-  }
-}
-allpreds=allpreds[!(allpreds %in% badones)]
-paramsets[[5]] <- allpreds
-regionalterrain <- regionalterrain[regionalterrain %in% allpreds]
-paramsets[[2]] <- regionalterrain
-roughness <- roughness[roughness %in% allpreds]
-roughness <-roughness[roughness %in% names(profiledata)]
-paramsets[[3]] <- roughness
-allpreds <- c(localterrain,regionalterrain,roughness,heights)
-allpreds <- allpreds[allpreds %in% names(profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)])]
-origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
-
-#########################################################################################
+require(rgdal)
 psets <- c(3)
 classes <-  levels(origmodeldata[[dependent]])
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
@@ -50,8 +16,8 @@ for (p in paramsets){
   mymodeldata <- origmodeldata[c(dependent,predset)]
   folds = sample(rep(1:5, length = nrow(mymodeldata)))
   
-  tt=1:3 #number of best parameters in combination
-  mydir=paste("ranfor_fw_5fold_5p_",dependent,"_",predset_name,"",sep="")
+  tt=1:6 #number of best parameters in combination
+  mydir=paste("ranfor_fw_5fold_6p_",dependent,"_",predset_name,"",sep="")
   dir.create(mydir)
   #############################################################################################################################
   #############################################################################################################################

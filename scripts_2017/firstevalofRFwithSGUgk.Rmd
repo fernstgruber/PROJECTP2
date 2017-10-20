@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Evaluating all those forests to improve the geologic map"
 author: "fabian gruber"
 date: "October 19, 2017"
 output: html_document
@@ -12,24 +12,54 @@ require(repmis)
 require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
+load("/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/modeldata_sGUkartiert.RData")
 ```
 
-## R Markdown
+## 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_allpreds/",kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
 
-```{r cars}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/temporlarge/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_roughness",kk=1:4,endround = 5,error = "cverror",geheim = "geheimerprederror")
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","vectorruggedness_hr_ws51"),doreturn = F,pset=5,altdata=modeldataoktober,kappasum = T)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","slope_DTM_50m_avg_ws9_50m"),doreturn = F,pset=5,altdata=modeldataoktober,kappasum = T)
+```
+
+```{r,echo=F}
+  evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_localterrain/",kk=1:4,endround = 5,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+
+
+
+
+
+
+
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_roughness//",kk=1:3,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws9"),doreturn = F,pset=3,altdata=modeldataoktober,kappasum = T)
+```
+
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws38"),doreturn = F,pset=3,altdata=modeldataoktober,kappasum = T)
+```
+
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","vectorruggedness_hr_ws57","TRI_hr_ws31"),doreturn = F,pset=3,altdata=modeldataoktober,kappasum = T)
+```
+
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws9","geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr"),doreturn = F,pset=3,altdata=modeldataoktober,kappasum = T)
+```
