@@ -73,7 +73,13 @@ roughness
 evaluateforwardCV_anyerror(mypath = "/home/fabs/PROJECTP2/temporlarge/svm_fw_5fold_5p_SGU_kartiert_roughness/",kk = 1:5,endround = 5,geheim = "geheimerprederror",error = "cverror")
 predict_radial_full(modeldata=origmodeldata,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws31","geom_hr_L50m_fl10_rplipmps_UE_hr_40cells_hr"))
 predict_radial_full(modeldata=origmodeldata,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws31","terraintexture_hr_ws41_t1"))
+predict_radial_full(modeldata=origmodeldata,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws31"))
+predict_radial_full(modeldata=origmodeldata,dependent = "SGU_kartiert",predictors = c("TRI_hr_ws31","terraintexture_hr_ws41_t1"))
 ```
+how about till against the rest?
 
+```{r}
+
+```
 
 
