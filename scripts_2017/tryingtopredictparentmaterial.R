@@ -1,4 +1,5 @@
 require(e1071)
+require(randomForest)
 require(rgdal)
 require(rgrass7)
 load("/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/modeldata_sGUkartiert.RData")
@@ -11,7 +12,7 @@ location="EPPAN_vhr"
 mapset="paper3data_predictparentmaterial"
 initGRASS(gisBase = gisBase,gisDbase = gisDbase,location=location,mapset=mapset,override = TRUE)
 
-predictors <- c("SGU_gk","vectorruggedness_hr_ws51")
+predictors <- c("SGUcode","vectorruggedness_hr_ws51","TRI_hr_ws9")
 modelcols <- c(dependent,predictors)
 SGU_gk <-readRAST("SGU")
 data <- SGU_gk@data
@@ -21,18 +22,24 @@ for (i in predictors[2:length(predictors)]){
 }
 names(data) <- predictors
 data$UID <- 1:nrow(data)
-data <- merge(data,legend,by.x="SGU_gk",by.y="SGUcode")
-modeldata <- modeldataoktober[modelcols]
-
-names(modeldata)
 names(data)
-data$UID <- 1:nrow(data)
+modeldataoktober <- merge(modeldataoktober,legend,by.x="SGU_gk",by.y="SGU")
+modeldata <- modeldataoktober[c(modelcols)]
+modeldata <- merge(modeldata,legend,by.x="SGU_gk",by.y=)
+names(modeldata)
+modeldata$SGUcode <- factor(modeldata$SGUcode,levels=1:15)
+data$SGUcode <- factor(data$SGUcode,levels=1:15)
+str(data)
+str(modeldata)
+
 nadata <- na.omit(data)
 summary(nadata)
+#remove Mrd!!
+
 
 f <- paste(dependent,"~.")
 fit <- do.call("randomForest",list(as.formula(f),modeldata))
-
+preds <- predict(fit,newdata=data)
 preds <- predict(fit,newdata=data[,predictors])
 preds <- predict(fit, newdata=na.omit(data))
 preds <- predict(fit,newdata=as.matrix(data))
