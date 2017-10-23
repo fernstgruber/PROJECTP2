@@ -1,0 +1,156 @@
+---
+title: "surveyor vs. geol. map"
+author: "fabian gruber"
+date: "October 18, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+require(knitr)
+library(RCurl)
+library(repmis)
+require(xtable)
+proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+geolegendeng <- read.table(text=getURL("https://raw.githubusercontent.com/fernstgruber/p2/master/data2017/geolegendeng.txt"),sep="\t",header=T)
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+load(file="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/confusionmatrixsoilprofiles.RData")
+legend <- read.table(paste(proj2path,"data2017/SGU_legend_new.txt",sep=""),sep="\t",header=T)
+
+```
+
+```{r,echo=FALSE}
+kable(CM)
+print(summary.kappa(kappa(CM)))
+
+```
+
+```{r setupprofilpoints, include=F}
+profilesites <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "profilpunkte",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
+predprofilesites <- profilesites[,c(4,37:41,45,55:63)]
+predictions <- names(profilesites)[57:63]
+names(predprofilesites) <- c("ID","bodenorig","Class","Type", "Subtype","variation","CARG","SGU_kartiert","SGU_gk",predictions)
+```
+
+\newpage
+```{r,echo=FALSE}
+p=predictions[1]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+\newpage
+```{r,echo=FALSE}
+p=predictions[2]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+
+\newpage
+
+```{r,echo=FALSE}
+p=predictions[3]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+
+
+\newpage
+```{r,echo=FALSE}
+p=predictions[4]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+
+
+\newpage
+```{r,echo=FALSE}
+p=predictions[5]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+
+
+\newpage
+```{r,echo=FALSE}
+p=predictions[6]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+
+
+\newpage
+```{r,echo=FALSE}
+p=predictions[7]
+print(paste("Confusion after predicting with ",p))
+df <- predprofilesites[c("SGU_kartiert",p)]
+  df <- merge(df,legend,by.x=as.character(p),by.y="SGUcode")
+  df[[p]] <- factor(df[[p]],levels=legend$SGU)
+  df$SGU_kartiert <- factor(df$SGU_kartiert,levels=legend$SGU)
+  CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
+
+
+
+
+

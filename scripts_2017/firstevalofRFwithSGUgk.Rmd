@@ -45,7 +45,7 @@ predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",pred
 
 
 ```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_roughness//",kk=1:3,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_6p_SGU_kartiert_roughness//",kk=1:5,endround = 6,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
 ```
 
 ```{r,echo=F}
