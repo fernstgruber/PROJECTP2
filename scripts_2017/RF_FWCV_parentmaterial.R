@@ -22,7 +22,12 @@ for(pp in allpreds){
     if(nrow(profiledata[is.na(profiledata[[pp]]),]) > 0) {
         badones <-c(badones,pp)
       }
+}
+for (p in allpreds){
+  if (summary(profiledata[[p]])[5] == 0.0 ) {
+    badones <- c(badones,p)
   }
+}
 allpreds=allpreds[!(allpreds %in% badones)]
 paramsets[[5]] <- allpreds
 regionalterrain <- regionalterrain[regionalterrain %in% allpreds]
