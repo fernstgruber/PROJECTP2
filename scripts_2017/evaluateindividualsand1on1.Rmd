@@ -1,0 +1,51 @@
+---
+title: "Evaluating all those forests to improve the geologic map"
+author: "fabian gruber"
+date: "October 19, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(e1071)
+require(RCurl)
+require(repmis)
+require(randomForest)
+proj2path="/home/fabs/PROJECTP2/"
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
+```
+## 
+
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath="/home/fabs/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_6p_SGU_kartiert_roughness/",kk=1:5,endround = 6,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+```{r}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_SBintern_SGU_kartiert_allpreds/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+```{r}
+#evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_SBintern_SGU_kartiert_roughness/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+```{r}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_till_allpreds/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+
+```{r}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_tillornot_allpreds/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+was hab ich hier für daten verwendet? einfach wirklich nur till oder nicht till? wie ist das wenn SGU auch dabei?
+```{r}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_tillornot_roughness/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+```{r}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_till_roughness/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+
+
