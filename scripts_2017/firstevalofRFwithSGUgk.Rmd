@@ -2,7 +2,9 @@
 title: "Evaluating all those forests to improve the geologic map"
 author: "fabian gruber"
 date: "October 19, 2017"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -19,10 +21,14 @@ load("/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/modeldata_sGUkartiert.R
 
 
 ```{r,echo=F}
-evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_5p_SGU_kartiert_allpreds/",kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+evaluateforwardCV_anyerror(mypath="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/temprdata/ranfor_fw_5fold_6p_SGU_kartiert_allpreds/",kk=1:5,endround = 6,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
 
 ```
 
+```{r,echo=F}
+predsall <- c(unlist(paramsets[5]),"SGU_gk")
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = predsall,doreturn = F,pset=5,altdata=modeldataoktober,kappasum = T)
+```
 
 ```{r,echo=F}
 predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","vectorruggedness_hr_ws51"),doreturn = F,pset=5,altdata=modeldataoktober,kappasum = T)
@@ -30,6 +36,10 @@ predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",pred
 
 ```{r,echo=F}
 predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","slope_DTM_50m_avg_ws9_50m"),doreturn = F,pset=5,altdata=modeldataoktober,kappasum = T)
+```
+
+```{r,echo=F}
+predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","DiurnalAnisotropicHeating_10m","vectorruggedness_hr_ws41","VerticalDistancetoChannelNetwork_10m"),doreturn = F,pset=5,altdata=modeldataoktober,kappasum = T)
 ```
 
 ```{r,echo=F}

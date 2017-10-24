@@ -33,6 +33,10 @@ data$UID <- 1:nrow(data)
 modeldataoktober <- merge(modeldataoktober,legend,by.x="SGU_gk",by.y="SGU")
 modeldata <- modeldataoktober[c(modelcols)]
 modeldata$SGUcode <- factor(modeldata$SGUcode,levels=1:15)
+modeldata[modeldata$SGU_kartiert == "TG","tillornot"] <- "till"
+modeldata[modeldata$SGU_kartiert != "TG","tillornot"] <- "nottill"
+modeldata$tillornot <- as.factor(modeldata$tillornot)
+dependent="tillornot"
 data$SGUcode <- factor(data$SGUcode,levels=1:15)
 f <- paste(dependent,"~.")
 fit <- do.call("randomForest",list(as.formula(f),modeldata))
