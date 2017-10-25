@@ -1,0 +1,40 @@
+---
+title: "profilepoint analysis alluvial deposits"
+author: "fabian gruber"
+date: "October 24, 2017"
+output: html_document
+---
+
+```{r}
+require(e1071)
+require(RCurl)
+require(repmis)
+require(randomForest)
+proj2path="/home/fabs/PROJECTP2/"
+myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
+eval(parse(text = myfunctions))
+load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
+```
+
+
+How are these points morphometrically different from others?
+For instance different to till in general
+
+```{r}
+cl1="AD"
+cl2="TG"
+evaluateforwardCV_anyerror(mypath = paste("/home/fabs/PROJECTP2/temporlarge/RanFor_1on1_5foldgeomorph_localterrainp5/",cl1,"_vs_",cl2,sep=""),kk = 1:5,endround = 5,error = "cverror",geheim="geheimerprederror",yrange=c(0,0.5))
+interestingparameters <- c("maxic_ws11_10m", "Convexity_50m","slope_DTM_50m_avg_ws11_50m")
+interestingparameters %in% names(modeldataoktober)
+df <- modeldataoktober[modeldataoktober$SGU_kartiert %in% c(cl1,cl2),]
+i=interestingparameters[1]
+df$SGU_kartiert <- droplevels(df$SGU_kartiert)
+i=interestingparameters[1]
+for(i in interestingparameters){
+  boxplot(data=df,maxic_ws11_10m ~ SGU_kartiert)
+  
+  boxplot(data=df,as.formula(as.character(i) ~ SGU_kartiert))
+}
+boxplot()
+```
+

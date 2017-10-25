@@ -5,22 +5,21 @@ require(randomForest)
 require(rgdal)
 require(rgrass7)
 
-#predictors <- c("SGUcode","TRI_hr_ws38")
-#predictors <- c("SGUcode","TRI_hr_ws9")
-#predictors <- c("SGUcode","TRI_hr_ws9","geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr")
-#predictors <- c("SGUcode","TRI_hr_ws38","geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr")
-predictors <- c("SGUcode","DiurnalAnisotropicHeating_10m","vectorruggedness_hr_ws41","VerticalDistancetoChannelNetwork_10m")
-proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+predictors <- c("SGUcode","TRI_hr_ws40","vectorruggedness_hr_ws41")
+proj2path="/home/fabs/PROJECTP2/"
 gisBase="/usr/local/src/grass70_release/dist.x86_64-unknown-linux-gnu"
-gisDbase =  "/media/fabs/Volume/Data/GRASSDATA/"
+gisDbase =  "/home/fabs/Data/GRASSDATA/"
 location="EPPAN_vhr"
 mapset="paper3data_predictparentmaterial"
 #########################################################################
 initGRASS(gisBase = gisBase,gisDbase = gisDbase,location=location,mapset=mapset,override = TRUE)
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
+modeldataoktober[modeldataoktober$SGU_kartiert == "TG","tillornot"] <- 1
+modeldataoktober[modeldataoktober$SGU_kartiert != "TG","tillornot"] <- 0
+modeldataoktober$tillornot <- as.factor(modeldataoktober$tillornot)
 legend <- read.table(paste(proj2path,"data2017/SGU_legend_new.txt",sep=""),sep="\t",header=T)
 names(legend) <- c("SGU","SGUcode")
-dependent="SGU_kartiert"
+dependent="tillornot"
 modelcols <- c(dependent,predictors)
 SGU_gk <-readRAST("SGU")
 data <- SGU_gk@data
@@ -33,22 +32,19 @@ data$UID <- 1:nrow(data)
 modeldataoktober <- merge(modeldataoktober,legend,by.x="SGU_gk",by.y="SGU")
 modeldata <- modeldataoktober[c(modelcols)]
 modeldata$SGUcode <- factor(modeldata$SGUcode,levels=1:15)
-modeldata[modeldata$SGU_kartiert == "TG","tillornot"] <- "till"
-modeldata[modeldata$SGU_kartiert != "TG","tillornot"] <- "nottill"
-modeldata$tillornot <- as.factor(modeldata$tillornot)
-dependent="tillornot"
 data$SGUcode <- factor(data$SGUcode,levels=1:15)
 f <- paste(dependent,"~.")
 fit <- do.call("randomForest",list(as.formula(f),modeldata))
 data[["preds"]] <- predict(fit,newdata=data)
 SGU_modell <- SGU_gk
-names(legend) <- c("SGU","SGU_predcodes")
-data <- merge(data,legend,by.x="preds",by.y="SGU",all.x=T)
+#names(legend) <- c("SGU","SGU_predcodes")
+#data <- merge(data,legend,by.x="preds",by.y="SGU",all.x=T)
+data$till <- as.numeric(data$preds)
 data <-data[order(data$UID,decreasing = F),]
 SGU_modell@data <- data
-summary(SGU_modell)
-outname=paste(predictors,collapse="_")
-writeRAST(SGU_modell["SGU_predcodes"],vname = outname)
+#summary(SGU_modell)
+outname=paste("till_",predictors,collapse="_",sep="")
+writeRAST(SGU_modell["till"],vname = outname)
 execGRASS("r.to.vect",input=outname,output=outname,type="area")
 execGRASS("v.out.ogr",input=outname,output=paste(outname,".shp",sep=""))
 

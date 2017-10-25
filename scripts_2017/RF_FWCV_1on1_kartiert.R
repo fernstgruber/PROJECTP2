@@ -4,7 +4,7 @@ require(repmis)
 require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
-load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
+load("/home/fabs/Data/paper2data/profiledata.RData")
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
@@ -20,6 +20,11 @@ for(pp in allpreds){
     badones <-c(badones,pp)
   }
 }
+for (p in allpreds){
+  if (summary(profiledata[[p]])[5] == 0.0 ) {
+    badones <- c(badones,p)
+  }
+}
 allpreds=allpreds[!(allpreds %in% badones)]
 paramsets[[5]] <- allpreds
 localterrain <- localterrain[localterrain %in% allpreds]
@@ -30,9 +35,11 @@ allpreds <- c(localterrain,regionalterrain,roughness,heights)
 allpreds <- allpreds[allpreds %in% names(profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)])]
 origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
 #########################################################################################
-psets <- c(3,5)
+psets <- c(5)
 classes <-  levels(origmodeldata[[dependent]])
-classes <- classes[!(classes %in% c("MrD"))]
+classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
+origclasses <- classes
+analysisclasses <- c("AD")
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
@@ -49,12 +56,12 @@ mymodeldata <- na.omit(origmodeldata[c(dependent,predset)])
 folds = sample(rep(1:5, length = nrow(mymodeldata)))
 
 predset=preds
-tt=1:5 #number of best parameters in combination
-mydir=paste("RanFor_1on1_5fold","geomorph_",predset_name,"p5",sep="")
+tt=1:3 #number of best parameters in combination
+mydir=paste("RanFor_1on1_5fold","profilesites",predset_name,"p3",sep="")
 dir.create(mydir)
 cl=classes[1]
-for(cl in classes){
-  newclasses <- classes[!(classes %in% cl)]
+for(cl in analysisclasses){
+  newclasses <- origclasses[!(origclasses %in% cl)]
   newclass=newclasses[1]
   for(newclass in newclasses){
     modelclasses <- c(cl,newclass)
