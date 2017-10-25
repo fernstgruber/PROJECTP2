@@ -150,6 +150,22 @@ df <- predprofilesites[c("SGU_kartiert",p)]
 print(summary.kappa(kappa(CM)))
 ```
 
+\newpage
+Analysis of confusion whenn only TG is modelled
+
+```{r}
+points <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "profilpunkte",vector = "Profilpunkte_SGU_wTGnew")
+df <- points[c("boden_SG23","SGUT_wTGnew")]
+df <- merge(df,legend,by.x="SGUT_wTGnew",by.y="SGUcode")
+df[["SGUT_wTGnew"]] <- factor(df[["SGUT_wTGnew"]],levels=legend$SGU)
+df$SGU_kartiert <- factor(df$boden_SG23,levels=legend$SGU)
+CM <-as.data.frame.matrix(table(df$SGU_kartiert,df$SGU))
+  kable(CM)
+```
+
+```{r,echo=FALSE}
+print(summary.kappa(kappa(CM)))
+```
 
 
 

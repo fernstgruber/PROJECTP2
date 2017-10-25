@@ -73,3 +73,15 @@ predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",pred
 ```{r,echo=F}
 predict_ranfor_full(modeldata = modeldataoktober,dependent = "SGU_kartiert",predictors = c("SGU_gk","TRI_hr_ws9","geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr"),doreturn = F,pset=3,altdata=modeldataoktober,kappasum = T)
 ```
+
+How about TILL OR NOT
+```{r,echo=F}
+tillmodeldata <- modeldataoktober
+tillmodeldata[tillmodeldata$SGU_kartiert == "TG","tillornot"] <- 1
+tillmodeldata[tillmodeldata$SGU_kartiert != "TG","tillornot"] <- 0
+tillmodeldata$tillornot <- as.factor(tillmodeldata$tillornot)
+
+predict_ranfor_full(modeldata = tillmodeldata,dependent = "tillornot",predictors = c("SGU_gk","TRI_hr_ws9","geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr"),doreturn = F,pset=3,altdata=tillmodeldata,kappasum = T)
+predict_ranfor_full(modeldata = tillmodeldata,dependent = "tillornot",predictors = c("SGU_gk","TRI_hr_ws40","vectorruggedness_hr_ws41"),doreturn = F,pset=3,altdata=tillmodeldata,kappasum = T)
+
+```

@@ -4,7 +4,7 @@ require(repmis)
 require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
-load("/home/fabs/Data/paper2data/profiledata.RData")
+load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
@@ -39,7 +39,7 @@ psets <- c(5)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
-analysisclasses <- c("AD")
+analysisclasses <- c("TG")
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
@@ -75,6 +75,13 @@ for(cl in analysisclasses){
     for(k in 1:5){
       kmodeldata=mynewmodeldata[folds != k,]
       ktestdata =  mynewmodeldata[folds == k,]
+      badonesintern <- vector()
+      for (p in predset){
+        if (summary(kmodeldata[[p]])[5] == 0.0 ) {
+          badonesintern <- c(badonesintern,p)
+        }
+      }
+      predset=predset[!(predset %in% badonesintern)]
       keepers <- vector()
       pred_df_orig <- data.frame(preds = as.character(predset))
       pred_df_orig$index <- 1:nrow(pred_df_orig)
