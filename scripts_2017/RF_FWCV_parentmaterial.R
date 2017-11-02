@@ -56,8 +56,8 @@ for (p in paramsets){
   mymodeldata <- origmodeldata[c(dependent,predset)]
   folds = sample(rep(1:5, length = nrow(mymodeldata)))
   
-  tt=1:6 #number of best parameters in combination
-  mydir=paste("ranfor_fw_5fold_6p_",dependent,"_",predset_name,"",sep="")
+  tt=1:20 #number of best parameters in combination
+  mydir=paste("ranfor_fw_5fold_20p_",dependent,"_",predset_name,"",sep="")
   dir.create(mydir)
   #############################################################################################################################
   #############################################################################################################################
