@@ -2,7 +2,9 @@
 title: "Evaluating all those forests to improve the geologic map"
 author: "fabian gruber"
 date: "October 19, 2017"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -10,7 +12,7 @@ require(e1071)
 require(RCurl)
 require(repmis)
 require(randomForest)
-proj2path="/home/fabs/PROJECTP2/"
+proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
