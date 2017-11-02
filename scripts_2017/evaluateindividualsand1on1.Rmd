@@ -10,7 +10,7 @@ require(e1071)
 require(RCurl)
 require(repmis)
 require(randomForest)
-proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+proj2path="/home/fabs/PROJECTP2/"
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
@@ -67,4 +67,28 @@ tillornot mit SGU_gk roughness
 
 ```{r,echo=F}
 evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_tillornot_mitSGUgk_roughness/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+slopedeposits or not allpreds
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_SDornot_allpreds/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+slopedeposits or not roughness 
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_SDornot_roughness/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+slopedeposits or not rALLPREDS & SGU_gk
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_SDornot_mitSGUgk_allpreds/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
+```
+
+slopedeposits or not roughness & SGU_gk
+
+```{r,echo=F}
+evaluateforwardCV_anyerror(mypath=paste(proj2path,"data2017/temprdata/ranfor_SDornot_mitSGUgk_roughness/",sep=""),kk=1:5,endround = 3,error = "cverror",geheim = "geheimerprederror",yrange=c(0,0.6))
 ```

@@ -4,7 +4,7 @@ require(repmis)
 require(randomForest)
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
-load("/media/fabs/Volume/01_PAPERZEUG/paper2data/profiledata.RData")
+load("/home/fabs/Data/paper2data/profiledata.RData")
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 paramsetnames <- c("localterrain","regionalterrain","roughness","heights","allpreds")
@@ -39,7 +39,8 @@ psets <- c(5)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
-analysisclasses <- c("TG")
+#analysisclasses <- c("GLD","CD","DC","ISR","MxD","SD","SSR")
+analysisclasses <- c("SSR")
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
@@ -59,7 +60,7 @@ predset=preds
 tt=1:3 #number of best parameters in combination
 mydir=paste("RanFor_1on1_5fold","profilesites",predset_name,"p3",sep="")
 dir.create(mydir)
-cl=classes[1]
+cl=analysisclasses[1]
 for(cl in analysisclasses){
   newclasses <- origclasses[!(origclasses %in% cl)]
   newclass=newclasses[1]
@@ -81,7 +82,13 @@ for(cl in analysisclasses){
           badonesintern <- c(badonesintern,p)
         }
       }
+      for(pp in predset){
+        if(nrow(kmodeldata[is.na(kmodeldata[[pp]]),]) > 0) {
+          badonesintern <-c(badonesintern,pp)
+        }
+      }
       predset=predset[!(predset %in% badonesintern)]
+     #predset <- predset[-286]
       keepers <- vector()
       pred_df_orig <- data.frame(preds = as.character(predset))
       pred_df_orig$index <- 1:nrow(pred_df_orig)
