@@ -214,8 +214,8 @@ Haftnässe-Psuedogley & \raisebox{-1.5ex}{Stagnosol, Planosol} & {influenced by 
 
 \subsubsection{Terrain parameters with emphasis on roughness measures}
 \citep{Riley1999}
-\subsubsection{Random Forest classification}
-random sampling of points for terrain analysis.
+\subsubsection{Random Forest classification }
+
 
 
 Considering the confusion matrices and the accuracy measures calculated, this was performed as if the field observations described by the surveyors had been planned to validate the use of the geologic map as a map of soil parent material.
@@ -253,47 +253,16 @@ AD &   7 &   0 &   0 &   0 &   0 &   1 &   0 &   0 &   0 &   0 &   0 &   0 &   1
 \label{kartiergegenkarte}
 \end{table}
 
-\subsection{Random forest classification of SGUs based on topography}
-A random forest classifier was trained on 100 random points per SGU and then applied to predict the membership of 200 different randomly selected points per unit. A stepwise forward feature selection procedure with all available terrain parameters except for absolute heights showed that after 7 parameters were selected, additional parameters did not significantly improve the correct classification rate of 75 \%. The terrain derivatives selected by the random forest classifier are channel network base level, which on it own correctlyl predicts 66 \% of the SGUs of the validation points, and slope, Texture, catchment area, VerticalDistancetoChannelNetwork and convexity, as well as the channel network base level calculated at a coarser resolution. As was to be expected due to the geological structure of the research area, terrain parameters based on relative elevations, as well as regional terrain parameters such aus catchment area can well distinguish between some SGUs. An investigation based on applying only local terrain parameters in the random forest classification showed that the parameters profile, cross-sectional and total curvature, together with convexity as well as slope computed at two different window sizes, lead to a correct classification rate of 49 \%. Using only the terrain parameters related to surface roughness, a correct classification rate of only 45 \% was achieved with a combination of the predictor variables TRI (res=2.5~m, ws=60~m), texture at two grid cell sizes(res=50~m and 2.5~m?) as well as VRM and vector strength based on the 2.5~m DTM and a window size of approx. 150~m. The importance measures of a classification using all available roughness measures also highlight the Texture at 50 m grid cell size and a neighborhood of ?10 cells to be the most influential variable, followed by the TRI at various search windows.
-
-\begin{table}[ht]
-\centering
-\tabcolsep=0.06cm
-\small
-\begin{tabular}{ccccccccccccccc}
-  \hline
- & CBD & CD & CSR & DC & GLD & IMS & ISR & LD  & MrD & MxD & SB & SD & SSR & TG \\ 
-  \hline
-AD & 0.2 & 21.1 & 0.0 & 23.6 & 14.8 & 2.5 & 0.0 & 1.2  & 22.2 & 10.9 & 5.7 & 12.7 & 0.2 & 45.2 \\ 
-  CBD &  & 0.5 & 6.1 & 8.5 & 0.0 & 0.0 & 1.1 & 0.9  & 0.5 & 1.5 & 10.1 & 9.7 & 0.9 & 9.1 \\ 
-  CD &  &  & 1.3 & 17.6 & 10.7 & 2.8 & 0.0 & 0.6  & 0.7 & 10.0 & 5.8 & 4.0 & 0.0 & 31.1\\ 
-  CSR &  &  &  & 11.8 & 0.0 & 0.0 & 5.5 & 0.8  & 0.0 & 1.3 & 0.6 & 40.7 & 5.0 & 23.1 \\ 
-  DC &  &  &  &  & 2.5 & 0.6 & 0.7 & 2.4  & 5.9 & 17.4 & 9.3 & 25.6 & 1.6 & 40.6 \\ 
-  GLD &  &  &  &  &  & 2.2 & 0.0 & 0.2  & 0.8 & 3.4 & 0.4 & 0.5 & 0.0 & 7 \\ 
-  IMS &  &  &  &  &  &  & 0.0 & 0.0  & 0.0 & 0.6 & 0.7 & 0.4 & 0.0 & 1.1 \\ 
-  ISR &  &  &  &  &  &  &  & 0.2 & 0.0 & 0.0 & 0.0 & 4.3 & 0.0 & 0.4 \\ 
-  LD &  &  &  &  &  &  &  &   & 0.0 & 0.1 & 1.4 & 3.7 & 0.5 & 4.2 \\ 
-  MrD  &  &  &  &  &  &  &  &  &  & 0.2 & 1.2 & 0.6 & 0.0 & 1.9 \\ 
-  MxD  &  &  &  &  &  &  &  &  &  &  & 2.7 & 2.7 & 0.1 & 19.5 \\ 
-  SB  &  &  &  &  &  &  &  &  &  &  &  & 109.3 & 4.4 & 67.4\\ 
-  SD  &  &  &  &  &  &  &  &  &  &  &  &  & 8.3 & 50.4 \\ 
-  SSR  &  &  &  &  &  &  &  &  &  &  &  &  &  & 5.5 \\ 
-   \hline
-\end{tabular}
-\caption{Length in kilometers of the borders of adjacent SGUs} 
-\label{table:borderlength}
-\end{table}
 \subsection{Random forest classification of parent material based on geologic map data and topography}
 Regional-scale terrain parameters and relative elevations were not identified as important predictor variables. One reason for this is that this information is implicitly accounted for by the geologic map, as the carious SGU classes are also closely linked to certain relative elevations, especially the vertical distance to channel base level, due to overal geologic structure of the study area.
 Roughness: TRI can be strongly related to slope.
 
 \subsection{Geologic-topographic characterisation of the predominant SGUs}
-Through synthesis of results of the comparison of the soil point data and the geologic map, the random forest anaylsis of terrain parameters as well as the distribution of soil types in the study area, a geologic-topographic characterisation of the  SGUs is performed. Only those units with substantial areal extent and sufficient soil profile points are described in detail.
+Through synthesis of results of the comparison of the soil point data and the geologic map, the random forest analsis of terrain parameters as well as the distribution of soil types in the study area, a geologic-topographic characterisation of the  SGUs is performed. Only those units with substantial areal extent and sufficient soil profile points are described in detail.
+
 \subsubsection{Alluvial deposits}
 The SGU alluvial deposits occupies 16.3 km², amounting to 14.9~\% of the study area. It incorporates alluvial deposits in the paleovalley but also in the Etsch valley, with to soil profile points limited to the former. The alluvial deposits share very long borders with the SGUs till in general, debris cones, mire deposits and colluvial deposits, due to its bifurcated vertical transection of the study area. Long borders can therefore also be found with the units glaciolacustrine deposits, mixed deposits, slope debris and till in general. There is agreement between the geological map and the soil profile description in 7 (54\%) of the 13 profiles for which the soil surveyors identified this SGU as the soil parent material. Some confusion with the SGUs debris cones and till in general can be observed, the former from the viewpoint of producer's reliability and the latter as an error of commission. 
-
-When attempting to characterise and predict the SGUs based on the 7 best terrain parameters, the SGUs with which the most confusion occurs are mire deposits, colluvial deposits, debris cones and to a lesser degree till in general, which all have common borders with the alluvial deposits. Most other SGUs can be separated from alluvial deposits based on relative elevation measures such as channel network base level or catchment area. Applying only local terrain parameters to distinguish alluvial from colluvial deposits, the random forest classifier identifies slope computed at a window size of 27.5~m as the most adequate predictor variable due to the slightly steeper slopes of the lattern unit, leading to to correct identification in 71 \% of the sample points, performing better than regional parameters such as catchment slope or LS factor (approx. 65 \%) or vector ruggedness from group of roughness-related terrain parameters. Seperating alluvial from mire deposits showed similar results, though a combination of slope  and maximum curvature is able to correctly identify 83 \% of the sample points when only analysing these two SGUs, as mire deposits are found in flatter regions  with slightly smaller curvature values. Regarding roughness measures, a combination of TRI, VRM and texture performs slightly better with a correct classification rate of 75 \% of the points, compared to  67 \% when distinguishing between alluvial and colluvial deposits with a combination of three roughness measures. Profile curvature and the closely related parameter convexity are determined to be the local terrain paramater than best characterises the difference between the topography of the SGUs alluvial deposits and till. (Hier muss noch an der Analyse gearbeitet werden da bisher Grundmoräne getrennt betrachtet wurde)
-
+Besides obvious channel-level related terrain parameters, which well seperate the units on the geologic map, slope related parameters also contribute strongly to distinguishing between alluvial deposits. 
 Of the 11 soil profile or auger points located on areas covered by alluvial deposits according to the reclassified geological map, the soil type Braunerde is predominant, with some occasional anthrosols. These brown soils are to be expected as the more or less pronounced stability of the flat alluvial deposits have allowed a certain degree of pedogenetic processes to occur. The Rigosols on the other hand are typical for the vineyards and orchards commonly found on alluvial deposits in the region, were landscape as well as soil have seen strong anthropogenic influence. The distribution of the soil types of the profile points identified to have alluvial deposits as parent material by the surveyors is comparable regarding the dominance of brown soils. Additionally, the soil types Kalklehm-Rendzina and Pararendzina were encountered, both characterised by organic horizons on more or less unweathered parent material, indicating that alluvial deposits were also identified at places lacking the stable conditions necessary for the development of a B-horizon as presented by the alluvial deposits unit of the geological map. It must however be considered that the SGU in the study area also incorporates parts of the wide Etsch valley floor, whereas the soil profile points are mostly situated in the paleovalley of the {\"U}beretsch. So while the alluvial deposits unit is characterised by the lowest mean slope aside from mire deposits, it is nevertheless necessary for future surveys to also investigate the less typical, more sloping areas at the border or in proximity of alluvial deposit units.
 
 \subsubsection{Siliceous bedrock}
@@ -350,6 +319,34 @@ We propose that future surveys focus increasingly on these units with greater un
 
 \section*{Acknowledgements} This research was performed within the project 'Terrain Classification of ALS Data to support Digital Soil Mapping', funded by the Autonomous Province Bolzano -- South Tyrol (15/40.3).
 
+\section*{additional tables}
+\begin{table}[ht]
+\centering
+\tabcolsep=0.06cm
+\small
+\begin{tabular}{ccccccccccccccc}
+  \hline
+ & CBD & CD & CSR & DC & GLD & IMS & ISR & LD  & MrD & MxD & SB & SD & SSR & TG \\ 
+  \hline
+AD & 0.2 & 21.1 & 0.0 & 23.6 & 14.8 & 2.5 & 0.0 & 1.2  & 22.2 & 10.9 & 5.7 & 12.7 & 0.2 & 45.2 \\ 
+  CBD &  & 0.5 & 6.1 & 8.5 & 0.0 & 0.0 & 1.1 & 0.9  & 0.5 & 1.5 & 10.1 & 9.7 & 0.9 & 9.1 \\ 
+  CD &  &  & 1.3 & 17.6 & 10.7 & 2.8 & 0.0 & 0.6  & 0.7 & 10.0 & 5.8 & 4.0 & 0.0 & 31.1\\ 
+  CSR &  &  &  & 11.8 & 0.0 & 0.0 & 5.5 & 0.8  & 0.0 & 1.3 & 0.6 & 40.7 & 5.0 & 23.1 \\ 
+  DC &  &  &  &  & 2.5 & 0.6 & 0.7 & 2.4  & 5.9 & 17.4 & 9.3 & 25.6 & 1.6 & 40.6 \\ 
+  GLD &  &  &  &  &  & 2.2 & 0.0 & 0.2  & 0.8 & 3.4 & 0.4 & 0.5 & 0.0 & 7 \\ 
+  IMS &  &  &  &  &  &  & 0.0 & 0.0  & 0.0 & 0.6 & 0.7 & 0.4 & 0.0 & 1.1 \\ 
+  ISR &  &  &  &  &  &  &  & 0.2 & 0.0 & 0.0 & 0.0 & 4.3 & 0.0 & 0.4 \\ 
+  LD &  &  &  &  &  &  &  &   & 0.0 & 0.1 & 1.4 & 3.7 & 0.5 & 4.2 \\ 
+  MrD  &  &  &  &  &  &  &  &  &  & 0.2 & 1.2 & 0.6 & 0.0 & 1.9 \\ 
+  MxD  &  &  &  &  &  &  &  &  &  &  & 2.7 & 2.7 & 0.1 & 19.5 \\ 
+  SB  &  &  &  &  &  &  &  &  &  &  &  & 109.3 & 4.4 & 67.4\\ 
+  SD  &  &  &  &  &  &  &  &  &  &  &  &  & 8.3 & 50.4 \\ 
+  SSR  &  &  &  &  &  &  &  &  &  &  &  &  &  & 5.5 \\ 
+   \hline
+\end{tabular}
+\caption{Length in kilometers of the borders of adjacent SGUs} 
+\label{table:borderlength}
+\end{table}
 \section*{References}
 \bibliography{P2.bib}
 
