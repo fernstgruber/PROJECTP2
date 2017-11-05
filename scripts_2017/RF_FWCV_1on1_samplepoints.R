@@ -13,7 +13,11 @@ sampledata <- na.omit(sampledata)
 origmodeldata <- sampledata[names(sampledata) %in% c(dependent,allpreds)]
 origmodeldata[[dependent]] <- as.factor(origmodeldata[[dependent]])
 badones <- vector()
-
+for(pp in allpreds){
+  if(nrow(origmodeldata[is.na(origmodeldata[[pp]]),]) > 0) {
+    badones <-c(badones,pp)
+  }
+}
 for (p in allpreds){
   if (summary(origmodeldata[[p]])[5] == 0.0 ) {
     badones <- c(badones,p)
@@ -23,11 +27,11 @@ roughness <- roughness[!(roughness %in% badones)]
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 #########################################################################################
-psets <- c(3,1,5)
+psets <- c(5,3,1)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
-analysisclasses <- c("TG","SD","CSR","DC")
+analysisclasses <- c("CSR")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
 
@@ -59,8 +63,24 @@ for(cl in analysisclasses){
     folds = sample(rep(1:5, length = nrow(mynewmodeldata)))
     trial=1001
     k=1
+    
     for(k in 1:5){
+      
       kmodeldata=mynewmodeldata[folds != k,]
+      ##neuer test
+      badonesintern <- vector()
+      for(pp in predset){
+        if(nrow(kmodeldata[is.na(kmodeldata[[pp]]),]) > 0) {
+          badonesintern <-c(badonesintern,pp)
+        }
+      }
+      for (p in predset){
+        if (summary(kmodeldata[[p]])[5] == 0.0 ) {
+          badonesintern <- c(badonesintern,p)
+        }
+      }
+      predset=predset[!(predset %in% badonesintern)]
+      ###richtig hier, oder weiter unten???
       ktestdata =  mynewmodeldata[folds == k,]
       keepers <- vector()
       pred_df_orig <- data.frame(preds = as.character(predset))
