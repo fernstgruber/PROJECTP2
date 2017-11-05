@@ -40,7 +40,7 @@ allpreds <- allpreds[allpreds %in% names(profiledata[names(profiledata) %in% c(d
 origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
 
 
-psets <- c(5)
+psets <- c(3)
 classes <-  levels(origmodeldata[[dependent]])
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
