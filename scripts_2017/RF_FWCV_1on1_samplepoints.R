@@ -31,7 +31,7 @@ psets <- c(5,3,1)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
-analysisclasses <- c("CSR")
+analysisclasses <- c("DC")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
 

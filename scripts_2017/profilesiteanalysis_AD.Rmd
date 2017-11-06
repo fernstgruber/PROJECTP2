@@ -38,12 +38,13 @@ relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.chara
 relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
 relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
 summary(relevantmodeldata$correct)
-allimp <- increaseacc(modeldata = relevantmodeldata,pset = 5,dependent = dependent)
-roughimp <- increaseacc(modeldata = relevantmodeldata,pset = 3,dependent = dependent)
-localimp <- increaseacc(modeldata = relevantmodeldata,pset = 1,dependent = dependent)
+allimp <- increaseacc(modeldata = relevantmodeldata,pset = 5,dependent = dependent)  
+roughimp <- increaseacc(modeldata = relevantmodeldata,pset = 3,dependent = dependent)  
+localimp <- increaseacc(modeldata = relevantmodeldata,pset = 1,dependent = dependent)  
+
   par(mfcol=c(1,3))
-boxplot(data=relevantmodeldata[c(as.character(rownames(allimp)[1]),dependent)],as.formula(paste(as.character(rownames(allimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(allimp)[1]))
-boxplot(data=relevantmodeldata[c(as.character(rownames(roughimp)[1]),dependent)],as.formula(paste(as.character(rownames(roughimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(roughimp)[1]))
+boxplot(data=relevantmodeldata[c(as.character(rownames(allimp)[1]),dependent)],as.formula(paste(as.character(rownames(allimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(allimp)[1]))  
+boxplot(data=relevantmodeldata[c(as.character(rownames(roughimp)[1]),dependent)],as.formula(paste(as.character(rownames(roughimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(roughimp)[1]))  
 boxplot(data=relevantmodeldata[c(as.character(rownames(localimp)[1]),dependent)],as.formula(paste(as.character(rownames(localimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(localimp)[1]))
 
 ```

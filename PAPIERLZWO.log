@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  5 NOV 2017 17:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  6 NOV 2017 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,10 +553,10 @@ Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 6101 strings out of 494935
- 88808 string characters out of 6178122
+ 6100 strings out of 494935
+ 88798 string characters out of 6178122
  181294 words of memory out of 5000000
- 9185 multiletter control sequences out of 15000+600000
+ 9184 multiletter control sequences out of 15000+600000
  10267 words of font info for 36 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  34i,11n,34p,3917b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -573,10 +573,10 @@ cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (22 pages, 244877 bytes).
+Output written on PAPIERLZWO.pdf (22 pages, 245197 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
+ 513 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
  101 named destinations out of 1000 (max. 500000)
  265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
