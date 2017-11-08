@@ -35,12 +35,12 @@ allpreds <- c(localterrain,regionalterrain,roughness,heights)
 allpreds <- allpreds[allpreds %in% names(profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)])]
 origmodeldata <- profiledata[names(profiledata) %in% c(dependent,"SGU_gk",allpreds)]
 #########################################################################################
-psets <- c(1)
+psets <- c(3)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
 #analysisclasses <- c("GLD","CD","DC","ISR","MxD","SD","SSR")
-analysisclasses <- classes[10:12]
+analysisclasses <- c("TG")
 #save(classes,paramsets,modeldata,paramsetnames,file="classesandparamsets.RData")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]

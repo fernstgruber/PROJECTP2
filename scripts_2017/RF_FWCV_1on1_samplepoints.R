@@ -27,11 +27,11 @@ roughness <- roughness[!(roughness %in% badones)]
 allpreds <- c(localterrain,regionalterrain,roughness,heights)
 paramsets <- list(localterrain,regionalterrain,roughness,heights,allpreds)
 #########################################################################################
-psets <- c(5,3,1)
+psets <- c(5)
 classes <-  levels(origmodeldata[[dependent]])
 classes <- classes[!(classes %in% c("Ant","WB","MrD"))]
 origclasses <- classes
-analysisclasses <- c("DC")
+analysisclasses <- c("SB")
 paramsetnames = paramsetnames[psets]
 paramsets = paramsets[psets]
 

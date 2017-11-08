@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -239,6 +239,16 @@
 \newblock \URLprefix
   \url{http://www.sciencedirect.com/science/article/pii/S0166248108000068},
   \DOIprefix\doi{http://dx.doi.org/10.1016/S0166-2481(08)00006-8}.
+%Type = Article
+\bibitem[{Phillips and Lorz(2008)}]{Phillips2008}
+\bibinfo{author}{Phillips, J.D.}, \bibinfo{author}{Lorz, C.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Origins and implications of soil layering}.
+\newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{89},
+  \bibinfo{pages}{144 -- 155}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S001282520800055X},
+  \DOIprefix\doi{https://doi.org/10.1016/j.earscirev.2008.04.003}.
 %Type = Article
 \bibitem[{Riley et~al.(1999)Riley, DeGloria and Elliot}]{Riley1999}
 \bibinfo{author}{Riley, S.J.}, \bibinfo{author}{DeGloria, S.D.},
