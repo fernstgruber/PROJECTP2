@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  8 NOV 2017 19:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  9 NOV 2017 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **PAPIERLZWO.tex
 (./PAPIERLZWO.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 9 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
@@ -436,22 +436,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--193
  []
 
 [7] [8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 219.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 220.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
  [9] [10]
 [11
 
 ]
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ≤ in font cmr12!
- [12] [13] [14] [15] [16] [17] [18] [19] [20]
+ [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 352.
+(Font)              <10.95> on input line 349.
  (./PAPIERLZWO.bbl
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ° in font cmr12!
@@ -459,7 +459,8 @@ Missing character: There is no ƒ in font cmr12!
 Missing character: There is no ç in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no § in font cmr12!
- [21]
+
+[22]
 Underfull \hbox (badness 3803) in paragraph at lines 54--66
 []\OT1/cmr/m/n/12 B^^?ohner, J., An-toni^^Sc, O., 2009.  Chap-ter 8 land-surfac
 e pa-ram-
@@ -489,7 +490,6 @@ Underfull \hbox (badness 1147) in paragraph at lines 54--66
  com / science / article / pii /
  []
 
-[22]
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ° in font cmr12!
 Missing character: There is no ƒ in font cmr12!
@@ -505,10 +505,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--119
 000086$[]\OT1/cmr/m/n/12 ,
  []
 
+[23]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
-[23]
+
 Underfull \hbox (badness 4927) in paragraph at lines 162--175
 \OT1/cmr/m/n/12 C., 2016.  Mind the gap: A clas-si-fi-ca-tion sys-tem for in-te
 -
@@ -526,6 +527,7 @@ Underfull \hbox (badness 3525) in paragraph at lines 162--175
 cedirect . com / science /
  []
 
+[24]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
 Missing character: There is no √ in font cmr12!
@@ -534,7 +536,7 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no ñ in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ñ in font cmr12!
-[24]
+ [25]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
 
@@ -550,24 +552,24 @@ Underfull \hbox (badness 1052) in paragraph at lines 293--300
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
- [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
  (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
-(rerunfilecheck)             Checksum: FC227E3C9BC3B7B826BDE3EAB708D385;3371.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
+(rerunfilecheck)             Checksum: A82B540654B740C83EFDC8704570AACC;3382.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
- 6133 strings out of 494935
- 89309 string characters out of 6178122
- 182326 words of memory out of 5000000
- 9205 multiletter control sequences out of 15000+600000
+ 6134 strings out of 493304
+ 89306 string characters out of 6139871
+ 187187 words of memory out of 5000000
+ 9431 multiletter control sequences out of 15000+600000
  10267 words of font info for 36 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 34i,11n,34p,3917b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 957 hyphenation exceptions out of 8191
+ 34i,11n,34p,4361b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
@@ -582,10 +584,10 @@ onts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (25 pages, 262638 bytes).
+Output written on PAPIERLZWO.pdf (26 pages, 264205 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 110 named destinations out of 1000 (max. 500000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 500000)
  297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
