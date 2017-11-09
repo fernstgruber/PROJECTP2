@@ -21,16 +21,18 @@ require(RCurl)
 require(repmis)
 require(randomForest)
 require(knitr)
-proj2path="/home/fabs/PROJECTP2/"
+#proj2path="/home/fabs/PROJECTP2/"
 paper2datapath ="/home/fabs/Data/paper2data/"
+proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+paper2datapath ="/media/fabs/Volume/01_PAPERZEUG/paper2data/"
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 legend <- read.table(paste(proj2path,"data2017/SGU_legend_new.txt",sep=""),sep="\t",header=T)
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
 modeldataoktober$SGU_gk <- factor(modeldataoktober$SGU_gk,levels=levels(legend$SGU))
 modeldataoktober$SGU_kartiert <- factor(modeldataoktober$SGU_kartiert,levels=levels(legend$SGU))
-profile <- sqliteGRASS_lenny(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
-sampledata <- sqliteGRASS_lenny(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_100m_grid_SGU")
+profile <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
+sampledata <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_100m_grid_SGU")
 sampledata$geolegen_1 <- as.factor(sampledata$geolegen_1)
 local <- unlist(paramsets[1])
 local <- local[local %in% names(modeldataoktober)]
@@ -86,7 +88,7 @@ par(mfcol=c(1,4))
 boxplot(data=relevantmodeldata[c(as.character(rownames(allimp)[1]),"SGU_kartiert")],as.formula(paste(as.character(rownames(allimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(allimp)[1]))
 boxplot(data=relevantmodeldata[c(as.character(rownames(roughimp)[1]),"SGU_kartiert")],as.formula(paste(as.character(rownames(roughimp)[1]),"~ ", dependent,sep=" ")),outline=F,main=as.character(rownames(roughimp)[1]))
 boxplot(data=relevantmodeldata[c(as.character(rownames(localimp)[1]),"SGU_kartiert")],as.formula(paste(as.character(rownames(localimp)[1]),"~ ", dependent,sep=" ")),outline=T,main=as.character(rownames(localimp)[1]))
-boxplot(data=relevantmodeldata[c("slope_DTM_50m_avg_ws7_50m",dependent)],as.formula(paste("slope_DTM_50m_avg_ws7_50m","~ ", dependent,sep=" ")),outline=T,main="slope_DTM_50m_avg_ws7_50m")
+boxplot(data=relevantmodeldata[c("geom_hr_L3_fl10_rplipedgedensity_UE_hr_20cells_hr",dependent)],as.formula(paste("geom_hr_L3_fl10_rplipedgedensity_UE_hr_20cells_hr","~ ", dependent,sep=" ")),outline=T,main="geom_hr_L3_fl10_rplipedgedensity_UE_hr_20cells_hr")
 ```
   
   How does this compare to the differences between the units on the geological map?  
