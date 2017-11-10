@@ -17,6 +17,9 @@ location="EPPAN_vhr"
 mapset="paper3data_predictparentmaterial"
 #########################################################################
 initGRASS(gisBase = gisBase,gisDbase = gisDbase,location=location,mapset=mapset,override = TRUE)
+rastlist <- execGRASS("g.list",type="rast",pattern="*")
+rastlist <- attributes(rastlist)$resOut
+predictors <- c("SGUcode",rastlist[-c(6,7,11:31,49,63:66,78:82,88:89)])
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
 legend <- read.table(paste(proj2path,"data2017/SGU_legend_new.txt",sep=""),sep="\t",header=T)
 names(legend) <- c("SGU","SGUcode")
