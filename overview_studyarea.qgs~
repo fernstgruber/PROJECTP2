@@ -33,7 +33,7 @@
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_vectorruggedness_hr_ws4520171102135841682" name="Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_vectorruggedness_hr_ws45">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="AD_kartierpunkte20171023193414433" name="AD_kartierpunkte">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="AD_kartierpunkte20171023193414433" name="AD_kartierpunkte">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="CBD_kartiert20171023193514513" name="CBD_kartiert">
@@ -57,7 +57,7 @@
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="MxD_kartiert20171023194100080" name="MxD_kartiert">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="SB_kartiert20171023194203481" name="SB_kartiert">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SB_kartiert20171023194203481" name="SB_kartiert">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SD_kartiert20171023194325940" name="SD_kartiert">
@@ -78,7 +78,7 @@
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGUcode_vectorruggedness_hr_ws5120171023150255700" name="SGUcode_vectorruggedness_hr_ws51">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr20171023155637821" name="SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr">
@@ -99,7 +99,7 @@
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Profilpunktemitboden_UTM_neighbors20171019193140027" name="Profilpunktemitboden_UTM_neighbors">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
             <customproperties/>
         </layer-tree-layer>
     </layer-tree-group>
@@ -107,10 +107,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>667165.1598191715311259</xmin>
-            <ymin>5137576.26004698686301708</ymin>
-            <xmax>683041.15381282451562583</xmax>
-            <ymax>5150580.58877280913293362</ymax>
+            <xmin>667995</xmin>
+            <ymin>5137282.5</ymin>
+            <xmax>678180</xmax>
+            <ymax>5155972.5</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -160,6 +160,7 @@
             <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="TG_kartiert20171023194508232"/>
             <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGU_wlegend20171016140536506"/>
             <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100011" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302"/>
+            <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="100m_grid_SGU20171102171653894"/>
             <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGU_wlegend_SGUcode20171016152823255"/>
             <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="SSR_kartiert20171023194418022"/>
             <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100011" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGUcode_TRI_hr_ws3820171023165310026"/>
@@ -257,9 +258,9 @@
                 <legendlayerfile isInOverview="0" layerid="Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_vectorruggedness_hr_ws4520171102135841682" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="AD_kartierpunkte" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="AD_kartierpunkte" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="AD_kartierpunkte20171023193414433" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="AD_kartierpunkte20171023193414433" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="CBD_kartiert" showFeatureCount="0">
@@ -297,9 +298,9 @@
                 <legendlayerfile isInOverview="0" layerid="MxD_kartiert20171023194100080" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SB_kartiert" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SB_kartiert" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="SB_kartiert20171023194203481" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="SB_kartiert20171023194203481" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SD_kartiert" showFeatureCount="0">
@@ -332,8 +333,8 @@
                 <legendlayerfile isInOverview="0" layerid="SGUcode_vectorruggedness_hr_ws5120171023150255700" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" visible="1"/>
             </filegroup>
         </legendlayer>
@@ -367,9 +368,9 @@
                 <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM_neighbors20171019193140027" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SGU_wlegend_SGUcode" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="1"/>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="SGU_wlegend_SGUcode" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="0"/>
             </filegroup>
         </legendlayer>
     </legend>
@@ -5591,22 +5592,22 @@
             <renderer-v2 attr="geolegen_1" symbollevels="0" type="categorizedSymbol">
                 <categories>
                     <category render="true" symbol="0" value="AD" label="AD"/>
-                    <category render="true" symbol="1" value="Ant" label="Ant"/>
-                    <category render="true" symbol="2" value="CBD" label="CBD"/>
-                    <category render="true" symbol="3" value="CD" label="CD"/>
-                    <category render="true" symbol="4" value="CSR" label="CSR"/>
-                    <category render="true" symbol="5" value="DC" label="DC"/>
-                    <category render="true" symbol="6" value="GLD" label="GLD"/>
-                    <category render="true" symbol="7" value="IMS" label="IMS"/>
-                    <category render="true" symbol="8" value="ISR" label="ISR"/>
-                    <category render="true" symbol="9" value="LD" label="LD"/>
-                    <category render="true" symbol="10" value="MrD" label="MrD"/>
-                    <category render="true" symbol="11" value="MxD" label="MxD"/>
-                    <category render="true" symbol="12" value="SB" label="SB"/>
-                    <category render="true" symbol="13" value="SD" label="SD"/>
-                    <category render="true" symbol="14" value="SSR" label="SSR"/>
-                    <category render="true" symbol="15" value="TG" label="TG"/>
-                    <category render="true" symbol="16" value="WB" label="WB"/>
+                    <category render="false" symbol="1" value="Ant" label="Ant"/>
+                    <category render="false" symbol="2" value="CBD" label="CBD"/>
+                    <category render="false" symbol="3" value="CD" label="CD"/>
+                    <category render="false" symbol="4" value="CSR" label="CSR"/>
+                    <category render="false" symbol="5" value="DC" label="DC"/>
+                    <category render="false" symbol="6" value="GLD" label="GLD"/>
+                    <category render="false" symbol="7" value="IMS" label="IMS"/>
+                    <category render="false" symbol="8" value="ISR" label="ISR"/>
+                    <category render="false" symbol="9" value="LD" label="LD"/>
+                    <category render="false" symbol="10" value="MrD" label="MrD"/>
+                    <category render="false" symbol="11" value="MxD" label="MxD"/>
+                    <category render="false" symbol="12" value="SB" label="SB"/>
+                    <category render="false" symbol="13" value="SD" label="SD"/>
+                    <category render="false" symbol="14" value="SSR" label="SSR"/>
+                    <category render="false" symbol="15" value="TG" label="TG"/>
+                    <category render="false" symbol="16" value="WB" label="WB"/>
                     <category render="false" symbol="17" value="" label=""/>
                 </categories>
                 <symbols>
@@ -10989,21 +10990,21 @@
             <renderer-v2 attr="value" symbollevels="0" type="categorizedSymbol">
                 <categories>
                     <category render="true" symbol="0" value="1" label="AD"/>
-                    <category render="true" symbol="1" value="2" label="CBD"/>
-                    <category render="true" symbol="2" value="3" label="CD"/>
-                    <category render="true" symbol="3" value="4" label="CSR"/>
-                    <category render="true" symbol="4" value="5" label="DC"/>
-                    <category render="true" symbol="5" value="6" label="GLD"/>
-                    <category render="true" symbol="6" value="7" label="IMS"/>
-                    <category render="true" symbol="7" value="8" label="ISR"/>
-                    <category render="true" symbol="8" value="9" label="LD"/>
-                    <category render="true" symbol="9" value="10" label="MrD"/>
-                    <category render="true" symbol="10" value="11" label="MxD"/>
-                    <category render="true" symbol="11" value="12" label="SB"/>
-                    <category render="true" symbol="12" value="13" label="SD"/>
-                    <category render="true" symbol="13" value="14" label="SSR"/>
-                    <category render="true" symbol="14" value="15" label="TG"/>
-                    <category render="true" symbol="15" value="" label=""/>
+                    <category render="false" symbol="1" value="2" label="CBD"/>
+                    <category render="false" symbol="2" value="3" label="CD"/>
+                    <category render="false" symbol="3" value="4" label="CSR"/>
+                    <category render="false" symbol="4" value="5" label="DC"/>
+                    <category render="false" symbol="5" value="6" label="GLD"/>
+                    <category render="false" symbol="6" value="7" label="IMS"/>
+                    <category render="false" symbol="7" value="8" label="ISR"/>
+                    <category render="false" symbol="8" value="9" label="LD"/>
+                    <category render="false" symbol="9" value="10" label="MrD"/>
+                    <category render="false" symbol="10" value="11" label="MxD"/>
+                    <category render="false" symbol="11" value="12" label="SB"/>
+                    <category render="false" symbol="12" value="13" label="SD"/>
+                    <category render="false" symbol="13" value="14" label="SSR"/>
+                    <category render="false" symbol="14" value="15" label="TG"/>
+                    <category render="false" symbol="15" value="" label=""/>
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
@@ -11767,7 +11768,7 @@
                     <category render="true" symbol="12" value="13" label="SD"/>
                     <category render="true" symbol="13" value="14" label="SSR"/>
                     <category render="true" symbol="14" value="15" label="TG"/>
-                    <category render="false" symbol="15" value="" label=""/>
+                    <category render="true" symbol="15" value="" label=""/>
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
@@ -16281,6 +16282,13 @@
                 <value>till_SGUcode_till_TRI_hr_ws40_till_vectorruggedness_hr_ws4120171024154839206</value>
                 <value>till_SGUcode_till_fischerk_ws5_hr20171024152605385</value>
                 <value>Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_vectorruggedness_hr_ws4520171102135841682</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_geom_hr_L50m_fl10_rplipshannon_UE_hr_20cells_hr20171102140244937</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws46_Slopedeposit_TRI_hr_ws220171102140320857</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_vectorruggedness_hr_ws5520171102140510735</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_Convergence_Index_50m20171102140510772</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws16_Slopedeposit_geom_hr_L3_fl10_rplipedgedensity_UE_hr_20cells_hr20171102140510815</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_MinimalCurvature_10m_Slopedeposit_geom_hr_L50m_fl1_rplipshape_UE_hr_60cells_hr20171102140510842</value>
+                <value>Slopedeposit_SGUcode_Slopedeposit_Channel_Network_Base_Level_50m_Slopedeposit_ChannelNetworkBaseLevel_10m20171102140510890</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
                 <value>enabled</value>
@@ -16308,6 +16316,13 @@
                 <value>enabled</value>
                 <value>enabled</value>
                 <value>enabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
                 <value>disabled</value>
             </LayerSnappingEnabledList>
             <SnappingMode type="QString">current_layer</SnappingMode>
@@ -16339,8 +16354,22 @@
                 <value>-1</value>
                 <value>-1</value>
                 <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
             </LayerSnappingToleranceUnitList>
             <LayerSnapToList type="QStringList">
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
@@ -16396,6 +16425,13 @@
                 <value>3.000000</value>
                 <value>3.000000</value>
                 <value>3.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
                 <value>0.000000</value>
             </LayerSnappingToleranceList>
         </Digitizing>

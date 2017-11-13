@@ -14,8 +14,8 @@ require(RCurl)
 require(repmis)
 require(randomForest)
 require(knitr)
-proj2path="/home/fabs/PROJECTP2/"
-paper2datapath ="/home/fabs/Data/paper2data/"
+proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+paper2datapath ="/media/fabs/Volume/01_PAPERZEUG/paper2data/"
 #proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
 #paper2datapath ="/media/fabs/Volume/01_PAPERZEUG/paper2data/"
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
@@ -24,8 +24,8 @@ legend <- read.table(paste(proj2path,"data2017/SGU_legend_new.txt",sep=""),sep="
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
 modeldataoktober$SGU_gk <- factor(modeldataoktober$SGU_gk,levels=levels(legend$SGU))
 modeldataoktober$SGU_kartiert <- factor(modeldataoktober$SGU_kartiert,levels=levels(legend$SGU))
-profile <- sqliteGRASS_lenny(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
-sampledata <- sqliteGRASS_lenny(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_100m_grid_SGU")
+profile <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
+sampledata <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_100m_grid_SGU")
 sampledata$geolegen_1 <- as.factor(sampledata$geolegen_1)
 local <- unlist(paramsets[1])
 local <- local[local %in% names(modeldataoktober)]
@@ -38,7 +38,7 @@ load(file=paste(paper2datapath,"/sampledata_100mgrid.RData",sep=""))
 How do those points that were classified correctly by the geologic map differ from those identified by the surveyors?  
 
 ```{r,results = 'asis',echo=F}
-cl1= "DC"
+cl1= "CD"
 dependent="correct"
 relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
 relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
@@ -58,10 +58,10 @@ boxplot(data=relevantmodeldata[c(as.character(rownames(localimp)[1]),dependent)]
 
 
 
-How about colluvial deposits
+How about colluvial deposits and slope deposits
 
 ```{r,results = 'asis',echo=F}
-cl1="DC"
+cl1="SD"
 cl2="CD"
 dependent="SGU_kartiert"
 relevantmodeldata <- modeldataoktober[modeldataoktober$SGU_kartiert %in% c(cl1,cl2),]
@@ -90,11 +90,11 @@ boxplot(data=relevantmodeldata[c(as.character(rownames(localimp)[1]),"SGU_kartie
   How does this compare to the differences between the units on the geological map?  
   
 ```{r,results = 'asis',echo=F}
-cl1="DC"
+cl1="SD"
 cl2="CD"
 dependent="geolegen_1" 
 relevantmodeldata <- sampledata[sampledata$geolegen_1 %in% c(cl1,cl2),]
-relevantmodeldata$geolegen_1<- as.factor(relevantmodeldata$geolegen_1)
+relevantmodeldata$geolegen_1<- as.factor(relevatntmodeldata$geolegen_1)
 #evaluateforwardCV_anyerror(mypath = paste("/home/fabs/PROJECTP2/data2017/temprdata/RanFor_1on1_5foldprofilesitesallpredsp3/",cl1,"_vs_",cl2,sep=""),kk = 1:5,endround = 3,error = "cverror",geheim="geheimerprederror",yrange=c(0,0.5))
 allimp <- increaseacc(modeldata = relevantmodeldata,pset = 5,dependent = dependent)
 kable(allimp)
