@@ -81,7 +81,7 @@
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGUcode_vectorruggedness_hr_ws5120171023150255700" name="SGUcode_vectorruggedness_hr_ws51">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr20171023155637821" name="SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr">
@@ -102,7 +102,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Profilpunktemitboden_UTM_neighbors20171019193140027" name="Profilpunktemitboden_UTM_neighbors">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -110,10 +110,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>669592.36774744023568928</xmin>
-      <ymin>5139161.5998293524608016</ymin>
-      <xmax>679777.36774744023568928</xmax>
-      <ymax>5157851.5998293524608016</ymax>
+      <xmin>673589.81868600659072399</xmin>
+      <ymin>5147496.61689419858157635</ymin>
+      <xmax>676136.06868600659072399</xmax>
+      <ymax>5152169.11689419858157635</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -344,9 +344,9 @@
         <legendlayerfile isInOverview="0" layerid="SGUcode_vectorruggedness_hr_ws5120171023150255700" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws31" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr" showFeatureCount="0">
@@ -379,9 +379,9 @@
         <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM_neighbors20171019193140027" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="SGU_wlegend_SGUcode" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="0"/>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SGU_wlegend_SGUcode" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -5642,20 +5642,20 @@
       <renderer-v2 attr="geolegen_1" symbollevels="0" type="categorizedSymbol">
         <categories>
           <category render="true" symbol="0" value="AD" label="AD"/>
-          <category render="false" symbol="1" value="Ant" label="Ant"/>
-          <category render="false" symbol="2" value="CBD" label="CBD"/>
-          <category render="false" symbol="3" value="CD" label="CD"/>
-          <category render="false" symbol="4" value="CSR" label="CSR"/>
-          <category render="false" symbol="5" value="DC" label="DC"/>
-          <category render="false" symbol="6" value="GLD" label="GLD"/>
-          <category render="false" symbol="7" value="IMS" label="IMS"/>
-          <category render="false" symbol="8" value="ISR" label="ISR"/>
-          <category render="false" symbol="9" value="LD" label="LD"/>
-          <category render="false" symbol="10" value="MrD" label="MrD"/>
-          <category render="false" symbol="11" value="MxD" label="MxD"/>
-          <category render="false" symbol="12" value="SB" label="SB"/>
+          <category render="true" symbol="1" value="Ant" label="Ant"/>
+          <category render="true" symbol="2" value="CBD" label="CBD"/>
+          <category render="true" symbol="3" value="CD" label="CD"/>
+          <category render="true" symbol="4" value="CSR" label="CSR"/>
+          <category render="true" symbol="5" value="DC" label="DC"/>
+          <category render="true" symbol="6" value="GLD" label="GLD"/>
+          <category render="true" symbol="7" value="IMS" label="IMS"/>
+          <category render="true" symbol="8" value="ISR" label="ISR"/>
+          <category render="true" symbol="9" value="LD" label="LD"/>
+          <category render="true" symbol="10" value="MrD" label="MrD"/>
+          <category render="true" symbol="11" value="MxD" label="MxD"/>
+          <category render="true" symbol="12" value="SB" label="SB"/>
           <category render="false" symbol="13" value="SD" label="SD"/>
-          <category render="false" symbol="14" value="SSR" label="SSR"/>
+          <category render="true" symbol="14" value="SSR" label="SSR"/>
           <category render="false" symbol="15" value="TG" label="TG"/>
           <category render="false" symbol="16" value="WB" label="WB"/>
           <category render="false" symbol="17" value="" label=""/>

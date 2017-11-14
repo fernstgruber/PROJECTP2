@@ -1,5 +1,5 @@
 ---
-title: "profilepoint analysis Calcareous sedimentary rock"
+title: "profilepoint analysis Glaciolacustrine deposits"
 author: "fabian gruber"
 date: "October 24, 2017"
 output:
@@ -146,7 +146,7 @@ cl1="TG"
 cl2="GLD"
 dependent="geolegen_1" 
 relevantmodeldata <- sampledata[sampledata$geolegen_1 %in% c(cl1,cl2),]
-relevantmodeldata$geolegen_1<- as.factor(relevatntmodeldata$geolegen_1)
+relevantmodeldata$geolegen_1<- as.factor(relevantmodeldata$geolegen_1)
 #evaluateforwardCV_anyerror(mypath = paste("/home/fabs/PROJECTP2/data2017/temprdata/RanFor_1on1_5foldprofilesitesallpredsp3/",cl1,"_vs_",cl2,sep=""),kk = 1:5,endround = 3,error = "cverror",geheim="geheimerprederror",yrange=c(0,0.5))
 allimp <- increaseacc(modeldata = relevantmodeldata,pset = 5,dependent = dependent)
 kable(allimp)
