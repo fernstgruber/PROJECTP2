@@ -375,12 +375,12 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <Composer title="SGU" visible="0">
+    <Composer title="SGU" visible="1">
         <Composition gridVisible="0" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
             <symbol alpha="1" type="fill" name="">
                 <layer pass="0" class="SimpleFill" locked="0">
                     <prop k="border_width_map_unit_scale" v="0,0"/>
-                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="color" v="0,0,0,0"/>
                     <prop k="joinstyle" v="miter"/>
                     <prop k="offset" v="0,0"/>
                     <prop k="offset_map_unit_scale" v="0,0"/>
@@ -392,33 +392,6 @@
                     <prop k="style" v="solid"/>
                 </layer>
             </symbol>
-            <ComposerLabel valign="32" labelText="Geol Karte CARG, reklassifiziert&#xa;moraine modelled with TRI and vectorruggedness" htmlState="0" halign="1" margin="0">
-                <LabelFont description="Ubuntu,10,-1,5,50,0,0,0,0,0"/>
-                <FontColor red="0" blue="0" green="0"/>
-                <ComposerItem pagey="136.997" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="174.045" y="136.997" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="29.7378" outlineWidth="0.3" excludeFromExports="0" uuid="{7afdba00-20f4-4d70-9859-3c54829efb19}" height="79.9793" itemRotation="0" frame="false" pagex="174.045">
-                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
-                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-                </ComposerItem>
-            </ComposerLabel>
-            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" map="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
-                <styles>
-                    <style marginBottom="2" name="title" font="Ubuntu,16,-1,5,50,0,0,0,0,0"/>
-                    <style marginTop="2" name="group" font="Ubuntu,14,-1,5,50,0,0,0,0,0"/>
-                    <style marginTop="2" name="subgroup" font="Ubuntu,12,-1,5,50,0,0,0,0,0"/>
-                    <style marginTop="2" name="symbol" font="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
-                    <style marginTop="2" marginLeft="2" name="symbolLabel" font="Ubuntu,12,-1,5,50,0,0,0,0,0"/>
-                </styles>
-                <layer-tree-group expanded="1" checked="Qt::Checked" name="">
-                    <customproperties/>
-                    <layer-tree-layer expanded="0" checked="Qt::Checked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
-                        <customproperties/>
-                    </layer-tree-layer>
-                </layer-tree-group>
-                <ComposerItem pagey="1" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="158.419" y="1" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="49.5812" outlineWidth="0.3" excludeFromExports="0" uuid="{64daf18e-7b8e-4d47-98e9-233f57a0f2e7}" height="127.3" itemRotation="0" frame="false" pagex="158.419">
-                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
-                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-                </ComposerItem>
-            </ComposerLegend>
             <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
                 <Extent ymin="5137024.18209602870047092" xmin="667450.87188256601803005" ymax="5156069.18211545422673225" xmax="680970.87189635634422302"/>
                 <LayerSet/>
@@ -470,11 +443,30 @@
                     </markerStyle>
                 </ComposerMapGrid>
                 <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-                <ComposerItem pagey="1" page="1" id="" lastValidViewScaleFactor="2.14596" positionMode="0" positionLock="false" x="0" y="1" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="208" outlineWidth="0.3" excludeFromExports="0" uuid="{8154190e-1c74-48bd-8c66-95db9dd53306}" height="293" itemRotation="0" frame="false" pagex="0">
+                <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.6087" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="208" outlineWidth="0.3" excludeFromExports="0" uuid="{8154190e-1c74-48bd-8c66-95db9dd53306}" height="293" itemRotation="0" frame="false" pagex="0">
                     <FrameColor alpha="255" red="0" blue="0" green="0"/>
                     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
                 </ComposerItem>
             </ComposerMap>
+        </Composition>
+    </Composer>
+    <Composer title="legend" visible="1">
+        <Composition gridVisible="0" printResolution="300" paperWidth="297" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="20" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="210" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="miter"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
         </Composition>
     </Composer>
     <projectlayers layercount="33">
