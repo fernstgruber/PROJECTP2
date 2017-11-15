@@ -6,45 +6,45 @@ Database file #1: P2.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in Gallant2000
 Warning--can't use both author and editor fields in Hobson1972
-You've used 28 entries,
+You've used 30 entries,
             2990 wiz_defined-function locations,
-            965 strings with 13583 characters,
-and the built_in function-call counts, 20683 in all, are:
-= -- 1565
-> -- 851
+            983 strings with 14216 characters,
+and the built_in function-call counts, 22139 in all, are:
+= -- 1676
+> -- 919
 < -- 25
-+ -- 330
-- -- 296
-* -- 2355
-:= -- 2947
-add.period$ -- 98
-call.type$ -- 28
-change.case$ -- 239
-chr.to.int$ -- 28
-cite$ -- 30
-duplicate$ -- 1531
-empty$ -- 1485
-format.name$ -- 383
-if$ -- 3918
++ -- 358
+- -- 320
+* -- 2526
+:= -- 3161
+add.period$ -- 106
+call.type$ -- 30
+change.case$ -- 256
+chr.to.int$ -- 30
+cite$ -- 32
+duplicate$ -- 1631
+empty$ -- 1587
+format.name$ -- 413
+if$ -- 4191
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 303
-newline$ -- 169
-num.names$ -- 118
-pop$ -- 501
+missing$ -- 324
+newline$ -- 181
+num.names$ -- 126
+pop$ -- 536
 preamble$ -- 1
-purify$ -- 208
+purify$ -- 224
 quote$ -- 0
-skip$ -- 462
+skip$ -- 492
 stack$ -- 0
-substring$ -- 791
-swap$ -- 1194
+substring$ -- 842
+swap$ -- 1270
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
+type$ -- 255
 warning$ -- 2
-while$ -- 113
+while$ -- 120
 width$ -- 0
-write$ -- 459
+write$ -- 492
 (There were 2 warnings)

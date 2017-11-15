@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  14 NOV 2017 10:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  15 NOV 2017 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **PAPIERLZWO.tex
 (./PAPIERLZWO.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 9 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
@@ -449,18 +449,30 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ]
 Missing character: There is no ¬ in font cmr12!
 Missing character: There is no ≤ in font cmr12!
- [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 365.
+ [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+Overfull \hbox (0.48344pt too wide) in paragraph at lines 311--312
+[]\OT1/cmr/m/n/12 Ice-marginal sed-i-ments are closely as-so-ci-ated with till 
+units and are mostly
+ []
 
-(./PAPIERLZWO.bbl [25]
+[22] <SGUandmodel.pdf, id=410, 830.30196pt x 729.37975pt>
+File: SGUandmodel.pdf Graphic file (type pdf)
+
+<use SGUandmodel.pdf>
+Package pdftex.def Info: SGUandmodel.pdf used on input line 316.
+(pdftex.def)             Requested size: 390.0pt x 342.59706pt.
+ [23] [24] [25 <./SGUandmodel.pdf>] [26] [27]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 382.
+
+(./PAPIERLZWO.bbl
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ° in font cmr12!
 Missing character: There is no ƒ in font cmr12!
 Missing character: There is no ç in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no § in font cmr12!
-
+ [28]
 Underfull \hbox (badness 3803) in paragraph at lines 54--66
 []\OT1/cmr/m/n/12 B^^?ohner, J., An-toni^^Sc, O., 2009.  Chap-ter 8 land-surfac
 e pa-ram-
@@ -490,7 +502,7 @@ Underfull \hbox (badness 1147) in paragraph at lines 54--66
  com / science / article / pii /
  []
 
-[26]
+[29]
 Missing character: There is no ≈ in font cmr12!
 Missing character: There is no ° in font cmr12!
 Missing character: There is no ƒ in font cmr12!
@@ -509,20 +521,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--119
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
-[27]
-Underfull \hbox (badness 4927) in paragraph at lines 162--175
+[30]
+Underfull \hbox (badness 4927) in paragraph at lines 171--184
 \OT1/cmr/m/n/12 C., 2016.  Mind the gap: A clas-si-fi-ca-tion sys-tem for in-te
 -
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 162--175
+Underfull \hbox (badness 4416) in paragraph at lines 171--184
 \OT1/cmr/m/n/12 grat-ing the sub-solum into soil sur-veys.  Geo-derma 264, Part
 
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 162--175
+Underfull \hbox (badness 3525) in paragraph at lines 171--184
 \OT1/cmr/m/n/12 B, 332 -- 339.  URL: []$\OT1/cmtt/m/n/12 http : / / www . scien
 cedirect . com / science /
  []
@@ -535,80 +547,93 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no ñ in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ñ in font cmr12!
-[28]
+[31]
+Underfull \hbox (badness 1888) in paragraph at lines 254--266
+[]\OT1/cmr/m/n/12 Olofsson, P., Foody, G.M., Stehman, S.V., Wood-cock, C.E., 20
+13.
+ []
+
+
+Underfull \hbox (badness 7540) in paragraph at lines 254--266
+\OT1/cmr/m/n/12 Mak-ing bet-ter use of ac-cu-racy data in land change stud-ies:
+
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 254--266
+\OT1/cmr/m/n/12 Es-ti-mat-ing ac-cu-racy and area and quan-ti-fy-ing un-cer-tai
+nty us-ing
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 254--266
+\OT1/cmr/m/n/12 strat-i-fied es-ti-ma-tion.  Re-mote Sens-ing of En-vi-ron-ment
+ 129, 122
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 254--266
+\OT1/cmr/m/n/12 -- 131.  URL: []$\OT1/cmtt/m/n/12 http : / / www . sciencedirec
+t . com / science / article /
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 254--266
+\OT1/cmtt/m/n/12 pii / S0034425712004191$[]\OT1/cmr/m/n/12 , doi:[]$\OT1/cmtt/m
+/n/12 https : / / doi . org / 10 . 1016 / j . rse . 2012 .
+ []
+
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
 
-Underfull \hbox (badness 2065) in paragraph at lines 293--300
+Underfull \hbox (badness 2065) in paragraph at lines 316--323
 []\OT1/cmr/m/n/12 Thalheimer, M., 2006.  Kartierung der land-wirtschaftlich gen
 utzten
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 293--300
+Underfull \hbox (badness 1052) in paragraph at lines 316--323
 \OT1/cmr/m/n/12 177.  URL: []$\OT1/cmtt/m/n/12 http : / / www . laimburg . it /
  de / projekte-[]publikationen /
  []
 
-[29])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 391.
- [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 391.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
+ [32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
  (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 391.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 391.
-
-
-Package rerunfilecheck Warning: File `PAPIERLZWO.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `PAPIERLZWO.out':
-(rerunfilecheck)             Before: AF02DB459F49A229472F437014B15C45;3413
-(rerunfilecheck)             After:  C1EB852BCFE82A98D335707F20106599;3483.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 391.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
+(rerunfilecheck)             Checksum: 427D57452231293C7A8640BB8346F7B4;3620.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
  ) 
 Here is how much of TeX's memory you used:
- 6144 strings out of 494935
- 89443 string characters out of 6178122
- 182326 words of memory out of 5000000
- 9205 multiletter control sequences out of 15000+600000
+ 6160 strings out of 493304
+ 89685 string characters out of 6139871
+ 186517 words of memory out of 5000000
+ 9445 multiletter control sequences out of 15000+600000
  10267 words of font info for 36 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 34i,11n,34p,3917b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.4.7.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.7.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.7.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.4.2} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.4.4.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (30 pages, 274002 bytes).
+ 957 hyphenation exceptions out of 8191
+ 34i,11n,34p,3917b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on PAPIERLZWO.pdf (32 pages, 2601538 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 121 named destinations out of 1000 (max. 500000)
- 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 668 PDF objects out of 1000 (max. 8388607)
+ 590 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 

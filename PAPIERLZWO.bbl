@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -151,6 +151,15 @@
 \newblock \bibinfo{type}{World Soil Resources Reports} \bibinfo{number}{106}.
   {FAO, Rome}. \bibinfo{address}{Rome}.
 %Type = Book
+\bibitem[{James et~al.(2013)James, Witten, Hastie and Tibshirani}]{James2013}
+\bibinfo{author}{James, G.}, \bibinfo{author}{Witten, D.},
+  \bibinfo{author}{Hastie, T.}, \bibinfo{author}{Tibshirani, R.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{An Introduction to Statistical Learning}.
+\newblock \bibinfo{publisher}{Springer-Verlag New York}.
+\newblock \URLprefix \url{http://www-bcf.usc.edu/~gareth/ISL/index.html},
+  \DOIprefix\doi{10.1007/978-1-4614-7138-7}.
+%Type = Book
 \bibitem[{Jenny(1941)}]{Jenny1941}
 \bibinfo{author}{Jenny, H.}, \bibinfo{year}{1941}.
 \newblock \bibinfo{title}{Factors of Soil Formation - A System of Quantitative
@@ -239,6 +248,20 @@
 \newblock \URLprefix
   \url{http://www.sciencedirect.com/science/article/pii/S0166248108000068},
   \DOIprefix\doi{http://dx.doi.org/10.1016/S0166-2481(08)00006-8}.
+%Type = Article
+\bibitem[{Olofsson et~al.(2013)Olofsson, Foody, Stehman and
+  Woodcock}]{Olofsson2013}
+\bibinfo{author}{Olofsson, P.}, \bibinfo{author}{Foody, G.M.},
+  \bibinfo{author}{Stehman, S.V.}, \bibinfo{author}{Woodcock, C.E.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Making better use of accuracy data in land change
+  studies: Estimating accuracy and area and quantifying uncertainty using
+  stratified estimation}.
+\newblock \bibinfo{journal}{Remote Sensing of Environment}
+  \bibinfo{volume}{129}, \bibinfo{pages}{122 -- 131}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0034425712004191},
+  \DOIprefix\doi{https://doi.org/10.1016/j.rse.2012.10.031}.
 %Type = Article
 \bibitem[{Phillips and Lorz(2008)}]{Phillips2008}
 \bibinfo{author}{Phillips, J.D.}, \bibinfo{author}{Lorz, C.},

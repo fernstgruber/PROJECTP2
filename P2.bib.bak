@@ -42,8 +42,6 @@
   Note                     = {Soil mapping, classification, and modelling: history and future directions},
   Pages                    = {312 - 331},
   Volume                   = {264},
-
-  __markedentry            = {[fabs:]},
   Doi                      = {http://dx.doi.org/10.1016/j.geoderma.2015.08.005},
   ISSN                     = {0016-7061},
   Keywords                 = {European Alps},
@@ -75,8 +73,6 @@
   Year                     = {2015},
   Number                   = {4},
   Volume                   = {56},
-
-  __markedentry            = {[fabs:]},
   Abstract                 = {The first soil maps were made by geologists, and many early soil maps were surficial geology maps. After soil science became established as a scientific discipline, there has been a continued interplay between geologists and soil scientists, both fields benefiting from advancements made by the other. In the 1940s and 1950s, researchers began to use soil information and soil maps to assist in the improvement or construction of various types of geologic maps. There is strong agreement between preliminary geology maps created from soil maps and traditional geology maps. This is primarily due to the influence of parent material on soil formation and may also be due in part to the importance placed on parent material in some soil classification systems. Despite the results obtained when using soil maps to create surficial geology maps, there is a need for more quantitative studies to assess the degree of compliment between soil-based maps and traditional geology maps, expansion of the technique into a wider range of geologic and climatic environments, and more research in locations that use classification systems other than US soil taxonomy.},
   Address                  = {Madison, WI},
   Doi                      = {10.2136/sh15-01-0001},
@@ -146,8 +142,6 @@
   Year                     = {2017},
   Editor                   = {Pereira, Paulo and Brevik, Eric C. and Muñoz-Rojas, Miriam and Miller, Bradley A. },
   Pages                    = {221 - 292},
-
-  __markedentry            = {[fabs:]},
   Abstract                 = {Abstract The present chapter focuses on soil and land use in the Alps as well as related challenges regarding soil-survey and soil-data use in order to support sustainable land-use planning. Based on case studies from different landscapes in the Alps the chapter illustrates soil–society relations regarding both the land-use impact on soils as well as soil data needs for land-use management. In terms of soil survey in the Alps, we present and discuss innovative approaches to soil mapping, geographic information systems (GIS) embedding, and modeling in order to better integrate soil data in land-use planning and management. The examples demonstrate the wealth of soil knowledge and experience in soil management in Alpine countries. Nevertheless the chapter emphasizes that further research, cross-border knowledge, and soil protection best practice transfer as well as the improvement of soil-data collection and use are needed to strengthen daily sustainable soil management in the Alps. },
   Doi                      = {http://doi.org/10.1016/B978-0-12-805200-6.00008-6},
   ISBN                     = {978-0-12-805200-6},
@@ -219,6 +213,18 @@
   Timestamp                = {2017.08.30}
 }
 
+@Book{James2013,
+  Title                    = {An Introduction to Statistical Learning},
+  Author                   = {Gareth James and Daniela Witten and Trevor Hastie and Robert Tibshirani},
+  Publisher                = {Springer-Verlag New York},
+  Year                     = {2013},
+
+  Doi                      = {10.1007/978-1-4614-7138-7},
+  Owner                    = {fabs},
+  Timestamp                = {2016.08.30},
+  Url                      = {http://www-bcf.usc.edu/~gareth/ISL/index.html}
+}
+
 @Book{Jenny1941,
   Title                    = {Factors of Soil Formation - A System of Quantitative Pedology},
   Author                   = {Hans Jenny},
@@ -238,8 +244,6 @@
   Note                     = {Soil mapping, classification, and modelling: history and future directions },
   Pages                    = {332 - 339},
   Volume                   = {264, Part B},
-
-  __markedentry            = {[fabs:]},
   Abstract                 = {Abstract As soil surveys were traditionally conducted in support of agriculture, soil classification tended to focus on upper soil horizons and their characteristics. However, when dealing with environmental issues – such as vegetation ecology or water quality – an integrated knowledge of the soil, soil-to-substratum, and deeper substratum continuum is required. In both World Reference Base for soil resources (WRB) and Soil Taxonomy (ST), the lower boundary for soil classification is arbitrarily set at 2 m, including weathered and continuous rock. However, as soil classification hinges on diagnostic horizons and characteristics, which often occur within the first 100 cm, collecting data on the subsolum is often neglected. We propose a classification system of the subsolum, the structure of which is inspired by WRB. We define Regolite, Saprolite, Saprock and Bedrock as four subsolum reference groups corresponding to different weathering stages. Intergrades of these reference groups can be qualified with principal qualifiers, while morphologic and lithologic characteristics can be presented with supplementary qualifiers. The proposed subsolum classification system is not intended to substitute geological surveys, but rather to complement existing soil classification systems such that at least the whole 2 m can be categorized. Still, whenever desired the system can also be used for deeper materials. },
   Doi                      = {http://dx.doi.org/10.1016/j.geoderma.2015.08.031},
   File                     = {:/media/fabs/Volume/Data/literature/Diss/Juilleret et al 2016.pdf:PDF},
@@ -267,6 +271,7 @@
   Number                   = {2},
   Pages                    = {218--228},
   Volume                   = {48},
+
   Abstract                 = {Watershed management and headwater reconstruction programs require a reliable knowledge of sediment dynamics. Geographical Information Systems (GIS) provide the framework for the implementation of different complex techniques for the assessment of shallow landsliding and erosion processes in mountain basins. This paper presents some morphometric indicators aimed at erosion and sediment delivery analysis. The proposed indicators can be easily derived from medium to fine resolution Digital Elevation Models (DEM). Applications conducted in Eastern Italian Alps have shown the adequateness of the proposed approach to address erosion and sediment-related problems. The analysis considered the classification of sediment source areas with regard to their activity, the comparison between drainage basins having different morphological characteristics and the topographic control on sediment transport capacity, with a particular attention to the identification of channel reaches characterised by a low sediment transport capacity.},
   Doi                      = {10.1007/s00254-005-1292-4},
   File                     = {:/media/fabs/Volume/Data/literature/Diss/Marchi and Fontana 2004.pdf:PDF},
@@ -315,8 +320,6 @@
   Year                     = {2015},
   Number                   = {1},
   Volume                   = {56},
-
-  __markedentry            = {[fabs:]},
   Address                  = {Madison, WI},
   Doi                      = {10.2136/sh14-05-0005},
   Owner                    = {fabs},
@@ -376,6 +379,25 @@
   Url                      = {http://www.sciencedirect.com/science/article/pii/S0166248108000068}
 }
 
+@Article{Olofsson2013,
+  Title                    = {Making better use of accuracy data in land change studies: Estimating accuracy and area and quantifying uncertainty using stratified estimation},
+  Author                   = {Pontus Olofsson and Giles M. Foody and Stephen V. Stehman and Curtis E. Woodcock},
+  Journal                  = {Remote Sensing of Environment},
+  Year                     = {2013},
+  Number                   = {Supplement C},
+  Pages                    = {122 - 131},
+  Volume                   = {129},
+
+  __markedentry            = {[fabs:6]},
+  Abstract                 = {Abstract The area of land use or land cover change obtained directly from a map may differ greatly from the true area of change because of map classification error. An error-adjusted estimator of area can be easily produced once an accuracy assessment has been performed and an error matrix constructed. The estimator presented is a stratified estimator which is applicable to data acquired using popular sampling designs such as stratified random, simple random and systematic (the stratified estimator is often labeled a poststratified estimator for the latter two designs). A confidence interval for the area of land change should also be provided to quantify the uncertainty of the change area estimate. The uncertainty of the change area estimate, as expressed via the confidence interval, can then subsequently be incorporated into an uncertainty analysis for applications using land change area as an input (e.g., a carbon flux model). Accuracy assessments published for land change studies should report the information required to produce the stratified estimator of change area and to construct confidence intervals. However, an evaluation of land change articles published between 2005 and 2010 in two remote sensing journals revealed that accuracy assessments often fail to include this key information. We recommend that land change maps should be accompanied by an accuracy assessment that includes a clear description of the sampling design (including sample size and, if relevant, details of stratification), an error matrix, the area or proportion of area of each category according to the map, and descriptive accuracy measures such as user's, producer's and overall accuracy. Furthermore, mapped areas should be adjusted to eliminate bias attributable to map classification error and these error-adjusted area estimates should be accompanied by confidence intervals to quantify the sampling variability of the estimated area. Using data from the published literature, we illustrate how to produce error-adjusted point estimates and confidence intervals of land change areas. A simple analysis of uncertainty based on the confidence bounds for land change area is applied to a carbon flux model to illustrate numerically that variability in the land change area estimate can have a dramatic effect on model outputs.},
+  Doi                      = {https://doi.org/10.1016/j.rse.2012.10.031},
+  ISSN                     = {0034-4257},
+  Keywords                 = {Land use change, Land cover change, Carbon modeling, Uncertainty, Stratified estimation, Accuracy assessment},
+  Owner                    = {fabs},
+  Timestamp                = {2017.11.15},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0034425712004191}
+}
+
 @Article{Phillips2008,
   Title                    = {Origins and implications of soil layering},
   Author                   = {Jonathan D. Phillips and Carsten Lorz},
@@ -385,7 +407,7 @@
   Pages                    = {144 - 155},
   Volume                   = {89},
 
-  __markedentry            = {[fabs:6]},
+  __markedentry            = {[fabs:]},
   Abstract                 = {Abstract Layering is common in soils, due to a variety of pedologic and geologic processes, and has important consequences for the interpretation of soils and landscapes. Layering can derive from original sedimentary layering; depositional upbuilding; episodic surface erosion, deposition, and stability; soil production by weathering; vertical or lateral translocation; bioturbation; and various combinations of these. Complex and polygenetic models incorporate both geogenic and pedogenic processes, and allow for physical and biological processes, as well as both vertical and horizontal movements. We review these conceptual frameworks and synthesize them into a vertical contrast model (VCM) for interpreting layered surficial materials. The VCM incorporates a variety of geologic and pedologic processes which may create, destroy, enhance, or obscure vertical contrasts. The model is illustrated via application to sites in the Ouachita Mountains, USA, and northwest Saxonian Lowlands, Germany. The examples illustrate the importance of a comprehensive pedogeomorphic interpretation of layering, since neither standard stratigraphic or top–down pedogenetic principles necessarily apply. The examples also show that the same process can, sometimes contemporaneously, both create and destroy vertical contrasts.},
   Doi                      = {https://doi.org/10.1016/j.earscirev.2008.04.003},
   ISSN                     = {0012-8252},
@@ -417,6 +439,7 @@
   Month                    = {7},
   Number                   = {8},
   Volume                   = {75},
+
   Abstract                 = {Terrain ruggedness is often an important variable in wildlife habitat models. Most methods used to quantify ruggedness are indices derived from measures of slope and, as a result, are strongly correlated with slope. Using a Geographic Information System, we developed a vector ruggedness measure (VRM) of terrain based on a geomorphological method for measuring vector dispersion that is less correlated with slope. We examined the relationship of VRM to slope and to 2 commonly used indices of ruggedness in 3 physiographically different mountain ranges within the Mojave Desert of the southwestern United States. We used VRM, slope, distance to water, and springtime bighorn sheep (Ovis canadensis nelsoni) adult female locations to model sheep habitat in the 3 ranges. Using logistic regression, we determined that the importance of ruggedness in habitat selection remained consistent across mountain ranges, whereas the relative importance of slope varied according to the characteristic physiography of eac...},
   Doi                      = {10.2193/2005-723},
   ISSN                     = {0022-541X},
