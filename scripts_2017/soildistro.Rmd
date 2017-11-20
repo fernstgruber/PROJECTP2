@@ -2,11 +2,13 @@
 title: "soil distribution from both viewpoints"
 author: "fabian gruber"
 date: "October 3, 2017"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 ```{r,include=F}
 library(knitr)
-load("/home/fabs/PROJECTP2/data2017/boden_SGU_Oct5.RData")
+load("/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/boden_SGU_Oct5.RData")
 ```
 
 ```{r,echo=FALSE}
@@ -54,4 +56,6 @@ print(paste("Distribution of the soil subtypes on",i, "as interpreted by the sur
 print(table(kart$SUBTYP))
 }
 ```
+
+
 

@@ -1,0 +1,39 @@
+---
+title: "soil distribution from both viewpoints"
+author: "fabian gruber"
+date: "October 3, 2017"
+output:
+  html_document: default
+  pdf_document: default
+---
+```{r,include=F}
+library(knitr)
+load("/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/data2017/boden_SGU_Oct5.RData")
+```
+
+
+HOW is the distribution of soil types when  considering only the soil profiles were the observed parent material is also the parent material as indicated by the SGUs of the geological map. 
+
+```{r,echo=FALSE}
+i = levels(boden_SGU$SGU_gk)[1]
+for ( i in levels(boden_SGU$SGU_gk)){
+  kart <- boden_SGU[(boden_SGU$SGU_kartiert == as.character(i)) & (boden_SGU$SGU_gk == as.character(i))  ,]
+kart <- droplevels(kart)
+if(nrow(kart) > 0) {
+  print("***********************************************************************************")
+  print("**************************SOIL CLASSES**********************************************")
+print(paste("Distribution of the soil classes  with parent material ",i, "as identified on geological map and by surveyors"))
+print(as.data.frame(table(kart$KLASSE)))
+
+ print("**************************SOIL TYPES************************************************")
+print(paste("Distribution of the soil types with parent material ",i, "as identified on geological map and by surveyors"))
+print(as.data.frame(table(kart$TYP)))
+
+print("**************************SOIL SUBTYPES*********************************************")
+print(paste("Distribution of the soil subtypes with parent material ",i, "as identified on geological map and by surveyors"))
+print(as.data.frame(table(kart$SUBTYP)))
+}
+}
+``` 
+
+
