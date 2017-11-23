@@ -111,6 +111,42 @@
   Timestamp                = {2011.03.03}
 }
 
+@Article{HEUNG201662,
+  Title                    = {An overview and comparison of machine-learning techniques for classification purposes in digital soil mapping},
+  Author                   = {Brandon Heung and Hung Chak Ho and Jin Zhang and Anders Knudby and Chuck E. Bulmer and Margaret G. Schmidt},
+  Journal                  = {Geoderma},
+  Year                     = {2016},
+  Number                   = {Supplement C},
+  Pages                    = {62 - 77},
+  Volume                   = {265},
+
+  Abstract                 = {Abstract Machine-learning is the automated process of uncovering patterns in large datasets using computer-based statistical models, where a fitted model may then be used for prediction purposes on new data. Despite the growing number of machine-learning algorithms that have been developed, relatively few studies have provided a comparison of an array of different learners — typically, model comparison studies have been restricted to a comparison of only a few models. This study evaluates and compares a suite of 10 machine-learners as classification algorithms for the prediction of soil taxonomic units in the Lower Fraser Valley, British Columbia, Canada. A variety of machine-learners (CART, CART with bagging, Random Forest, k-nearest neighbor, nearest shrunken centroid, artificial neural network, multinomial logistic regression, logistic model trees, and support vector machine) were tested in the extraction of the complex relationships between soil taxonomic units (great groups and orders) from a conventional soil survey and a suite of 20 environmental covariates representing the topography, climate, and vegetation of the study area. Methods used to extract training data from a soil survey included by-polygon, equal-class, area-weighted, and area-weighted with random over sampling (ROS) approaches. The fitted models, which consist of the soil-environmental relationships, were then used to predict soil great groups and orders for the entire study area at a 100m spatial resolution. The resulting maps were validated using 262 points from legacy soil data. On average, the area-weighted sampling approach for developing training data from a soil survey was most effective. Using a validation of R=1 cell, the k-nearest neighbor and support vector machine with radial basis function resulted in the highest accuracy of 72% for great groups using ROS; however, models such as CART with bagging, logistic model trees, and Random Forest were preferred due to the speed of parameterization and the interpretability of the results while resulting in similar accuracies ranging from 65–70% using the area-weighted sampling approach. Model choice and sample design greatly influenced outputs. This study provides a comprehensive comparison of machine-learning techniques for classification purposes in soil science and may assist in model selection for digital soil mapping and geomorphic modeling studies in the future.},
+  Doi                      = {https://doi.org/10.1016/j.geoderma.2015.11.014},
+  ISSN                     = {0016-7061},
+  Keywords                 = {Digital soil mapping, Machine-learning, Soil classification, Data-mining, Model comparison},
+  Owner                    = {fabs},
+  Timestamp                = {2017.11.23},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0016706115301300}
+}
+
+@Article{HEUNG201751,
+  Title                    = {Comparing the use of training data derived from legacy soil pits and soil survey polygons for mapping soil classes},
+  Author                   = {Brandon Heung and Matúš Hodúl and Margaret G. Schmidt},
+  Journal                  = {Geoderma},
+  Year                     = {2017},
+  Number                   = {Supplement C},
+  Pages                    = {51 - 68},
+  Volume                   = {290},
+
+  Abstract                 = {Abstract Machine-learners used for digital soil mapping are generally trained using either data derived from field-observed soil pits or from soil survey polygons - although no direct comparison of the accuracy resulting from the two methods has yet to be undertaken. This study examined such a comparison over the Okanagan Valley and Kamloops region of British Columbia where good quality soil pit and soil survey data were available. A standard set of environmental variables including vegetative, climatic, and topographic indices were used to predict soil Great Groups in accordance with the Canadian System of Soil Classification. The pit-derived training dataset was developed using n=478 points from the British Columbia Soil Information System while the polygon-derived training dataset was developed through random sampling of single-component soil survey map units based on an area-weighted approach. In both cases, the training points were intersected with a suite of 18 environmental covariates, reduced from 27 covariates using principal component analysis, and submitted to a machine-learner for predictions at a 100m spatial resolution. Four single-model learners (CART, k-nearest neighbor, multinomial logistic regression, and logistic model tree) and five ensemble-model learners (CART with bagging, k-nearest neighbor with bagging, multinomial logistic regression with bagging, logistic model trees with bagging, and Random Forest) were compared. Surfaces of prediction uncertainty were produced using ignorance uncertainty and results were validated using a 5-fold cross-validation procedure. Predictions made using polygon-derived training data were consistently higher in accuracy across all models where the Random Forest model was the most effective learner with C=61% accuracy when using pit-derived training data and C=68% accuracy when using polygon-derived training data. Comparing single-model and ensemble-learner models, the bagging algorithm resulted in a 2–11% increase in accuracy when using pit-derived training data. Ensemble-models allowed for the visualization of prediction uncertainty. This study provides further insight into the use of legacy soil data and the development of training data for digital soil mapping.},
+  Doi                      = {https://doi.org/10.1016/j.geoderma.2016.12.001},
+  ISSN                     = {0016-7061},
+  Keywords                 = {Digital soil mapping, Machine-learning, Soil classification, Data-mining, Model comparison, Ensemble-learning},
+  Owner                    = {fabs},
+  Timestamp                = {2017.11.23},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0016706116309491}
+}
+
 @InBook{Hobson1972,
   Title                    = {Spatial analysis in geomorphology},
   Author                   = {R. D. Hobson},
