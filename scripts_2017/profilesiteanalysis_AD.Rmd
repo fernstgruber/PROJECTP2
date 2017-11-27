@@ -13,19 +13,20 @@ require(RCurl)
 require(repmis)
 require(randomForest)
 proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+proj2path="/home/fabs/PROJECTP2/"
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
 eval(parse(text = myfunctions))
 legend <- read.table(paste(proj2path,"data2017/SGU_legend_new.txt",sep=""),sep="\t",header=T)
 load(paste(proj2path,"data2017/modeldata_sGUkartiert.RData",sep=""))
 modeldataoktober$SGU_gk <- factor(modeldataoktober$SGU_gk,levels=levels(legend$SGU))
 modeldataoktober$SGU_kartiert <- factor(modeldataoktober$SGU_kartiert,levels=levels(legend$SGU))
-profile <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
-sampledata <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_100m_grid_SGU")
+profile <- sqliteGRASS_lenny(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_Profilpunktemitboden_UTM")
+sampledata <- sqliteGRASS_lenny(location="EPPAN_vhr",mapset = "paper3data_predictparentmaterial",vector = "paper3data_predictparentmaterial_100m_grid_SGU")
 sampledata$geolegen_1 <- as.factor(sampledata$geolegen_1)
 local <- unlist(paramsets[1])
 local <- local[local %in% names(modeldataoktober)]
 paramsets[1] <- list(local)
-load(file="/media/fabs/Volume/01_PAPERZEUG/paper2data/sampledata_100mgrid.RData")
+load(file="/home/fabs/Data/paper2data/sampledata_100mgrid.RData")
 
 ```
 
