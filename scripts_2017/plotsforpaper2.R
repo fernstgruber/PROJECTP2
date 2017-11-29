@@ -24,6 +24,11 @@ barplot(table(boden_SGU$TYP),las=2,cex.names=0.5,ylim=c(0,200))
 ########
 #Welche Punkte werden verwendet?
 ######
+#####################################################################################################################################
+#####################################################################################################################################
+###########################################################################################################################################
+#####################################################################################################################################
+######
 parameter = "TRI_hr_ws48"
 ylim=c(0,100)
 
@@ -80,6 +85,11 @@ boxplot(data=mapclassdata[c(as.character(parameter),dependent)],as.formula(paste
 #dev.off()
 ####################################################
 ######
+#####################################################################################################################################
+#####################################################################################################################################
+###########################################################################################################################################
+#####################################################################################################################################
+######
 parameter = "vectorruggedness_hr_ws43"
 ylim=c(0,0.22)
 
@@ -135,8 +145,11 @@ svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_geol_VR43.svg
 boxplot(data=mapclassdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
 dev.off()
 
-
-####################################################
+#####################################################################################################################################
+#####################################################################################################################################
+######
+#####################################################################################################################################
+#####################################################################################################################################
 ######
 parameter = "vectorruggedness_hr_ws57"
 ylim=c(0,0.2)
@@ -147,6 +160,24 @@ relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.chara
 relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
 relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
 svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_internal_VR57.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="AD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_AD_internal_VR57.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="DC"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_DC_internal_VR57.svg",sep=""))
 boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
 dev.off()
 
@@ -171,11 +202,11 @@ dev.off()
 
 
 dependent="SGU_kartiert"
-classes <- c("TG","SB","SD")
+classes <- c("TG","SB","SD","AD","DC")
 classdata <- modeldataoktober[modeldataoktober$SGU_kartiert %in% classes,c(dependent,parameter)]
 classdata <- droplevels(classdata)
 summary(classdata)
-svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_kartiert_VR57.svg",sep=""))
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_AD_DC_kartiert_VR57.svg",sep=""))
 boxplot(data=classdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
 dev.off()
 
@@ -189,7 +220,7 @@ summary(mapdata)
 mapdata$SGU <- as.factor(mapdata$geolegen_1)
 mapclassdata <- mapdata[mapdata$SGU %in% classes,c(dependent,parameter)]
 mapclassdata <-droplevels(mapclassdata)
-svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_geol_VR57.svg",sep=""))
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_AD_DC_geol_VR57.svg",sep=""))
 boxplot(data=mapclassdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
 dev.off()
 
@@ -249,3 +280,326 @@ mapclassdata <-droplevels(mapclassdata)
 svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_geol_VR57.svg",sep=""))
 boxplot(data=mapclassdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
 dev.off()
+
+
+
+
+######
+parameter = "TRI_hr_ws31"
+ylim=c(0,80)
+
+cl1="TG"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SB"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SB_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SD_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+cl1="DC"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_DC_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+cl1="AD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_AD_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+
+dependent="SGU_kartiert"
+classes <- c("TG","SB","SD","AD","DC")
+classdata <- modeldataoktober[modeldataoktober$SGU_kartiert %in% classes,c(dependent,parameter)]
+classdata <- droplevels(classdata)
+summary(classdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_AD_kartiert_TRI31.svg",sep=""))
+boxplot(data=classdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+dependent="SGU"
+north <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_TRI_100m_grid_SGU_north")
+south <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_TRI_100m_grid_SGU_south")
+mapdata <- rbind(north,south)
+rm(north,south)
+names(mapdata)
+summary(mapdata)
+mapdata$SGU <- as.factor(mapdata$geolegen_1)
+mapclassdata <- mapdata[mapdata$SGU %in% classes,c(dependent,parameter)]
+mapclassdata <-droplevels(mapclassdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_ADgeol_TRI31.svg",sep=""))
+boxplot(data=mapclassdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+####################################################
+
+
+######
+parameter = "TRI_hr_ws31"
+ylim=c(0,80)
+
+cl1="TG"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SB"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SB_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SD_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+cl1="DC"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_DC_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+cl1="AD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_AD_internal_TRI31.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+
+dependent="SGU_kartiert"
+classes <- c("TG","SB","SD","AD","DC")
+classdata <- modeldataoktober[modeldataoktober$SGU_kartiert %in% classes,c(dependent,parameter)]
+classdata <- droplevels(classdata)
+summary(classdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_AD_kartiert_TRI31.svg",sep=""))
+boxplot(data=classdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+dependent="SGU"
+north <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_TRI_100m_grid_SGU_north")
+south <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_TRI_100m_grid_SGU_south")
+mapdata <- rbind(north,south)
+rm(north,south)
+names(mapdata)
+summary(mapdata)
+mapdata$SGU <- as.factor(mapdata$geolegen_1)
+mapclassdata <- mapdata[mapdata$SGU %in% classes,c(dependent,parameter)]
+mapclassdata <-droplevels(mapclassdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_ADgeol_TRI31.svg",sep=""))
+boxplot(data=mapclassdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+####################################################
+
+######
+parameter = "geom_hr_L3_fl10_rplippatchdensity_UE_hr_20cells_hr"
+
+ylim=c(0,0.05)
+
+cl1="TG"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_internal_mps.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SB"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SB_internal_mps.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SD_internal_mps.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+cl1="DC"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_DC_internal_mps.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+cl1="AD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_AD_internal_mps.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+
+dependent="SGU_kartiert"
+classes <- c("TG","SB","SD","AD","DC")
+classdata <- modeldataoktober[modeldataoktober$SGU_kartiert %in% classes,c(dependent,parameter)]
+classdata <- droplevels(classdata)
+summary(classdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_AD_kartiert_mps.svg",sep=""))
+boxplot(data=classdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+parameterGRASS = "geom_hr_L3_fl10_rplippatchdensity_UE_hr_20cells"
+dependent="SGU"
+north <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_rli_100m_grid_SGU_north")
+south <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_rli_100m_grid_SGU_south")
+mapdata <- rbind(north,south)
+rm(north,south)
+names(mapdata)
+summary(mapdata)
+mapdata$SGU <- as.factor(mapdata$geolegen_1)
+mapclassdata <- mapdata[mapdata$SGU %in% classes,c(dependent,parameterGRASS)]
+mapclassdata <-droplevels(mapclassdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_ADgeol_mps.svg",sep=""))
+boxplot(data=mapclassdata[c(as.character(parameterGRASS),dependent)],as.formula(paste(as.character(parameterGRASS),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+####################################################
+
+######
+
+
+parameter="slope_ws15_hr_hr"
+ylim=c(0,90)
+
+cl1="TG"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_internal_slopews15.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SB"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SB_internal_slopews15.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+cl1="SD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_SD_internal_slopews15.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+cl1="DC"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_DC_internal_slopews15.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+cl1="AD"
+dependent="correct"
+relevantmodeldata <- modeldataoktober[(modeldataoktober$SGU_kartiert == as.character(cl1)),]
+relevantmodeldata$correct <- ifelse(relevantmodeldata$SGU_kartiert == relevantmodeldata$SGU_gk,1,0)
+relevantmodeldata$correct<-as.factor(relevantmodeldata$correct)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_AD_internal_slopews15.svg",sep=""))
+boxplot(data=relevantmodeldata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+
+
+
+
+dependent="SGU_kartiert"
+classes <- c("TG","SB","SD","AD","DC")
+classdata <- modeldataoktober[modeldataoktober$SGU_kartiert %in% classes,c(dependent,parameter)]
+classdata <- droplevels(classdata)
+summary(classdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_AD_kartiert_slopews15.svg",sep=""))
+boxplot(data=classdata[c(as.character(parameter),dependent)],as.formula(paste(as.character(parameter),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+parameterGRASS ="slope_ws15_hr"
+dependent="SGU"
+north <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_100m_grid_SGU_north")
+south <- sqliteGRASS_delilah(location="EPPAN_vhr",mapset = "p2_samplevectors",vector = "dtm_hr_100m_grid_SGU_south")
+mapdata <- rbind(north,south)
+rm(north,south)
+names(mapdata)
+summary(mapdata)
+mapdata$SGU <- as.factor(mapdata$geolegen_1)
+mapclassdata <- mapdata[mapdata$SGU %in% classes,c(dependent,parameterGRASS)]
+mapclassdata <-droplevels(mapclassdata)
+svg(paste(proj2path,"/figure/studyarea_statistics/boxplot_TG_SB_SD_DC_ADgeol_slopews15.svg",sep=""))
+boxplot(data=mapclassdata[c(as.character(parameterGRASS),dependent)],as.formula(paste(as.character(parameterGRASS),"~ ", dependent,sep=" ")),outline=T,main=as.character(parameter),ylim=ylim)  
+dev.off()
+####################################################
