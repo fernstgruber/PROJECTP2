@@ -3,10 +3,10 @@ require(RCurl)
 require(repmis)
 require(randomForest)
 library(knitr)
-#proj2path="/home/fabs/PROJECTP2/"
-#paper2datapath ="/home/fabs/Data/paper2data/"
-proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
-paper2datapath ="/media/fabs/Volume/01_PAPERZEUG/paper2data/"
+proj2path="/home/fabs/PROJECTP2/"
+paper2datapath ="/home/fabs/Data/paper2data/"
+#proj2path="/media/fabs/Volume/01_PAPERZEUG/PROJECTP2/"
+#paper2datapath ="/media/fabs/Volume/01_PAPERZEUG/paper2data/"
 load(paste(proj2path,"data2017/boden_SGU_Oct5.RData",sep=""))
 load(paste(proj2path,"data2017/pointIDs.RData",sep=""))
 myfunctions <- getURL("https://raw.githubusercontent.com/fernstgruber/Rstuff/master/fabiansandrossitersfunctions.R", ssl.verifypeer = FALSE)
