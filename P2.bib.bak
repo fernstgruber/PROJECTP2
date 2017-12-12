@@ -98,6 +98,19 @@
   Url                      = {http://dx.doi.org/10.4236/ijg.2014.53026}
 }
 
+@Article{Congalton1991,
+  Title                    = {A review of assessing the accuracy of classification of remotely sensed data},
+  Author                   = {R. G. Congalton},
+  Journal                  = {Remote Sensing of Environment},
+  Year                     = {1991},
+  Pages                    = {35 - 46},
+  Volume                   = {37},
+
+  Doi                      = {10.1016/0034-4257(91)90048-B},
+  Owner                    = {fabs},
+  Timestamp                = {2017.02.28}
+}
+
 @Manual{Englisch1998,
   Title                    = {{Anleitung zur Forstlichen Standortskartierung}},
   Author                   = {Englisch, M. and Kilian, W.},
@@ -120,6 +133,19 @@
 
   Owner                    = {fabs},
   Timestamp                = {2016.08.24}
+}
+
+@Article{Fracek2013,
+  Title                    = {Wissensbasierte Modellierung der Mächtigkeit des kalkfreien Bodenbereiches in den Waldböden des Kantons Basel-Landschaft (Nordwestschweiz)},
+  Author                   = {Kristin Fracek and Thomas Mosimann},
+  Journal                  = {Waldökologie, Landschaftsforschung und Naturschutz},
+  Year                     = {2013},
+  Pages                    = {5-16},
+  Volume                   = {13},
+
+  File                     = {:/media/fabs/Volume/Data/literature/Diss/Fracek and Mosimann.pdf:PDF},
+  Owner                    = {fabs},
+  Timestamp                = {2014.01.31}
 }
 
 @InBook{Gallant2000,

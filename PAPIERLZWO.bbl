@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{32}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -63,6 +63,14 @@
   \url{http://www.sciencedirect.com/science/article/pii/S0166248108000081},
   \DOIprefix\doi{http://dx.doi.org/10.1016/S0166-2481(08)00008-1}.
 %Type = Article
+\bibitem[{Breiman(2001)}]{Breiman2001}
+\bibinfo{author}{Breiman, L.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Random forests}.
+\newblock \bibinfo{journal}{Machine Learning} \bibinfo{volume}{45},
+  \bibinfo{pages}{5--32}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1023/A%3A1010933404324},
+  \DOIprefix\doi{10.1023/A:1010933404324}.
+%Type = Article
 \bibitem[{Brevik and Miller(2015)}]{Brevik2015}
 \bibinfo{author}{Brevik, E.C.}, \bibinfo{author}{Miller, B.A.},
   \bibinfo{year}{2015}.
@@ -86,6 +94,15 @@
 \newblock \bibinfo{title}{{Guidelines for soil description}}.
 \newblock \bibinfo{organization}{Food and Agricultural Organisation of the
   United Nations}. \bibinfo{address}{Rome}.
+%Type = Article
+\bibitem[{Fracek and Mosimann(2013)}]{Fracek2013}
+\bibinfo{author}{Fracek, K.}, \bibinfo{author}{Mosimann, T.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Wissensbasierte modellierung der mächtigkeit des
+  kalkfreien bodenbereiches in den waldböden des kantons basel-landschaft
+  (nordwestschweiz)}.
+\newblock \bibinfo{journal}{Waldökologie, Landschaftsforschung und
+  Naturschutz} \bibinfo{volume}{13}, \bibinfo{pages}{5--16}.
 %Type = Inbook
 \bibitem[{Gallant and Wilson(2000)}]{Gallant2000}
 \bibinfo{author}{Gallant, J.C.}, \bibinfo{author}{Wilson, J.P.},
