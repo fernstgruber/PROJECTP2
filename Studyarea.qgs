@@ -1,7 +1,7 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis projectname="" version="2.8.1-Wien">
   <title></title>
-  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+  <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
     <customproperties/>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="till_SGUcode_till_TRI_hr_ws40_till_vectorruggedness_hr_ws4120171024154839206" name="till_SGUcode_till_TRI_hr_ws40_till_vectorruggedness_hr_ws41">
       <customproperties/>
@@ -72,7 +72,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="TG_kartiert20171023194508232" name="TG_kartiert">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Profilpunktemitboden_UTM20171016151124143" name="Profilpunktemitboden_UTM">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Profilpunktemitboden_UTM20171016151124143" name="Profilpunktemitboden_UTM">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws3820171024085730687" name="SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws38">
@@ -102,7 +102,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Profilpunktemitboden_UTM_neighbors20171019193140027" name="Profilpunktemitboden_UTM_neighbors">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="shade_hr20171219122436052" name="shade_hr">
@@ -335,9 +335,9 @@
         <legendlayerfile isInOverview="0" layerid="TG_kartiert20171023194508232" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Profilpunktemitboden_UTM" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Profilpunktemitboden_UTM" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM20171016151124143" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM20171016151124143" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws38" showFeatureCount="0">
@@ -385,9 +385,9 @@
         <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM_neighbors20171019193140027" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SGU_wlegend_SGUcode" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SGU_wlegend_SGUcode" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="shade_hr" showFeatureCount="0">
@@ -498,7 +498,7 @@
       </ComposerMap>
     </Composition>
   </Composer>
-  <Composer title="map" visible="1">
+  <Composer title="map" visible="0">
     <Composition gridVisible="0" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -515,12 +515,68 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
+      <ComposerScaleBar segmentMillimeters="15.3842" numMapUnitsPerScaleBarUnit="1000" numSegments="3" height="3" alignment="0" labelBarSpace="3" outlineWidth="1" units="1" numSegmentsLeft="0" lineJoinStyle="miter" style="Line Ticks Up" unitLabel="km" lineCapStyle="square" font="Ubuntu,12,-1,5,50,0,0,0,0,0" mapId="0" boxContentSpace="1" numUnitsPerSegment="1000">
+        <fillColor alpha="255" red="0" blue="0" green="0"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="25.6295" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="115.566" y="25.6295" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="59.2978" outlineWidth="0.3" excludeFromExports="0" uuid="{cbbfb9b7-774d-479a-b872-39539c3ab054}" height="20" itemRotation="0" frame="false" pagex="115.566">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerScaleBar>
       <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5136731.37364833615720272" xmin="666744.70351337117608637" ymax="5156101.37366809323430061" xmax="680654.70352755940984935"/>
         <LayerSet/>
         <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{1dee5f77-4442-44f9-a3d3-6289e9f48731}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.31327" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="214" outlineWidth="0.3" excludeFromExports="0" uuid="{460f5ba9-0f7d-4e67-8f7e-ea0a68b9879d}" height="298" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.14596" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="214" outlineWidth="0.3" excludeFromExports="0" uuid="{460f5ba9-0f7d-4e67-8f7e-ea0a68b9879d}" height="298" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -4205,8 +4261,6 @@
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="area"/>
       </renderer-v2>

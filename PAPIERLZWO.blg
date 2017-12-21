@@ -6,45 +6,46 @@ Database file #1: P2.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in Gallant2000
 Warning--can't use both author and editor fields in Hobson1972
-You've used 32 entries,
+Warning--empty note in waldtypisierungTirol
+You've used 35 entries,
             2990 wiz_defined-function locations,
-            1001 strings with 14633 characters,
-and the built_in function-call counts, 23289 in all, are:
-= -- 1771
-> -- 947
-< -- 27
-+ -- 369
-- -- 329
-* -- 2644
-:= -- 3329
-add.period$ -- 113
-call.type$ -- 32
-change.case$ -- 269
-chr.to.int$ -- 32
-cite$ -- 34
-duplicate$ -- 1725
-empty$ -- 1680
-format.name$ -- 428
-if$ -- 4413
+            1020 strings with 15244 characters,
+and the built_in function-call counts, 24882 in all, are:
+= -- 1889
+> -- 1009
+< -- 29
++ -- 395
+- -- 350
+* -- 2807
+:= -- 3573
+add.period$ -- 122
+call.type$ -- 35
+change.case$ -- 291
+chr.to.int$ -- 35
+cite$ -- 38
+duplicate$ -- 1854
+empty$ -- 1795
+format.name$ -- 458
+if$ -- 4702
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 341
-newline$ -- 192
-num.names$ -- 134
-pop$ -- 563
+missing$ -- 363
+newline$ -- 207
+num.names$ -- 146
+pop$ -- 616
 preamble$ -- 1
-purify$ -- 235
+purify$ -- 254
 quote$ -- 0
-skip$ -- 520
+skip$ -- 559
 stack$ -- 0
-substring$ -- 888
-swap$ -- 1334
+substring$ -- 923
+swap$ -- 1414
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 273
-warning$ -- 2
-while$ -- 128
+type$ -- 300
+warning$ -- 3
+while$ -- 137
 width$ -- 0
-write$ -- 523
-(There were 2 warnings)
+write$ -- 564
+(There were 3 warnings)

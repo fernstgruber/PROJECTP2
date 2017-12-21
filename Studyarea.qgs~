@@ -72,7 +72,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="TG_kartiert20171023194508232" name="TG_kartiert">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Profilpunktemitboden_UTM20171016151124143" name="Profilpunktemitboden_UTM">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Profilpunktemitboden_UTM20171016151124143" name="Profilpunktemitboden_UTM">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws3820171024085730687" name="SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws38">
@@ -105,15 +105,18 @@
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="SGU_wlegend_SGUcode20171016152823255" name="SGU_wlegend_SGUcode">
       <customproperties/>
     </layer-tree-layer>
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="shade_hr20171219122436052" name="shade_hr">
+      <customproperties/>
+    </layer-tree-layer>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>673589.81868600659072399</xmin>
-      <ymin>5147496.61689419858157635</ymin>
-      <xmax>676136.06868600659072399</xmax>
-      <ymax>5152169.11689419858157635</ymax>
+      <xmin>672428.62574658542871475</xmin>
+      <ymin>5139106.78167662583291531</ymin>
+      <xmax>682613.62574658542871475</xmax>
+      <ymax>5157796.78167662583291531</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -138,6 +141,7 @@
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100011" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr20171023155637821"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="AD_kartierpunkte20171023193414433"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="flowline20171019195019356"/>
+      <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="DTM_SouthTyrol_10m20171219115655639"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_vectorruggedness_hr_ws5520171102140510735"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="Profilpunktemitboden_UTM20171016151124143"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100011" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGUcode_slope_DTM_50m_avg_ws9_50m20171023152037511"/>
@@ -163,6 +167,7 @@
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="Slopedeposit_SGUcode_Slopedeposit_Channel_Network_Base_Level_50m_Slopedeposit_ChannelNetworkBaseLevel_10m20171102140510890"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="SD_kartiert20171023194325940"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="TG_kartiert20171023194508232"/>
+      <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:3044" srcDatumTransform="-1" destDatumTransform="-1" layerid="shade_hr20171219122436052"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGU_wlegend20171016140536506"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="USER:100011" srcDatumTransform="-1" destDatumTransform="-1" layerid="SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302"/>
       <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="100m_grid_SGU20171102171653894"/>
@@ -211,6 +216,7 @@
       <item>Slopedeposit_SGUcode_Slopedeposit_MinimalCurvature_10m_Slopedeposit_geom_hr_L50m_fl1_rplipshape_UE_hr_60cells_hr20171102140510842</item>
       <item>Slopedeposit_SGUcode_Slopedeposit_Channel_Network_Base_Level_50m_Slopedeposit_ChannelNetworkBaseLevel_10m20171102140510890</item>
       <item>SGUcode_largepredictorset20171113192321593</item>
+      <item>shade_hr20171219122436052</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -329,9 +335,9 @@
         <legendlayerfile isInOverview="0" layerid="TG_kartiert20171023194508232" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Profilpunktemitboden_UTM" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Profilpunktemitboden_UTM" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM20171016151124143" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Profilpunktemitboden_UTM20171016151124143" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws38" showFeatureCount="0">
@@ -384,10 +390,15 @@
         <legendlayerfile isInOverview="0" layerid="SGU_wlegend_SGUcode20171016152823255" visible="1"/>
       </filegroup>
     </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="shade_hr" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="shade_hr20171219122436052" visible="0"/>
+      </filegroup>
+    </legendlayer>
   </legend>
   <Composer title="SGU" visible="0">
-    <Composition gridVisible="0" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
-      <symbol alpha="1" type="fill" name="">
+    <Composition gridVisible="0" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
+      <symbol alpha="0" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0"/>
           <prop k="color" v="255,255,255,255"/>
@@ -405,7 +416,7 @@
       <ComposerLabel valign="32" marginX="0" marginY="0" labelText="Geol Karte CARG, reklassifiziert&#xa;moraine modelled with TRI and vectorruggedness" htmlState="0" halign="1">
         <LabelFont description="Ubuntu,10,-1,5,50,0,0,0,0,0"/>
         <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="136.997" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="174.045" y="136.997" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="29.7378" outlineWidth="0.3" excludeFromExports="0" uuid="{7afdba00-20f4-4d70-9859-3c54829efb19}" height="79.9793" itemRotation="0" frame="false" pagex="174.045">
+        <ComposerItem pagey="9.697" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="396.764" y="9.697" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="29.7378" outlineWidth="0.3" excludeFromExports="0" uuid="{7afdba00-20f4-4d70-9859-3c54829efb19}" height="79.9793" itemRotation="0" frame="false" pagex="396.764">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -424,7 +435,7 @@
             <customproperties/>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="1" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="158.419" y="1" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="49.5812" outlineWidth="0.3" excludeFromExports="0" uuid="{64daf18e-7b8e-4d47-98e9-233f57a0f2e7}" height="127.3" itemRotation="0" frame="false" pagex="158.419">
+        <ComposerItem pagey="9.697" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="250.476" y="9.697" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="49.5812" outlineWidth="0.3" excludeFromExports="0" uuid="{64daf18e-7b8e-4d47-98e9-233f57a0f2e7}" height="127.3" itemRotation="0" frame="false" pagex="250.476">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -480,14 +491,43 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="1" page="1" id="" lastValidViewScaleFactor="2.14596" positionMode="0" positionLock="false" x="0" y="1" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="208" outlineWidth="0.3" excludeFromExports="0" uuid="{8154190e-1c74-48bd-8c66-95db9dd53306}" height="293" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="1.68374" positionMode="0" positionLock="false" x="1" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="208" outlineWidth="0.3" excludeFromExports="0" uuid="{8154190e-1c74-48bd-8c66-95db9dd53306}" height="293" itemRotation="0" frame="false" pagex="1">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
     </Composition>
   </Composer>
-  <projectlayers layercount="34">
+  <Composer title="map" visible="1">
+    <Composition gridVisible="0" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+      <symbol alpha="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="5136731.37364833615720272" xmin="666744.70351337117608637" ymax="5156101.37366809323430061" xmax="680654.70352755940984935"/>
+        <LayerSet/>
+        <Grid/>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.31327" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="214" outlineWidth="0.3" excludeFromExports="0" uuid="{460f5ba9-0f7d-4e67-8f7e-ea0a68b9879d}" height="298" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+    </Composition>
+  </Composer>
+  <projectlayers layercount="35">
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>AD_kartierpunkte20171023193414433</id>
       <datasource>./data2017/AD_kartierpunkte.shp</datasource>
@@ -3880,7 +3920,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Profilpunktemitboden_UTM20171016151124143</id>
       <datasource>./data2017/Profilpunktemitboden_UTM.shp</datasource>
       <title></title>
@@ -3949,54 +3989,6 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="field_14">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_15">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_16">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_17">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_18">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_19">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_20">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_21">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_22">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_23">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_24">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_25">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_26">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_27">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_28">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_29">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_30">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="boden_SGU_">
@@ -4068,41 +4060,299 @@
         <edittype widgetv2type="TextEdit" name="boden_SG22">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="boden_SG23">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="boden_SG24">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="data set">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
       </edittypes>
-      <renderer-v2 symbollevels="0" type="singleSymbol">
+      <renderer-v2 attr="data set" symbollevels="0" type="categorizedSymbol">
+        <categories>
+          <category render="false" symbol="0" value="" label=""/>
+          <category render="true" symbol="1" value="1" label="1"/>
+          <category render="true" symbol="2" value="2" label="2"/>
+          <category render="true" symbol="3" value="3" label="3"/>
+          <category render="true" symbol="4" value="4" label="4"/>
+        </categories>
         <symbols>
           <symbol alpha="1" type="marker" name="0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="83,21,169,255"/>
+              <prop k="color" v="133,110,209,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="circle"/>
+              <prop k="name" v="rectangle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_width" v="0.2"/>
               <prop k="outline_width_map_unit_scale" v="0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
-              <prop k="size" v="2"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" type="marker" name="1">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,127,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="rectangle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" type="marker" name="2">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="228,101,173,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="rectangle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" type="marker" name="3">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="51,160,44,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="rectangle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" type="marker" name="4">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="rectangle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
               <prop k="size_map_unit_scale" v="0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
         </symbols>
+        <source-symbol>
+          <symbol alpha="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="166,206,227,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="rectangle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="randomcolors" name="[source]"/>
+        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="area"/>
       </renderer-v2>
-      <customproperties/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fontBold" value="true"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Ubuntu"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="11"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="63"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="0"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Medium"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placementFlags" value="0"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+      </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
@@ -4179,54 +4429,6 @@
         <edittype widgetv2type="TextEdit" name="field_14">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="field_15">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_16">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_17">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_18">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_19">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_20">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_21">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_22">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_23">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_24">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_25">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_26">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_27">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_28">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_29">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="field_30">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="boden_SGU_">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
@@ -4296,10 +4498,10 @@
         <edittype widgetv2type="TextEdit" name="boden_SG22">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="boden_SG23">
+        <edittype widgetv2type="TextEdit" name="boden_SG24">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="boden_SG24">
+        <edittype widgetv2type="TextEdit" name="data set">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
@@ -5654,10 +5856,10 @@
           <category render="true" symbol="10" value="MrD" label="MrD"/>
           <category render="true" symbol="11" value="MxD" label="MxD"/>
           <category render="true" symbol="12" value="SB" label="SB"/>
-          <category render="false" symbol="13" value="SD" label="SD"/>
+          <category render="true" symbol="13" value="SD" label="SD"/>
           <category render="true" symbol="14" value="SSR" label="SSR"/>
-          <category render="false" symbol="15" value="TG" label="TG"/>
-          <category render="false" symbol="16" value="WB" label="WB"/>
+          <category render="true" symbol="15" value="TG" label="TG"/>
+          <category render="true" symbol="16" value="WB" label="WB"/>
           <category render="false" symbol="17" value="" label=""/>
         </categories>
         <symbols>
@@ -16520,6 +16722,52 @@
         </edittype>
       </edittypes>
     </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <id>shade_hr20171219122436052</id>
+      <datasource>../../Data/outrast_paper2maps/shade_hr.tif</datasource>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>shade_hr</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1009</srsid>
+          <srid>3044</srid>
+          <authid>EPSG:3044</authid>
+          <description>ETRS89 / ETRS-TM32</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer gradient="BlackToWhite" opacity="1" alphaBand="-1" type="singlebandgray" grayBand="1">
+          <rasterTransparency/>
+          <contrastEnhancement>
+            <minValue>-84.055</minValue>
+            <maxValue>219.59</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </contrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>till_SGUcode_till_TRI_hr_ws40_till_vectorruggedness_hr_ws4120171024154839206</id>
       <datasource>./temporlarge/shapes/till_SGUcode_till_TRI_hr_ws40_till_vectorruggedness_hr_ws41.shp</datasource>
@@ -17148,22 +17396,23 @@
         <value>SGUcode_TRI_hr_ws38_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr20171023171407444</value>
         <value>SGUcode_TRI_hr_ws920171023165304797</value>
         <value>SGUcode_TRI_hr_ws9_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr20171023155637821</value>
+        <value>SGUcode_largepredictorset20171113192321593</value>
         <value>SGUcode_slope_DTM_50m_avg_ws9_50m20171023152037511</value>
         <value>SGUcode_vectorruggedness_hr_ws5120171023150255700</value>
         <value>SGUcode_vectorruggedness_hr_ws57_TRI_hr_ws3120171023143347302</value>
         <value>SGUcode_vectorruggedness_hr_ws57_vectorruggedness_hr_ws51_slope_DTM_50m_avg_ws9_50m_geom_hr_L50m_fl10_rplipmps_UE_hr_20cells_hr_TRI_hr_ws9_TRI_hr_ws31_TRI_hr_ws3820171024085730687</value>
         <value>SSR_kartiert20171023194418022</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_Channel_Network_Base_Level_50m_Slopedeposit_ChannelNetworkBaseLevel_10m20171102140510890</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_MinimalCurvature_10m_Slopedeposit_geom_hr_L50m_fl1_rplipshape_UE_hr_60cells_hr20171102140510842</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws16_Slopedeposit_geom_hr_L3_fl10_rplipedgedensity_UE_hr_20cells_hr20171102140510815</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_Convergence_Index_50m20171102140510772</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_vectorruggedness_hr_ws5520171102140510735</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws46_Slopedeposit_TRI_hr_ws220171102140320857</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_geom_hr_L50m_fl10_rplipshannon_UE_hr_20cells_hr20171102140244937</value>
+        <value>Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_vectorruggedness_hr_ws4520171102135841682</value>
         <value>TG_kartiert20171023194508232</value>
         <value>till_SGUcode_till_TRI_hr_ws40_till_vectorruggedness_hr_ws4120171024154839206</value>
         <value>till_SGUcode_till_fischerk_ws5_hr20171024152605385</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_vectorruggedness_hr_ws4520171102135841682</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_vectorruggedness_hr_ws51_Slopedeposit_geom_hr_L50m_fl10_rplipshannon_UE_hr_20cells_hr20171102140244937</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws46_Slopedeposit_TRI_hr_ws220171102140320857</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_vectorruggedness_hr_ws5520171102140510735</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws33_Slopedeposit_Convergence_Index_50m20171102140510772</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_TRI_hr_ws16_Slopedeposit_geom_hr_L3_fl10_rplipedgedensity_UE_hr_20cells_hr20171102140510815</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_MinimalCurvature_10m_Slopedeposit_geom_hr_L50m_fl1_rplipshape_UE_hr_60cells_hr20171102140510842</value>
-        <value>Slopedeposit_SGUcode_Slopedeposit_Channel_Network_Base_Level_50m_Slopedeposit_ChannelNetworkBaseLevel_10m20171102140510890</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>enabled</value>
@@ -17189,16 +17438,17 @@
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
         <value>enabled</value>
         <value>enabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
+        <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
@@ -17220,9 +17470,7 @@
         <value>-1</value>
         <value>-1</value>
         <value>-1</value>
-        <value>-1</value>
-        <value>-1</value>
-        <value>-1</value>
+        <value>2</value>
         <value>-1</value>
         <value>-1</value>
         <value>-1</value>
@@ -17236,8 +17484,12 @@
         <value>0</value>
         <value>0</value>
         <value>0</value>
+        <value>-1</value>
+        <value>-1</value>
+        <value>-1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -17298,16 +17550,17 @@
         <value>3.000000</value>
         <value>3.000000</value>
         <value>3.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>3.000000</value>
         <value>3.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
+        <value>3.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
     <PositionPrecision>
