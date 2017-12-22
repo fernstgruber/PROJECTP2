@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{34}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -140,15 +140,6 @@
   \url{http://www.sciencedirect.com/science/article/pii/B9780128052006000086},
   \DOIprefix\doi{http://doi.org/10.1016/B978-0-12-805200-6.00008-6}.
 %Type = Article
-\bibitem[{Grohmann et~al.(2010)Grohmann, Smith and Riccomini}]{Grohmann2010}
-\bibinfo{author}{Grohmann, C.H.}, \bibinfo{author}{Smith, M.J.},
-  \bibinfo{author}{Riccomini, C.}, \bibinfo{year}{2010}.
-\newblock \bibinfo{title}{Multiscale analysis of topographic surface roughness
-  in the midland valley, scotland}.
-\newblock \bibinfo{journal}{IEEE Transactions on Geoscience and Remote Sensing}
-  \bibinfo{volume}{PP}, \bibinfo{pages}{1 -- 14}.
-\newblock \DOIprefix\doi{10.1109/TGRS.2010.2053546}.
-%Type = Article
 \bibitem[{Heung et~al.(2014)Heung, Bulmer and Schmidt}]{Heung2014}
 \bibinfo{author}{Heung, B.}, \bibinfo{author}{Bulmer, C.E.},
   \bibinfo{author}{Schmidt, M.G.}, \bibinfo{year}{2014}.
@@ -222,16 +213,6 @@
   {\"O}sterreichs}. volume~\bibinfo{volume}{81}.
 \newblock \bibinfo{edition}{2} ed., \bibinfo{publisher}{{\"O}sterr. Bodenkundl.
   Ges.}
-%Type = Article
-\bibitem[{Marchi and Dalla~Fontana(2005)}]{Marchi2005}
-\bibinfo{author}{Marchi, L.}, \bibinfo{author}{Dalla~Fontana, G.},
-  \bibinfo{year}{2005}.
-\newblock \bibinfo{title}{Gis morphometric indicators for the analysis of
-  sediment dynamics in mountain basins}.
-\newblock \bibinfo{journal}{Environmental Geology} \bibinfo{volume}{48},
-  \bibinfo{pages}{218--228}.
-\newblock \URLprefix \url{http://dx.doi.org/10.1007/s00254-005-1292-4},
-  \DOIprefix\doi{10.1007/s00254-005-1292-4}.
 %Type = Article
 \bibitem[{McBratney et~al.(2003)McBratney, {Mendonca Santos} and
   Minasny}]{McBratney2003}
@@ -361,5 +342,12 @@
   \bibinfo{year}{unknown}.
 \newblock \bibinfo{title}{Waldtypisierung tirol - system zur
   substratansprache}.
+%Type = Article
+\bibitem[{Woodcock(1977)}]{Woodcock1977}
+\bibinfo{author}{Woodcock, N.H.}, \bibinfo{year}{1977}.
+\newblock \bibinfo{title}{Specification of fabric shapes using an eigenvalue
+  method}.
+\newblock \bibinfo{journal}{Geological Society of America Bulletin}
+  \bibinfo{volume}{88}, \bibinfo{pages}{1231--1236}.
 
 \end{thebibliography}
