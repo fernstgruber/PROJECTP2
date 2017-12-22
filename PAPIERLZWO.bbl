@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{35}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -252,6 +252,21 @@
   Österreichische bodensystematik 2000 in der revidierten fassung von 2011}.
 \newblock \bibinfo{journal}{Mitt. Österr. Bodenkdl. Ges.}
   \bibinfo{volume}{79}.
+%Type = Article
+\bibitem[{Nestroy et~al.(2000)Nestroy, Danneberg, Englisch, Geßl, Hager,
+  Herzberger, Kilian, Nelhiebel, Pecina, Pehamberger, Schneider and
+  Wagner}]{Nestroy2000}
+\bibinfo{author}{Nestroy, O.}, \bibinfo{author}{Danneberg, O.},
+  \bibinfo{author}{Englisch, M.}, \bibinfo{author}{Geßl, A.},
+  \bibinfo{author}{Hager, H.}, \bibinfo{author}{Herzberger, E.},
+  \bibinfo{author}{Kilian, W.}, \bibinfo{author}{Nelhiebel, P.},
+  \bibinfo{author}{Pecina, E.}, \bibinfo{author}{Pehamberger, A.},
+  \bibinfo{author}{Schneider, W.}, \bibinfo{author}{Wagner, J.},
+  \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{{Systematische Gliederung der Böden Österreichs
+  (Österreichische Bodensystematik 2000)}}.
+\newblock \bibinfo{journal}{Mitt. Österr. Bodenkdl. Ges.}
+  \bibinfo{volume}{60}.
 %Type = Incollection
 \bibitem[{Olaya(2009)}]{Olaya2009141}
 \bibinfo{author}{Olaya, V.}, \bibinfo{year}{2009}.

@@ -77,24 +77,24 @@ A number of studies have compared the information from soil surveys with geologi
 
 A second important soil forming factor is topography or relief. It is considered in traditional soil survey, for instance by mapping landscape position and local slope and curvature \citep{FAO2006}, and also DSM, where the representing variables implemented in a given model can be chosen from a wide set of available parameters. Examples of such terrain parameters can be found, amongst others, in \cite{Boehner2009},\cite{Gallant2000} and \cite{Olaya2009141}. Regarding the geomorphometric characterisation of geologic or soil parent material units, a number of considerations have to be taken into account when choosing which parameter groups to investigate. While regional parameters well describe the hydrologically relevant, relative position in the landscape, they, as well as absolute and relative height-related parameters, are strongly correlated to the underlying geological structure of a given region. Local parameters such as slope and curvature are often used to infer soil properties and give insight into local dynamics, but may also vary strongly within a map unit. To characterise parent material units, especially with regard to topographic, and as a result, soil, variability, an intermediate terrain parameter describing a unit's land surface is of particular interest. Researchers have long investigated ways to quantify the roughness or ruggedness of terrain, from the analysis of field data and topographic maps to computing roughness indices on raster grids. Geology, geomorphology as well as habitat modelling and wildlife management have been the main scientific research areas in which such investigations were performed on land surfaces.  \cite{Hobson1972} presented three different roughness values and applied them to field measurements, correlating them to rock type. \cite{Beasom1983} and \cite{Nellemann1994} applied contour line analysis as a way of characterizing terrain ruggedness. Grid-cell based roughness measures were proposed as the topographic roughness index (TRI) by  \cite{Riley1999} or the vector ruggedness measure (VRM) by \cite{Sappington2007}, who expanded on the work of \cite{Hobson1972}. Similar approaches based on eigenvalue rations of an orientation matrix were proposed for application in geology for instance by \cite{Woodcock1977} and \cite{Coblentz2014}.
 
-The objective of the presented study is to evaluate how to make best use of available geologic and topographic information for soil survey. The study area in the \"{U}beretsch/Oltradige region of the Autonomous Province Bolzano -- South Tyrol was chosen for its detailed geologic maps as well as the diversity of soil forming factors, especially geology and topography. By applying random forest classification and feature selection, we investigate which terrain parameters, with emphasis on roughness measures, are best suited to produce a parent material map based on an available geological maps as well as topography. Additionally, the same method is applied to distinguish terrain parameters that, for each soil parent material class, best separate those profile site points that are correctly classified in the geological map from those of the same class that are misclassified. Based on this analysis and a similar investigation into characteristic terrain parameters of the geological map units, each of these is characterised with regard to topography and soil. We highlight those units where there is often dissent between soil parent material as mapped by the soil surveyor and the geologic units mapped by geologists. The main aim of the random forest classification is to identify the topographic characteristics of the parent material units in order to facilitate future, more detailed surveys,  and not necessarily to improve the geological map with regard to its application as a parent material map.
+The objective of the presented study is to evaluate how to make best use of available geologic and topographic information for soil survey. The study area in the \"{U}beretsch/Oltradige region of the Autonomous Province Bolzano -- South Tyrol was chosen for its detailed geologic maps as well as the diversity of soil forming factors, especially geology and topography. By applying random forest classification and feature selection, we investigate which terrain parameters, with emphasis on roughness measures, are best suited to produce a parent material map based on an available geological maps as well as topography. Additionally, the same method is applied to distinguish terrain parameters that, for each soil parent material class, best separate those profile site points that are correctly classified in the geological map from those of the same class that are misclassified. Based on this analysis and a similar investigation into characteristic terrain parameters of the geological map units, each of these is characterised with regard to topography and soil. We highlight those units where there is often dissent between soil parent material as mapped by the soil surveyor and the geologic units mapped by geologists. The main aim of the random forest classification is to identify the topographic characteristics of the parent material units in order to facilitate future, more detailed soil surveys, and not necessarily to improve the geological map with regard to its application as a parent material map.
 
 \section{Study area and data}
 \subsection{General description}
-The study area includes the wide vale of Eppan-Kaltern, the {\"U}beretsch, located just south-west of Bozen in the Autonomous Province of Bolzano -- South Tyrol, and extends in the north to the debris fan of Andrian in the Etsch Valley and the adjacent hill slope on the orographic right of the Etsch River. The western border of the study area is the steep slope of the Mendola-Ro\`en-Ridge, whereas the eastern border of the {\"U}beretsch as well as the study area is represented by the the Mitterberg, a ridge of Permic Vulcanites from which steep slopes descend to the Etsch Valley (approx. 200\,m a.s.l.). The Kalterer Lake represents the southern limits of the investigated area. The land use of the paleovalley and its debris cones as well as the Etsch valley is dominantly apple orchards and vineyards, whereas the slope of the  Mendola-Ro\`en-Ridge and the hilly outcrops of Vulcanites are covered by forests. Pastures are located mainly on till covering the flat areas of the  Mendola-Ro\`en-Ridge. Figure~\ref{fig:studyarea} shows the study area as well as the surficial geologic units and soil profile locations.
+The study area includes the wide vale of Eppan-Kaltern, the {\"U}beretsch, located just south-west of Bozen in the Autonomous Province of Bolzano -- South Tyrol, and extends in the north to the debris fan of Andrian in the Etsch Valley and the adjacent hill slope on the orographic right of the Etsch River. The western border of the study area is the steep slope of the Mendola-Ro\`en-Ridge (max. 2116~m.a.s.l.), whereas the eastern border of the {\"U}beretsch as well as the study area is represented by the the Mitterberg, a ridge of Permic Vulcanites from which steep slopes descend to the Etsch Valley (approx. 200\,m a.s.l.). The Kalterer Lake represents the southern limits of the investigated area. The land use of the paleovalley and its debris cones as well as the Etsch valley is dominantly apple orchards and vineyards, whereas the slope of the  Mendola-Ro\`en-Ridge and the hilly outcrops of Vulcanites are covered by forests. Pastures are located mainly on till covering the flat areas of the  Mendola-Ro\`en-Ridge. Figure~\ref{fig:studyarea} shows the study area as well as the surficial geologic units and soil profile locations. The study area is characterised by the mild and humid transition zone between the Mediterranean and Continental climate zone. The longtime mean annual precipitation in Montiggl, located in the southeastern quadrant of the study area is 802~mm along with longtime mean annaul temperature of 11.9$^{\circ}$ \citep{Thalheimer2006}.
  \begin{figure}[ht!]
 \includegraphics[width=\textwidth,angle=0]{studyarea_page_cropped.pdf}
-\caption{Overview of the study area showing the surficial geology as well the locations of the soil profile sites analysed in this study. }
+\caption{Overview of the study area showing the surficial geology as well as the locations of the soil profile sites analysed in this study. Computations  were performed only for the areas covered by surficial geologic units.  }
 \label{fig:studyarea}
 \end{figure}
 \subsection{Surficial Geology}
 A detailed  description of the geologic situation can be found in the commentary to the new geologic map of Eppan \citep{Avanzini2006}. 
-The paleovalley of {\"U}beretsch is described by \cite{Scholz2005} as a complex system of gravelly lateral moraines and large kame terraces, the result if the 'Kaltern lobe', a Pleniglacial tongue of the Etsch valley glacier. Additionally, eroded remainders of debris flows that were deposited against the recessing glacier can be found along the slopes of the Mendola-Ro\`en-Ridge, as well as recent debris flow deposits, often composed of mainly limestone and dolomite fragment. The vale bottom itself is filled with Pleistocene sediments and contains a  number of valleys carved into the gravels by fossil melt-water. At the eastern and western borders of the Pleistocene sediments, outcrops of Permic igneous Rhyolite and Lapilli-Tuff are responsible for a hilly relief, most prominently at the eastern border of the study area where the {\"U}beretsch is separated from the Etsch valley by a steep slope down from the Mitterberg with an elevation difference of approximately 400\,m.   
+The paleovalley of {\"U}beretsch is described by \cite{Scholz2005} as a complex system of gravelly lateral moraines and large kame terraces, the result of the 'Kaltern lobe', a Pleniglacial tongue of the Etsch valley glacier. Additionally, laterally eroded remainders of debris fans that were deposited against the recessing glacier can be found along the slopes of the Mendola-Ro\`en-Ridge, as well as recent debris flow deposits, often composed of mainly limestone and dolomite fragment. The vale bottom itself is filled with Pleistocene sediments and contains a  number of valleys carved into the gravels by fossil melt-water. At the eastern and western borders of the Pleistocene sediments, outcrops of Permic igneous Rhyolite and Lapilli-Tuff are responsible for a hilly relief, most prominently at the eastern border of the study area where the {\"U}beretsch is separated from the Etsch valley by a steep slope down from the Mitterberg with an elevation difference of approximately 400\,m.   
 The steep slopes of the Mendola-Ro\`en-Ridge are dominated by various Dolomite units, with intermittent layers of sand and siltstones. Except for the very steep Dolomite walls of the ridge, the rarely occurring outcrops of these formations are surrounded and mostly covered by Pleistocene and Holocene slope debris, and in locally flatter areas by till. 
  
 The study area comprises two map sheets of the new geologic map of Italy, sheet Eppan,  which covers the northern and major part of the area, as well as sheet Mezzo-Lombardo in the southern part. The sheets were published at a scale of 1\,:\,50,000 in 2007 and 2012, respectively. Mapping was performed at a scale of 1\,:\,10,000, this information was kindly provided by the Department of Geology and Building Material Tests of the Autonomous Province Bolzano -- South Tyrol, in shapefile format and used for the analysis performed in this study.
  
-For simplification of the analysis and data harmonisation, the geologic map units were generalised to the 16 surficial geology units (SGUs) described in Table \ref{table:geounits}, that allow comparison with the parent material units described and identified by the soil surveyors in the field.
+For simplification of the analysis and data harmonisation, the original geologic map units were generalised into the 16 surficial geology units (SGUs) described in Table \ref{table:geounits}, that allow comparison with the parent material units described and identified by the soil surveyors in the field.
 \begin{table}[ht]
 \centering
 \tiny
@@ -112,7 +112,7 @@ calcareous sedimentary rock & \raisebox{-0ex}{CSR} & \raisebox{-0ex}{limestones 
 
 \raisebox{-0ex}{debris cones} & \raisebox{-0ex}{DC} & Holocene conic deposits from debris flows and torrents &\raisebox{-0ex}{12.7} \\  
 
-glacio- and lacustrine deposits & GLD & (fine) sand deposits (with dropstones) &\raisebox{-0ex}{2.5} \\  
+glaciolacustrine and lacustrine deposits & GLD & (fine) sand deposits (with dropstones) &\raisebox{-0ex}{2.5} \\  
 
 ice-marginal sediments & IMS & clast-supported gravels &\raisebox{0ex}{0.2} \\ 
 
@@ -127,58 +127,41 @@ landslide deposits & \raisebox{-0ex}{LD} & \raisebox{-0ex}{large landslide depos
 \raisebox{-0ex}{siliceous bedrock} & \raisebox{-0ex}{SB} & rhyolite and rhyodazite tuffs and ignimbrites &\raisebox{-0ex}{13.0} \\  
 
 \raisebox{-0ex}{slope debris} & \raisebox{-0ex}{SD} & Holocene and Pleistocene debris on slopes&\raisebox{-0ex}{10.3} \\  
-\raisebox{-0ex}{siliceous sedimentary rock} & \raisebox{-0ex}{SSR} & sandstones and siltstones &\raisebox{0ex}{1.1} \\ 
-till in general & TG & undifferentiated glacial sediment &\raisebox{0ex}{25.9} \\  
+\raisebox{-0ex}{siliceous sedimentary rock} & \raisebox{-0ex}{SSR} & silt- and sandstones &\raisebox{0ex}{1.1} \\ 
+till in general & TG & undifferentiated glacial deposits &\raisebox{0ex}{25.9} \\  
    \hline
 \end{tabular}
-\caption{Table of the generalised parent material units with abbreviations and short description. Additionally, the proportion of the study area covered by each unit is given. Anthropogenic deposits and water bodies are not included in the analysis.} 
+\caption{Generalised surficial geology units in alphabetic order with abbreviations and short descriptions. Additionally, the proportion of the study area covered by each unit is given. Anthropogenic deposits are not included in the analysis.} 
 \label{table:geounits}
 \end{table}
 
 \subsection{Soils}
-Figure \ref{fig:soils_studyarea} gives an overview of the distribution of the soil types attributed to the soil profiles in the study area.
+Figure \ref{fig:soils_studyarea} gives an overview of the distribution of the soil types amongst the soil profiles incorporated into the analysis and located within study area.
  \begin{figure}[ht!]
 \includegraphics[width=\textwidth,angle=0]{soildistro_AOI.pdf}
-\caption{Soil type distribution of the soil profiles in the study area. Coloring indicates the soil type classes. }
+\caption{Soil type distribution amongst the soil profiles in the study area. Coloring indicates the soil type classes. Classification was performed according to the Austrian soil classification \citep{Nestroy2000,Nestroy2011}. Relationships with WRB reference groups can be found in Table~\ref{soilunits}}.
 \label{fig:soils_studyarea}
 \end{figure}
 \subsubsection{soil classification and data}
-The soil classification scheme applied in this study is the Austrian system \citep{Nestroy2011}, as most of the soil profile descriptions available for this study apply this system and it is generally recommendable  to use local systems for large-scale mapping. Additionally, not all available soil profile data, especially those from points investigated only with augering, included sufficient information for deriving the reference soil group according to the World Reference Base for soil resources \citep{wrb}. Table~\ref{soilunits} gives an overview of which reference soil groups are correlated to the relevant soil types in the Austrian classification. Classification of the soil profiles was performed at the subtype level, a basic overview of the Austrian soil classification system can be found in \cite{Baruck2016}.
-
-\paragraph{data base 1: soil survey of agricultural areas in the \"{U}beretsch/Oltradige region}
-From 1993-1995 a soil survey of the farmlands in the region \"{U}beretsch was conducted \citep{Thalheimer2006}. Soil types were classified according to Soil Taxonomy, resulting in a soil map with 18 different soil series. 58 detailed soil pit descriptions were incorporated into the presented study, all located either in vineyards or apple orchards. Using the horizon descriptions, chemical properties as well as photographs of the pit face, theses soil profiles were reclassified applying the Austrian System.
-
-\paragraph{data base 2: soil survey 'ReBo - Terrain Classification
-of ALS Data to support Digital Soil Mapping'} 
-During this project which was  funded by the Autonomous
-Province Bolzano -- South Tyrol and had the aim to investigate optimal cooperation between soil survey and terrain classification, 55 soil pit profiles were described in the presented studies area of interest. Soil classification was performed following \cite{kilian2015}.
-
-\paragraph{data base 3: data base of the Forestry Service of the Autonomous Province Bolzano -- South Tyrol} 
-
-42 pit descriptions from the Forestry Service data set
-
-\paragraph{data base 4} 
-
-227 auger observations (WLM)
-
+The soil classification scheme applied in this study is the Austrian system \citep{Nestroy2000,Nestroy2011}, as most of the soil profile descriptions available for this study apply this system which is also well adapted to the Alpine environment \citep{Baruck2016}. Furthermore, it is generally recommendable  to use local systems for large-scale mapping and not all available soil profile data, especially those from points investigated only with augering, included sufficient information for deriving the reference soil group according to the World Reference Base for soil resources \citep{wrb}. Table~\ref{soilunits} gives an overview of which reference soil groups are best correlated to the relevant soil types in the Austrian classification. Classification of the soil profiles was performed at the subtype level, a basic overview of the Austrian soil classification system can be found in \cite{Baruck2016}.
 \begin{table}[ht]
 \centering
 \tiny
 \begin{tabular}{p{2.0cm}p{3.0cm}p{5.0cm}p{1.8cm}}
 
-soil type  & possible WRB group & short description & soil class\\ 
+soil type  & corresponding WRB groups & short description & soil class\\ 
   \hline
   Grobmaterial-Rohboden & {Leptosol, Regosol, Histosol} & {same as Feinmaterial-Rohboden but with more than 40 V.-\% coarse fraction} & {Terrestrische Rohb\"{o}den}\\ 
   \hline
-  {Feinmaterial-Rohboden} & {Leptosol, Regosol, Histosol, Arenosol} &{only initial soil formation (Ai horizon) on parent material with less than 40 V.-\% coarse fraction.} & {Terrestrische Rohb\"{o}den}\\ 
+  {Feinmaterial-Rohboden} & {Leptosol, Regosol, Histosol, Arenosol} &{only initial soil formation ($A_i$ horizon) on parent material with less than 40 V.-\% coarse fraction} & {Terrestrische Rohb\"{o}den}\\ 
   \hline
-  \raisebox{-1.5ex}{Rendzina} &\raisebox{-1.5ex} {Leptosols, Histosols} & {with organic horizon on calcareous bedrock.} & {Terrestrische Humusb\"{o}den} \\ 
+  \raisebox{-1.5ex}{Rendzina} &\raisebox{-1.5ex} {Leptosols, Histosols} & {only an A or organic horizon on calcareous bedrock.} & {Terrestrische Humusb\"{o}den} \\ 
   \hline
-Kalklehm-Rendzina & \raisebox{-1.5ex}{Leptosol} & {soils with a loamy organic horizon on calcareous bedrock.} & {Terrestrische Humusb\"{o}den}  \\ 
+Kalklehm-Rendzina & \raisebox{-1.5ex}{Leptosol} & {soils with a loamy A horizon on calcareous bedrock.} & {Terrestrische Humusb\"{o}den}  \\ 
   \hline
-\raisebox{-1.5ex}{Pararendzina} & {Leptosol, Regosol, Umbrisol, Histosol} & {with organic horizon on carbonatic siliceous bedrock.} & {Terrestrische Humusb\"{o}den} \\ 
+\raisebox{-1.5ex}{Pararendzina} & {Leptosol, Regosol, Umbrisol, Histosol} & {only an A horizon on carbonate-containing unconsolidated sediment or bedrock.} & {Terrestrische Humusb\"{o}den} \\ 
   \hline
- \raisebox{-1.5ex}{Ranker} & {Leptosol, Umbrisol, Regosol} & {with organic horizon on siliceous bedrock.} & {Terrestrische Humusb\"{o}den} \\ 
+ \raisebox{-1.5ex}{Ranker} & {Leptosol, Umbrisol, Regosol} & {only an A or organic horizon on siliceous bedrock.} & {Terrestrische Humusb\"{o}den} \\ 
   \hline  
  \raisebox{-1.5ex}{Braunerde} & {Cambisol, Fluvisol, Luvisol, Umbrisol, Regosol} & {with brown B-horizon owing to  weathering and re-formation of clay minerals.} & \raisebox{-1.5ex}{Braunerden} \\ 
    \hline
@@ -199,9 +182,26 @@ Textur-Substratboden & \raisebox{-1.5ex}{Regosol, Arenosol, Vertisol} & {strong 
 Haftnässe-Psuedogley & \raisebox{-1.5ex}{Stagnosol, Planosol} & {influenced by shallow, capillary stagnation phases.} & {Pseudogleye} \\ 
 \hline
 \end{tabular}
-\caption{Table relating the Austrian soil types to WRB reference groups along with a simplified description, based on \cite{kilian2015}.} 
+\caption{Corresponding WRB reference groups for the Austrian soil types encountered in the study area, along with a simplified description based on \cite{Nestroy2011}.} 
 \label{soilunits}
 \end{table}
+\paragraph{data base 1: soil survey of agricultural areas in the \"{U}beretsch/Oltradige region}
+From 1993-1995 a soil survey of the farmlands in the region \"{U}beretsch was conducted \citep{Thalheimer2006}. Soil types were classified according to Soil Taxonomy, resulting in a soil map with 18 different soil series. 58 detailed soil pit descriptions were incorporated into the presented study, all located either in vineyards or apple orchards. Using the horizon descriptions, chemical properties as well as photographs of the pit face, theses soil profiles were reclassified applying the Austrian System.
+
+\paragraph{data base 2: soil survey 'ReBo - Terrain Classification
+of ALS Data to support Digital Soil Mapping'} 
+During this project which was  funded by the Autonomous
+Province Bolzano -- South Tyrol and had the aim to investigate optimal cooperation between soil survey and terrain classification, 55 soil pit profiles were described in the presented studies area of interest. Soil classification was performed following \cite{kilian2015}.
+
+\paragraph{data base 3: data base of the Forestry Service of the Autonomous Province Bolzano -- South Tyrol} 
+
+42 pit descriptions from the Forestry Service data set
+
+\paragraph{data base 4} 
+
+227 auger observations (WLM)
+
+
 \subsection{Digital elevation data}
 \section{Methods}
 \subsection{General workflow}
