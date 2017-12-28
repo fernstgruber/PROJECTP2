@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{45}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,6 +11,13 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Book
+\bibitem[{APB(2006)}]{APB2006}
+\bibinfo{author}{APB}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Waldtypisierung Südtirol}.
+\newblock \bibinfo{publisher}{Autonome Provinz Bozen - Südtirol}.
+\newblock \URLprefix
+  \url{http://www.provinz.bz.it/forst/studien-projekte/waldtypisierung.asp}.
 %Type = Techreport
 \bibitem[{Avanzini et~al.(2006)Avanzini, Bargossi, Borsato, Castiglioni,
   Cucato, Morelli, Prosser and Sapelza}]{Avanzini2006}
@@ -88,6 +95,20 @@
 \newblock \bibinfo{journal}{International Journal of Geosciences}
   \bibinfo{volume}{5}, \bibinfo{pages}{247--266}.
 \newblock \URLprefix \url{http://dx.doi.org/10.4236/ijg.2014.53026}.
+%Type = Article
+\bibitem[{Conrad et~al.(2015)Conrad, Bechtel, Bock, Dietrich, Fischer, Gerlitz,
+  Wehberg, Wichmann and B\"ohner}]{SAGA}
+\bibinfo{author}{Conrad, O.}, \bibinfo{author}{Bechtel, B.},
+  \bibinfo{author}{Bock, M.}, \bibinfo{author}{Dietrich, H.},
+  \bibinfo{author}{Fischer, E.}, \bibinfo{author}{Gerlitz, L.},
+  \bibinfo{author}{Wehberg, J.}, \bibinfo{author}{Wichmann, V.},
+  \bibinfo{author}{B\"ohner, J.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{System for automated geoscientific analyses (saga) v.
+  2.1.4}.
+\newblock \bibinfo{journal}{Geoscientific Model Development}
+  \bibinfo{volume}{8}, \bibinfo{pages}{1991--2007}.
+\newblock \URLprefix \url{https://www.geosci-model-dev.net/8/1991/2015/},
+  \DOIprefix\doi{10.5194/gmd-8-1991-2015}.
 %Type = Manual
 \bibitem[{Englisch and Kilian(1999)}]{Englisch1998}
 \bibinfo{author}{Englisch, M.}, \bibinfo{author}{Kilian, W.},
@@ -139,6 +160,22 @@
 \newblock \URLprefix
   \url{http://www.sciencedirect.com/science/article/pii/B9780128052006000086},
   \DOIprefix\doi{http://doi.org/10.1016/B978-0-12-805200-6.00008-6}.
+%Type = Manual
+\bibitem[{{GRASS Development Team}(2016)}]{GRASS}
+\bibinfo{author}{{GRASS Development Team}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Geographic Resources Analysis Support System (GRASS
+  GIS) Software, Version 7.0}.
+\newblock \bibinfo{organization}{Open Source Geospatial Foundation}.
+\newblock \URLprefix \url{http://grass.osgeo.org}.
+%Type = Article
+\bibitem[{Grohmann et~al.(2010)Grohmann, Smith and Riccomini}]{Grohmann2010}
+\bibinfo{author}{Grohmann, C.H.}, \bibinfo{author}{Smith, M.J.},
+  \bibinfo{author}{Riccomini, C.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Multiscale analysis of topographic surface roughness
+  in the midland valley, scotland}.
+\newblock \bibinfo{journal}{IEEE Transactions on Geoscience and Remote Sensing}
+  \bibinfo{volume}{PP}, \bibinfo{pages}{1 -- 14}.
+\newblock \DOIprefix\doi{10.1109/TGRS.2010.2053546}.
 %Type = Article
 \bibitem[{Heung et~al.(2014)Heung, Bulmer and Schmidt}]{Heung2014}
 \bibinfo{author}{Heung, B.}, \bibinfo{author}{Bulmer, C.E.},
@@ -165,6 +202,15 @@
   legends for soil maps.}
 \newblock \bibinfo{type}{World Soil Resources Reports} \bibinfo{number}{106}.
   {FAO, Rome}. \bibinfo{address}{Rome}.
+%Type = Article
+\bibitem[{Iwahashi and Pike(2007)}]{Iwahashi2007}
+\bibinfo{author}{Iwahashi, J.}, \bibinfo{author}{Pike, R.J.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Automated classifications of topography from dems by
+  an unsupervised nested-means algorithm and a three-part geometric signature}.
+\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{86},
+  \bibinfo{pages}{409 -- 440}.
+\newblock \DOIprefix\doi{10.1016/j.geomorph.2006.09.012}.
 %Type = Book
 \bibitem[{James et~al.(2013)James, Witten, Hastie and Tibshirani}]{James2013}
 \bibinfo{author}{James, G.}, \bibinfo{author}{Witten, D.},
@@ -174,6 +220,17 @@
 \newblock \bibinfo{publisher}{Springer-Verlag New York}.
 \newblock \URLprefix \url{http://www-bcf.usc.edu/~gareth/ISL/index.html},
   \DOIprefix\doi{10.1007/978-1-4614-7138-7}.
+%Type = Article
+\bibitem[{Jasiewicz and Stepinski(2013)}]{Jasiewicz2013}
+\bibinfo{author}{Jasiewicz, J.}, \bibinfo{author}{Stepinski, T.F.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{Geomorphons — a pattern recognition approach to
+  classification and mapping of landforms}}.
+\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{182},
+  \bibinfo{pages}{147 -- 156}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0169555X12005028},
+  \DOIprefix\doi{10.1016/j.geomorph.2012.11.005}.
 %Type = Book
 \bibitem[{Jenny(1941)}]{Jenny1941}
 \bibinfo{author}{Jenny, H.}, \bibinfo{year}{1941}.
@@ -221,6 +278,17 @@
 \newblock \bibinfo{title}{On digital soil mapping}.
 \newblock \bibinfo{journal}{Geoderma} \bibinfo{volume}{117}, \bibinfo{pages}{3
   -- 52}.
+%Type = Article
+\bibitem[{McKean and Roering(2004)}]{McKean2004}
+\bibinfo{author}{McKean, J.}, \bibinfo{author}{Roering, J.},
+  \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Objective landslide detection and surface morphology
+  mapping using high-resolution airborne laser altimetry}.
+\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{57},
+  \bibinfo{pages}{331 -- 351}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/B6V93-48NJ4FP-2/2/ee836438d645363d2ff75f332f2f1eef},
+  \DOIprefix\doi{10.1016/S0169-555X(03)00164-8}.
 %Type = Article
 \bibitem[{Miller and Lee~Burras(2015)}]{Miller2015a}
 \bibinfo{author}{Miller, B.A.}, \bibinfo{author}{Lee~Burras, C.},
@@ -303,6 +371,14 @@
 \newblock \URLprefix
   \url{http://www.sciencedirect.com/science/article/pii/S001282520800055X},
   \DOIprefix\doi{https://doi.org/10.1016/j.earscirev.2008.04.003}.
+%Type = Manual
+\bibitem[{{R Core Team}(2014)}]{cran2014}
+\bibinfo{author}{{R Core Team}}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{R: A Language and Environment for Statistical
+  Computing}.
+\newblock \bibinfo{organization}{R Foundation for Statistical Computing}.
+  \bibinfo{address}{Vienna, Austria}.
+\newblock \URLprefix \url{http://www.R-project.org/}.
 %Type = Article
 \bibitem[{Riley et~al.(1999)Riley, DeGloria and Elliot}]{Riley1999}
 \bibinfo{author}{Riley, S.J.}, \bibinfo{author}{DeGloria, S.D.},
@@ -357,6 +433,18 @@
   \bibinfo{year}{unknown}.
 \newblock \bibinfo{title}{Waldtypisierung tirol - system zur
   substratansprache}.
+%Type = Inproceedings
+\bibitem[{Wack and Stelzl(2005)}]{Wack2005}
+\bibinfo{author}{Wack, R.}, \bibinfo{author}{Stelzl, H.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Laser dtm generation for south-tyrol and
+  3d-visualization}, in: \bibinfo{booktitle}{ISPRS WG III/3, III/4, V/3
+  Workshop "Laser scanning 2005"}.
+%Type = Phdthesis
+\bibitem[{Wood(1996)}]{Wood1996}
+\bibinfo{author}{Wood, J.D.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{{The geomorphological characterisation of digital
+  elevation models}}.
+\newblock Ph.D. thesis. University of Leicester, UK.
 %Type = Article
 \bibitem[{Woodcock(1977)}]{Woodcock1977}
 \bibinfo{author}{Woodcock, N.H.}, \bibinfo{year}{1977}.

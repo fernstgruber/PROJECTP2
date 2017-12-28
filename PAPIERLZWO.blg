@@ -7,45 +7,46 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--can't use both author and editor fields in Gallant2000
 Warning--can't use both author and editor fields in Hobson1972
 Warning--empty note in waldtypisierungTirol
-You've used 35 entries,
+Warning--empty pages in Wack2005
+You've used 45 entries,
             2990 wiz_defined-function locations,
-            1016 strings with 15185 characters,
-and the built_in function-call counts, 25200 in all, are:
-= -- 1881
-> -- 1073
-< -- 29
-+ -- 419
-- -- 374
-* -- 2859
-:= -- 3632
-add.period$ -- 120
-call.type$ -- 35
-change.case$ -- 299
-chr.to.int$ -- 35
-cite$ -- 38
-duplicate$ -- 1865
-empty$ -- 1796
-format.name$ -- 478
-if$ -- 4744
+            1088 strings with 17304 characters,
+and the built_in function-call counts, 31334 in all, are:
+= -- 2365
+> -- 1285
+< -- 37
++ -- 501
+- -- 446
+* -- 3503
+:= -- 4536
+add.period$ -- 157
+call.type$ -- 45
+change.case$ -- 369
+chr.to.int$ -- 45
+cite$ -- 49
+duplicate$ -- 2332
+empty$ -- 2265
+format.name$ -- 580
+if$ -- 5903
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 370
-newline$ -- 205
-num.names$ -- 146
-pop$ -- 629
+missing$ -- 456
+newline$ -- 262
+num.names$ -- 186
+pop$ -- 795
 preamble$ -- 1
-purify$ -- 262
+purify$ -- 326
 quote$ -- 0
-skip$ -- 558
+skip$ -- 704
 stack$ -- 0
-substring$ -- 907
-swap$ -- 1435
+substring$ -- 1147
+swap$ -- 1750
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 300
-warning$ -- 3
-while$ -- 135
+type$ -- 387
+warning$ -- 4
+while$ -- 171
 width$ -- 0
-write$ -- 559
-(There were 3 warnings)
+write$ -- 714
+(There were 4 warnings)

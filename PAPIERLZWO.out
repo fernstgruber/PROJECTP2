@@ -2,33 +2,32 @@
 \BOOKMARK [1][-]{section.2}{Study area and data}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{General description}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Surficial Geology}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Soils}{section.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.3.1}{soil classification and data}{subsection.2.3}% 6
-\BOOKMARK [2][-]{subsection.2.4}{Digital elevation data}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Methods}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{General workflow}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Terrain parameters with emphasis on roughness measures}{section.3}% 10
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Local and regional terrain parameters}{subsection.3.2}% 11
-\BOOKMARK [3][-]{subsubsection.3.2.2}{surface roughness-related terrain parameters}{subsection.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Random Forest classification }{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Results and discussion}{}% 14
-\BOOKMARK [2][-]{subsection.4.1}{Comparison of soil parent material at soil profile sites with geologic map units}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.2}{Geologic-topographic characterisation of the predominant SGUs}{section.4}% 16
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Alluvial deposits}{subsection.4.2}% 17
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Siliceous bedrock}{subsection.4.2}% 18
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Till in general}{subsection.4.2}% 19
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Slope debris}{subsection.4.2}% 20
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Calcareous sedimentary rock}{subsection.4.2}% 21
-\BOOKMARK [3][-]{subsubsection.4.2.6}{Debris cones}{subsection.4.2}% 22
-\BOOKMARK [3][-]{subsubsection.4.2.7}{Intermediate sedimentary rock and siliceous sedimentary rock}{subsection.4.2}% 23
-\BOOKMARK [3][-]{subsubsection.4.2.8}{Colluvial, mixed, and landslide deposits}{subsection.4.2}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.9}{Glacio-lacustrine deposits, ice-marginal sediments and mire deposits}{subsection.4.2}% 25
-\BOOKMARK [2][-]{subsection.4.3}{Random forest classification of parent material based on geologic map data and topography}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.4}{General difficulties and specific issues}{section.4}% 27
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Differences with regard to mapping purpose}{subsection.4.4}% 28
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Nomenclatural differences and overlaping classes}{subsection.4.4}% 29
-\BOOKMARK [3][-]{subsubsection.4.4.3}{Is the morphodynamic background of deposits a necessary distinctive attribute from a pedological point of view?}{subsection.4.4}% 30
-\BOOKMARK [2][-]{subsection.4.5}{Influence of the Alpine environment on interpretability of geologic units as parent material units}{section.4}% 31
-\BOOKMARK [3][-]{subsubsection.4.5.1}{thin cover layers of till - an essential new parentmaterial unit?}{subsection.4.5}% 32
-\BOOKMARK [2][-]{subsection.4.6}{Terrain parameters - issues and results}{section.4}% 33
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 34
+\BOOKMARK [2][-]{subsection.2.3}{Soil data sets and soil classification}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Digital terrain model}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Methods}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{General workflow}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Terrain parameters with emphasis on roughness measures}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Local and regional terrain parameters}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Surface roughness-related terrain parameters}{subsection.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Random Forest classification }{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Results and discussion}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Comparison of soil parent material at soil profile sites with geologic map units}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Geologic-topographic characterisation of the predominant SGUs}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Alluvial deposits}{subsection.4.2}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Siliceous bedrock}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Till in general}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Slope debris}{subsection.4.2}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Calcareous sedimentary rock}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Debris cones}{subsection.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.4.2.7}{Intermediate sedimentary rock and siliceous sedimentary rock}{subsection.4.2}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.8}{Colluvial, mixed, and landslide deposits}{subsection.4.2}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.9}{Glacio-lacustrine deposits, ice-marginal sediments and mire deposits}{subsection.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.3}{Random forest classification of parent material based on geologic map data and topography}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.4}{General difficulties and specific issues}{section.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Differences with regard to mapping purpose}{subsection.4.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Nomenclatural differences and overlaping classes}{subsection.4.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Is the morphodynamic background of deposits a necessary distinctive attribute from a pedological point of view?}{subsection.4.4}% 29
+\BOOKMARK [2][-]{subsection.4.5}{Influence of the Alpine environment on interpretability of geologic units as parent material units}{section.4}% 30
+\BOOKMARK [3][-]{subsubsection.4.5.1}{thin cover layers of till - an essential new parentmaterial unit?}{subsection.4.5}% 31
+\BOOKMARK [2][-]{subsection.4.6}{Terrain parameters - issues and results}{section.4}% 32
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 33

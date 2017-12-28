@@ -12,6 +12,27 @@
   Timestamp                = {2013.07.08}
 }
 
+@Book{APB2006,
+  Title                    = {Waldtypisierung Südtirol},
+  Author                   = {APB},
+  Publisher                = {Autonome Provinz Bozen - Südtirol},
+  Year                     = {2006},
+
+  Owner                    = {fabs},
+  Timestamp                = {2016.08.25},
+  Url                      = {http://www.provinz.bz.it/forst/studien-projekte/waldtypisierung.asp}
+}
+
+@Electronic{DTM,
+  Title                    = {Download Landeskartographie},
+  Author                   = {Autonomous Province Bolzano, South Tyrol},
+  Url                      = {http://www.provinz.bz.it/natur-raum/themen/landeskartografie-download.asp},
+  Year                     = {2016},
+
+  Owner                    = {fabs},
+  Timestamp                = {2016.12.29}
+}
+
 @TechReport{Avanzini2006,
   Title                    = {Erl{\"a}uterungen zur geologischen Karten von Italien im Ma{\ss}stab 1:50000 Blatt 026 Eppan},
   Author                   = {M. Avanzini and G.M. Bargossi and A. Borsato and G.B. Castiglioni and M. Cucato and C. Morelli and G. Prosser and A. Sapelza},
@@ -140,6 +161,19 @@
   Timestamp                = {2017.02.28}
 }
 
+@Article{SAGA,
+  Title                    = {System for Automated Geoscientific Analyses (SAGA) v. 2.1.4},
+  Author                   = {Conrad, O. and Bechtel, B. and Bock, M. and Dietrich, H. and Fischer, E. and Gerlitz, L. and Wehberg, J. and Wichmann, V. and B\"ohner, J.},
+  Journal                  = {Geoscientific Model Development},
+  Year                     = {2015},
+  Number                   = {7},
+  Pages                    = {1991--2007},
+  Volume                   = {8},
+
+  Doi                      = {10.5194/gmd-8-1991-2015},
+  Url                      = {https://www.geosci-model-dev.net/8/1991/2015/}
+}
+
 @Manual{Englisch1998,
   Title                    = {{Anleitung zur Forstlichen Standortskartierung}},
   Author                   = {Englisch, M. and Kilian, W.},
@@ -207,6 +241,15 @@
   Owner                    = {fabs},
   Timestamp                = {2017.04.18},
   Url                      = {http://www.sciencedirect.com/science/article/pii/B9780128052006000086}
+}
+
+@Manual{GRASS,
+  Title                    = {Geographic Resources Analysis Support System (GRASS GIS) Software, Version 7.0},
+  Author                   = {{GRASS Development Team}},
+  Organization             = {Open Source Geospatial Foundation},
+  Year                     = {2016},
+
+  Url                      = {http://grass.osgeo.org}
 }
 
 @Article{Grohmann2010,
@@ -290,6 +333,23 @@
   Timestamp                = {2017.08.30}
 }
 
+@Article{Iwahashi2007,
+  Title                    = {Automated classifications of topography from DEMs by an unsupervised nested-means algorithm and a three-part geometric signature},
+  Author                   = {Junko Iwahashi and Richard J. Pike},
+  Journal                  = {Geomorphology},
+  Year                     = {2007},
+  Pages                    = {409 - 440},
+  Volume                   = {86},
+
+  Abstract                 = {An iterative procedure that implements the classification of continuous topography as a problem in digital image-processing automatically divides an area into categories of surface form; three taxonomic criteria–slope gradient, local convexity, and surface texture–are calculated from a square-grid digital elevation model (DEM). The sequence of programmed operations combines twofold-partitioned maps of the three variables converted to greyscale images, using the mean of each variable as the dividing threshold. To subdivide increasingly subtle topography, grid cells sloping at less than mean gradient of the input DEM are classified by designating mean values of successively lower-sloping subsets of the study area (nested means) as taxonomic thresholds, thereby increasing the number of output categories from the minimum 8 to 12 or 16. Program output is exemplified by 16 topographic types for the world at 1-km spatial resolution (SRTM30 data), the Japanese Islands at 270 m, and part of Hokkaido at 55 m. Because the procedure is unsupervised and reflects frequency distributions of the input variables rather than pre-set criteria, the resulting classes are undefined and must be calibrated empirically by subsequent analysis. Maps of the example classifications reflect physiographic regions, geological structure, and landform as well as slope materials and processes; fine-textured terrain categories tend to correlate with erosional topography or older surfaces, coarse-textured classes with areas of little dissection. In Japan the resulting classes approximate landform types mapped from airphoto analysis, while in the Americas they create map patterns resembling Hammond's terrain types or surface-form classes; SRTM30 output for the United States compares favorably with Fenneman's physical divisions. Experiments are suggested for further developing the method; the Arc/Info AML and the map of terrain classes for the world are available as online downloads.},
+  Doi                      = {10.1016/j.geomorph.2006.09.012},
+  File                     = {:/media/fabs/Volume/Data/literature/Diss/Iwahashi_and_Pike_2007.pdf:PDF},
+  Keywords                 = {Terrain classification; DEM; Slope gradient; Surface texture; Local convexity; ArcGIS macro},
+  Owner                    = {korboter},
+  Review                   = {Iwahashi and Pike (2007) present a land surface classification by applying a nested-means partitioning based on the topographich parameters slope gradient, local convexity and surface texture. The 8 classes can be extended to 12 or 16 classes by further slope gradient-based partitioning. terrain types vs. terrain regions (the presented method classifies into terrain types that reflect the statistical properties of the input DEM good intro on landform classification "most automated classifications are empirical exercises in general geomorphometry........, nor are they physically based - slope: 3x3 matrix with ArcInfo (algorithm of Horn 1981) - surface texture: previously termed "frequency of ridges and valleys; grid cellls that outline the distribution of valleys and ridges are extracted by substracting the DEM from median filtered (3x3) version of itself. The number of said cells in a radius of 10 cells respresents texture. where coarse texture with few cells represents planar slopes. - local convexity helps discriminate low-relief features ->percentage of convex-upward cells within a constant radius of ten cells no region growing algo was applied to consolidate isolated colls},
+  Timestamp                = {2011.03.03}
+}
+
 @Book{James2013,
   Title                    = {An Introduction to Statistical Learning},
   Author                   = {Gareth James and Daniela Witten and Trevor Hastie and Robert Tibshirani},
@@ -300,6 +360,26 @@
   Owner                    = {fabs},
   Timestamp                = {2016.08.30},
   Url                      = {http://www-bcf.usc.edu/~gareth/ISL/index.html}
+}
+
+@Article{Jasiewicz2013,
+  Title                    = {{Geomorphons — a pattern recognition approach to classification and mapping of landforms}},
+  Author                   = {Jaros\l{}aw Jasiewicz and Tomasz F. Stepinski},
+  Journal                  = {Geomorphology },
+  Year                     = {2013},
+  Number                   = {0},
+  Pages                    = {147 - 156},
+  Volume                   = {182},
+
+  Abstract                 = {We introduce a novel method for classification and mapping of landform elements from a {DEM} based on the principle of pattern recognition rather than differential geometry. At the core of the method is the concept of geomorphon (geomorphologic phonotypes) — a simple ternary pattern that serves as an archetype of a particular terrain morphology. A finite number of 498 geomorphons constitute a comprehensive and exhaustive set of all possible morphological terrain types including standard elements of landscape, as well as unfamiliar forms rarely found in natural terrestrial surfaces. A single scan of a {DEM} assigns an appropriate geomorphon to every cell in the raster using a procedure that self-adapts to identify the most suitable spatial scale at each location. As a result, the method classifies landform elements at a range of different spatial scales with unprecedented computational efficiency. A general purpose geomorphometric map — an interpreted map of topography — is obtained by generalizing allgeomorphons to a small number of the most common landform elements. Due to the robustness and high computational efficiency of the method high resolution geomorphometric maps having continental and even global extents can be generated from giga-cell DEMs. Such maps are a valuable new resource for both manual and automated geomorphometric analyses. In order to demonstrate a practical application of this new method, a 30&#xa0;m cell−&#xa0;1 geomorphometric map of the entire country of Poland is generated and the features and potential usage of this map are briefly discussed. The computer implementation of the method is outlined. The code is available in the public domain.},
+  Doi                      = {10.1016/j.geomorph.2012.11.005},
+  File                     = {:/home/fabs/Data/literature/Diss/Jasiewicz and Stepinski 2013.pdf:PDF},
+  ISSN                     = {0169-555X},
+  Keywords                 = {Geomorphological mapping, GRASS},
+  Owner                    = {read},
+  Review                   = {IMPLEMENTED IN GRASS 7 Allgemein: most existing methods of automated landform classification have their roots in differential geometry. The differences between different existing approaches focus on how to best utilize the information contained in geomorphometric variables, and on the choice of target units of classification. Methods can be divided into those which are cell-based and those which are oject based. They can be also divided into those which use a classifier designed manually on the basis of expert knowledge and empirical evidence and those which use a classifier generated by a machine learning algorithm Finally, methods can be divided with respect to target units of classification (Minar and Evans, 2008); considered units include: landforms, landform elements, and physio graphic units (für zitate siehe paper). NOVEL APPORACH THAT DEPARTS FROM EXISTING METHODOLOGIES: we classify landform elements using tools of computer vision rather than tools of differential geometry. Thus, our algorithm attempts to mimic the classification process carried out by a human analyst. Image texture refers to the spatial arrangement of grayscale intensities in a selected region of an image. we utilize the concept of Local Ternary Patterns (LTP) (Liao, 2010) to identify local landform elements. The set of all possible LTPs is finite (498). Geomorphons are fundamental micro-structures of landscape. Instead of using a fixed-size neighborhood to collect elevation values for determination of LTP, we use a neighborhood with size and shape that self-adapts to the local topography. This self-adaptation technique utilizes the line-of-sight principle (Lee, 1991; Nagy, 1994; Yokoyama et al., 2002) and ensures that landforms are identified at their most appropriate spatial scale. We demonstrate how to generate a map of the 10 most common landform elements (peak, ridge, shoulder, spur, slope, hollow, footslope, valley, pit, and flat) using geomorphons. local ternary patterns: looks at 8 neighbours, gives them the values lower,same,equal. In practive however the quantity derived from line-of-sight-principle is used instead of simply the elevation values. By using different L-values (lookup-distance) landform elements can be identified on a wider range of scales than with the grid-based neighbourhood. CLASSIFICATION INTO 10 LANDFORMS: While traversing a LTP in order of principal directions a “transition” is a change in ternary element. Thus geomorphons flat, peak, and pit have 0 transitions, as all ternary elements in their patterns are the same. Shoulder, spur, hollow, and valley have 2 transitions, while ridge, valley, and slope have 4 transitions. We have chosen a reclassification formula based on a particular lookup table constructed on the basis of similarity between ternary patterns representing the geomorphons; patterns are similar if they have similar number of different ternary elements. GOOD DESCRIPTION OF HOW THEY COMPARED THEIR APPROACH TO THOSE OF WOOD and DIKAU with GRASS: other methods are incomplete.., it is possible to merge (Schmidt and Hewitt, 2004) Wood's and Dikau's classification schemes into a single scheme showing all 15 landform types, but needs fuzzy classification (computational cost!) SCALE FLEXIBILITY: The geomorphons method does not use a fixed-size neighborhood, instead the size and the shape of a neighborhood from which the land- form element is determined adjusts automatically to the geometry of the local terrain. The value of L determines the maximum scale at which we can find the landform element; it needs to be set to a relatively large value in order for the map to show landform elements at a broad range of scales. The inner, irregular octagons are determined by the LOS-principle in the 8 principle directions. Increasing L values converge to same result. CONCLUSION: Geomorphons represent a paradigm shift in DEM classification. First, the method is underpinned by principles of machine vision rather than differential geometry. Second, it classifies landforms at different spatial scales simultaneously.},
+  Timestamp                = {2013.08.22},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0169555X12005028}
 }
 
 @Book{Jenny1941,
@@ -384,6 +464,25 @@
   Owner                    = {read},
   Review                   = {describes the resolution and coverage of soil maps in different countries outline the framework of a empirical partially deterministic partially stochastic model: soil spatial prediction functions (SSPFe) with spatially autocorrelated errors Brief review of approaches (#) to soil spatial prediction: #Jenny ( lot of this early quantitative work was very well summarised by Yaalon (1975), mainly to understand soil formation, not for predicitve mapping), #geographich and neighbourhood approaches (purely spatial) as well as geostatistics ( because of a failure to obtain prediction from the soil-forming factors largely because the quantitative variables describing these factors were not readily available to do such predictions, trend-surfaces applied to soil attributes such as pH, T°C; kriging also estimates uncertainies;co-kriging applies denser sets of secondary variables (other attributes of environmental factors) corelated with primary variable; Environmental correlation approach (Jenny + geography) clorpt-formula for quantitave prediction: using elevation derivatives to predict eg depth of A-horizon; subsets were used to predict soil classes), similarity to co-kriging lead to regression kriging (cloprt for prediction of soil attributes,kriging used on residuals) #predicting attributes from other soil attibutes: philips 2001 shows clorpt not working esp at fine resolutions - soil (other attributes at same spot) must be added to clorpt list SCORPAN:Jenny-like formulation not for explanation but for EMPIRICAL quantitative descriptions of relationships between soil and other spatially referenced factors, each factor represented by a set of continous or categorical values, not considering direction of causality. The model shall predict probabilties with a measure of uncertainties. does not consider pedotransfer functions (s=f(s)) with spatial reference. (read Heuvelink1996 for his regresseion kriging and 1wayANOVA) . The function is fitted to the observation points and then extended to the whole grid POSSIBLE FUNCTIONS (#) #linear models:--ordinary least squares, --principles component regression (for large number of correlated predictor variables) and partial least squares (components are determined by response AND predictor variables, used esp for electromagnetic spectrum, --linear discriminant analysis: seminal supervised learning technique;IMPORTANT: used by Bell et al. (1992, 1994) who related soil drainage classes to landscape parameters #Generalized linear model: --can handle nonnormal response distributions, modifyingmodel instead of transforming variables (also co-kriging is GLM). better than neural networks and regression trees for predicting soil attributes from environmental variables. #Generalized additive models:try to characterize nonlinear effects not considered in GLMs. not used much in soil science #Tree models-classification and regression: rule-structured classifiers built from training sets. can deal with nonlinearity, no assumptions needed, can deal with nonadditive behaviour.eg.CART. easily interpreted, widely used for prediction of soil attributes. --prediction of continuous attributes with regression tree. discrete predictions from each terminal node -> not very smooth when small nr of terminal nodes. possible improvement = multivariate lm at each node, or fuzzy membership. --prediction of soil classe =with decision/classification tree. CART=binary decision tree. used for mapping Murray-Darling basin #Neural networks:sytem of many elements with communication channels (connectors, which are weighted). networks are trained to a specific target output. Used lots, esp for pedotransfer functions, also applied to soil classes #Fuzzy systems: attempt to represent the uncertainty in predictors and predicted classes. hard input is fuzzified, fuzzy operators defined, defuzzify output. #Other models: genetic algorithms (randomised search and optimisation techniques), from data mining: multivariate adaptive regression splines(MARS), treenet (analogous to long series expansion(fourier)) #Strengthening models: bootstrap aggregating - assess acuracy of prediction with bootstrapping, model is fit for each set. -boosting:combines outut of many 'weak models' whch are weighted and then aggregated #Expert systems: Bui2003: soil maps are representations of the surveyors mental soil-landscape model by structuring terrain objects in a nested hierarchy followed by inference and formalisation of knowledge rules. eg Expector approach, using elevation derivatives #Unsupervised classification: instead of placing soil into existing classes, these classes are produced from observed soil properties. Big in 1960s, main rules are k-means and fuzzy k-means. afterwards one of the previous methods is used to fit model SPATIAL CONSIDERATIONS : considering spatial components of the environmental and soil variables and by perpending the spatial correlation strucuture of the residuals. decomposing the predictor variables into seperate spatial components and mapped seperately, with factorial kriging analysis or wavelets, the former assuming stationarity and finding the scale of the components from observations. Very likely short spatial range components(nuggget) don't relate to soil and can be removed. Structure in e-generalised least squares and geostatistics - variograms of the fitted parts of prediction functions may be instructive #GLS: s=Qb+e estimate parameter vector, calculate e , their semivariance, fit semivariogram, calculate correlation matrix, calculate R, iterate until R=min #geostatistics - scorpan-kriging: spatial trend is described by scorpan and residuals e modeled by variograms and some sort of kriging; --scorpan-universal kriging:allows incorporation of deterministic trend (bq(x), which can only be linear function) and stochastic components (e(x), modeled with variogram) in kriging. Alternately kriging is combined with regression to model the trend function seperately s(x)=f(q,x)+e'(x) ; In regression kriging, the soil property S at unvisited site is first predicted by f(), and followed by kriging of the residuals of the model. --scorpan-simple-kriging: under assumption that e has mean=0, simple kriging allows.... versteh i ned --scorpan compositional kriging: for prediction of soil classes incorporating predictor variables Q, a form of compositional krigiing with external trend is proposed. The probabilites of belonging to a soil class must sum up to one, and residuals to 0 # geostatistics - co-kriging and coregionalisation analysis: often used, any q layer can be covariate.however, linear relation between predictor and variable is assumed; regressionkriging seems to perform better (Odeh1995). --coregionalisation: even without cokriging it helps understand linear spatial relationships #other methods: --Bayesian maximum entropy allows incorporation of wide variety of soft and hard data. compared to ordinary kriging it uses soft data on a sound theoretical basis. --Fractal interpolation: effort to preserve spatial variability of original data when transferred across scales (Bindlish and Barros1996 used it for elevation data (IINNTTEERREESSSSAANNTT!!) PREVIOUS SCORPAN STUDIES: The key predictor factors are r (80% of studies) followed by s (35%), o and p (both 25%), n (20%) and c (5%) whereas a does not seem to have been used as a factor. No studies considered five or more factors. DATA SOURCES: #s: -surface multi-and hyperreflectance, -radar attenuation, -electrical conductivity, -gamma radiometrics, -preexisting soil class or properties map #c: -temperature, -precipitation, -evapotranspiration, -water balance components #o: -vegation map, -landcover and landuse classification, -biomass and yield maps, #r. -primary terrain attributes (slope, aspect, curvature and upslope contributing area), local or regional, scale-specific or -invariant (Shary2002), -secondary attributes (eg wetness index), -terrain or landscape classification (Pennock et al 1987, Wood1996, MacMillan2000 and others) #p: geological and regolith maps (in australia from hyperspectral data and expert knowledge) #a: difficult #m: simply coordinates to ensure spatial considerations ScorpanSSPFe-Method:: 1) Define soil attribute(s) of interest and decide resolution q and block size b (20-200 m) 2) Assemble data layers to represent Q 3) Spatial decomposition or lagging of data layers. wavelet decomposition or : geostatistically by modelling the correlation structure in the imagery by decomposing the variogram into independent spatial components, and then taking each component in turn and kriging it, thereby separating it from the others. Both methods get rid of short-range uncorrelated noise components 4) Sampling of assembled data (Q) to obtain sampling sites : aim is to construct predictive equations for the soil attributes of interest in terms of the environmental variables. One possibility is to use Latin hypercube sampling (McKay et al., 1979), creating tuplets with characteristic combinations. At points that are similar to these tuplets soil samples schould be taken in order to consider different characteristics. Hengl has a similar metobergurgl 12.Julihod. Or sample a area that resembles the greater region. 5) GPS field sampling and laboratory analysis to obtain soil class or property data. sometimes duplicate in the range of 1/2 grid to check for shortrange variability 6) Fit quantitative relationships (observing Ockham’s razor) - (viele viele algorithmen)- is a single model adequate/sufficient? 7) Predict digital map 8) Field sampling and laboratory analysis for corroboration and quality testing - local variation and uncertainty in environmental layers will lead to error; required to provide an independent estimate of the quality of the map produced ; Marsman and de Gruijter (1986) approach is more efficient in that the sampling is designed specifically for corroboration. little work on corroboration of digital soil maps, especially of classes. This is an area of research need. 9)If necessary simplify legend or decrease resolution by returning to (i) or improve map by returning to (v) USES described discussion: why not call SSPFe a pedotransferfunction? DANGERS VIEL VIEL LITERATUR!},
   Timestamp                = {2008.11.21}
+}
+
+@Article{McKean2004,
+  Title                    = {Objective landslide detection and surface morphology mapping using high-resolution airborne laser altimetry},
+  Author                   = {J. McKean and J. Roering},
+  Journal                  = {Geomorphology},
+  Year                     = {2004},
+  Number                   = {3-4},
+  Pages                    = {331 - 351},
+  Volume                   = {57},
+
+  Abstract                 = {A map of extant slope failures is the most basic element of any landslide assessment. Without an accurate inventory of slope instability, it is not possible to analyze the controls on the spatial and temporal patterns of mass movement or the environmental, human, or geomorphic consequences of slides. Landslide inventory maps are tedious to compile, difficult to make in vegetated terrain using conventional techniques, and tend to be subjective. In addition, most landslide inventories simply outline landslide boundaries and do not offer information about landslide mechanics as manifested by internal deformation features. In an alternative approach, we constructed accurate, high-resolution DEMs from airborne laser altimetry (LIDAR) data to characterize a large landslide complex and surrounding terrain near Christchurch, New Zealand. One-dimensional, circular (2-D) and spherical (3-D) statistics are used to map the local topographic roughness in the DEMs over a spatial scale of 1.5 to 10 m. The bedrock landslide is rougher than adjacent unfailed terrain and any of the statistics can be employed to automatically detect and map the overall slide complex. Furthermore, statistics that include a measure of the local variability of aspect successfully delineate four kinematic units within the gently sloping lower half of the slide. Features with a minimum size of surface folds that have a wavelength of about 11 to 12 m and amplitude of about 1 m are readily mapped. Two adjacent earthflows within the landslide complex are distinguished by a contrast in median roughness, and texture and continuity of roughness elements. The less active of the earthflows has a surface morphology that presumably has been smoothed by surface processes. The Laplacian operator also accurately maps the kinematic units and the folds and longitudinal levees within and at the margins of the units. Finally, two-dimensional power spectra analyses are used to quantify how roughness varies with length scale. These results indicate that no dominant length scale of roughness exists for smooth, unfailed terrain. In contrast, zones with different styles of landslide deformation exhibit distinctive spectral peaks that correspond to the scale of deformation features, such as the compression folds. The topographic-based analyses described here may be used to objectively delineate landslide features, generate mechanical inferences about landslide behavior, and evaluate relatively the recent activity of slides.},
+  Doi                      = {10.1016/S0169-555X(03)00164-8},
+  File                     = {:/media/fabs/Volume/Data/literature/Diss/McKean_2004_Geomorphology.pdf:PDF},
+  ISSN                     = {0169-555X},
+  Keywords                 = {Landslides},
+  Owner                    = {korboter},
+  Timestamp                = {2011.03.03},
+  Url                      = {http://www.sciencedirect.com/science/article/B6V93-48NJ4FP-2/2/ee836438d645363d2ff75f332f2f1eef}
 }
 
 @Article{DDI:DDI12209,
@@ -520,6 +619,19 @@
   Url                      = {http://www.sciencedirect.com/science/article/pii/S001282520800055X}
 }
 
+@Manual{cran2014,
+  Title                    = {R: A Language and Environment for Statistical Computing},
+
+  Address                  = {Vienna, Austria},
+  Author                   = {{R Core Team}},
+  Organization             = {R Foundation for Statistical Computing},
+  Year                     = {2014},
+
+  Owner                    = {fabs},
+  Timestamp                = {2017.12.28},
+  Url                      = {http://www.R-project.org/}
+}
+
 @Article{Riley1999,
   Title                    = {A Terrain Ruggedness Index That Quantifies Topographic Heterogeneity},
   Author                   = {Shawn J. Riley and Stephen D. DeGloria and Robert Elliot},
@@ -593,6 +705,28 @@
   Owner                    = {fabs},
   Timestamp                = {2017.06.01},
   Url                      = {http://www.laimburg.it/de/projekte-publikationen/blickpunkte.asp?news_action=300&news_image_id=828290}
+}
+
+@InProceedings{Wack2005,
+  Title                    = {Laser DTM Generation for South-Tyrol and 3D-Visualization},
+  Author                   = {R. Wack and H. Stelzl},
+  Booktitle                = {ISPRS WG III/3, III/4, V/3 Workshop "Laser scanning 2005"},
+  Year                     = {2005},
+
+  File                     = {:/media/fabs/Volume/Data/literature/Diss/wack_stelzl_2006_laser_dtm_generation_for_south_tyrol_and_3d_visualization.pdf:PDF},
+  Owner                    = {Administrator},
+  Timestamp                = {2008.10.01}
+}
+
+@PhdThesis{Wood1996,
+  Title                    = {{The geomorphological characterisation of digital elevation models}},
+  Author                   = {Joseph D. Wood},
+  School                   = {University of Leicester, UK},
+  Year                     = {1996},
+
+  File                     = {:/home/fabs/Data/literature/Diss/Wood_1996_Thesis_LandscapeModelling.pdf:PDF},
+  Owner                    = {Korbi},
+  Timestamp                = {2008.05.20}
 }
 
 @Article{Woodcock1977,
