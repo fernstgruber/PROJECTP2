@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  28 DEC 2017 12:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  28 DEC 2017 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,59 +440,54 @@ Overfull \hbox (1.248pt too wide) in paragraph at lines 196--198
  []
 
 [9] [10] [11] [12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 238.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 241.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 238.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 241.
 
 [13] [14
 
-] <boxplots_VR57_TRI31_MPS.pdf, id=440, 730.71431pt x 221.9725pt>
+] <boxplots_VR57_TRI31_MPS.pdf, id=445, 730.71431pt x 221.9725pt>
 File: boxplots_VR57_TRI31_MPS.pdf Graphic file (type pdf)
 
 <use boxplots_VR57_TRI31_MPS.pdf>
-Package pdftex.def Info: boxplots_VR57_TRI31_MPS.pdf used on input line 290.
+Package pdftex.def Info: boxplots_VR57_TRI31_MPS.pdf used on input line 293.
 (pdftex.def)             Requested size: 390.0pt x 118.47467pt.
  [15] [16 <./boxplots_VR57_TRI31_MPS.pdf>]
-[17] <soils_red.pdf, id=493, 732.81781pt x 349.06412pt>
+[17] <soils_red.pdf, id=498, 732.81781pt x 349.06412pt>
 File: soils_red.pdf Graphic file (type pdf)
  <use soils_red.pdf>
-Package pdftex.def Info: soils_red.pdf used on input line 303.
+Package pdftex.def Info: soils_red.pdf used on input line 306.
 (pdftex.def)             Requested size: 390.0pt x 185.77008pt.
 
-<soildistro_ohneleerebalken.pdf, id=496, 1191.7648pt x 1008.62257pt>
+<soildistro_ohneleerebalken.pdf, id=501, 1191.7648pt x 1008.62257pt>
 File: soildistro_ohneleerebalken.pdf Graphic file (type pdf)
 
 <use soildistro_ohneleerebalken.pdf>
-Package pdftex.def Info: soildistro_ohneleerebalken.pdf used on input line 309.
+Package pdftex.def Info: soildistro_ohneleerebalken.pdf used on input line 312.
 
 (pdftex.def)             Requested size: 390.0pt x 330.06084pt.
  [18] [19 <./soils_red.pdf>] [20] [21 <./soildistro_ohneleerebalken.pdf>] [22] 
 [23] [24] [25] [26] [27] [28] [29] [30]
 [31]
-Overfull \hbox (0.48344pt too wide) in paragraph at lines 363--365
+Overfull \hbox (0.48344pt too wide) in paragraph at lines 366--368
 []\OT1/cmr/m/n/12 Ice-marginal sed-i-ments are closely as-so-ci-ated with till 
 units and are mostly
  []
 
-<SGUandmodel.pdf, id=594, 1037.59642pt x 719.7464pt>
+<SGUandmodel.pdf, id=599, 1037.59642pt x 719.7464pt>
 File: SGUandmodel.pdf Graphic file (type pdf)
  <use SGUandmodel.pdf>
-Package pdftex.def Info: SGUandmodel.pdf used on input line 369.
+Package pdftex.def Info: SGUandmodel.pdf used on input line 372.
 (pdftex.def)             Requested size: 390.0pt x 270.51926pt.
 
 [32] [33] [34 <./SGUandmodel.pdf>] [35] [36] [37] [38] (./PAPIERLZWO.bbl
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¼ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¼ in font cmr12!
-
-Underfull \hbox (badness 1748) in paragraph at lines 16--23
-[]\OT1/cmr/m/n/12 APB, 2006.  Wald-typ-isierung Sdtirol.  Au-tonome Prov-inz Bo
-zen -
+Underfull \hbox (badness 1205) in paragraph at lines 16--23
+[]\OT1/cmr/m/n/12 APB, 2006.  Wald-typ-isierung S^^?udtirol.  Au-tonome Prov-in
+z Bozen -
  []
 
 Missing character: There is no Å in font cmr12!
@@ -568,29 +563,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--164
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
+ [41]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [41]
-Underfull \hbox (badness 4927) in paragraph at lines 243--257
+
+Underfull \hbox (badness 4927) in paragraph at lines 257--271
 \OT1/cmr/m/n/12 C., 2016.  Mind the gap: A clas-si-fi-ca-tion sys-tem for in-te
 -
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 243--257
+Underfull \hbox (badness 4416) in paragraph at lines 257--271
 \OT1/cmr/m/n/12 grat-ing the sub-solum into soil sur-veys.  Geo-derma 264, Part
 
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 243--257
+Underfull \hbox (badness 3525) in paragraph at lines 257--271
 \OT1/cmr/m/n/12 B, 332 -- 339.  URL: []$\OT1/cmtt/m/n/12 http : / / www . scien
 cedirect . com / science /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--293
+Underfull \hbox (badness 10000) in paragraph at lines 297--307
 \OT1/cmtt/m/n/12 article / B6V93-[]48NJ4FP-[]2 / 2 / ee836438d645363d2ff75f332f
 2f1eef$[]\OT1/cmr/m/n/12 ,
  []
@@ -615,37 +611,37 @@ Missing character: There is no – in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no – in font cmr12!
 
-Underfull \hbox (badness 1888) in paragraph at lines 353--365
+Underfull \hbox (badness 1888) in paragraph at lines 367--379
 []\OT1/cmr/m/n/12 Olofsson, P., Foody, G.M., Stehman, S.V., Wood-cock, C.E., 20
 13.
  []
 
 
-Underfull \hbox (badness 7540) in paragraph at lines 353--365
+Underfull \hbox (badness 7540) in paragraph at lines 367--379
 \OT1/cmr/m/n/12 Mak-ing bet-ter use of ac-cu-racy data in land change stud-ies:
 
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 353--365
+Underfull \hbox (badness 4024) in paragraph at lines 367--379
 \OT1/cmr/m/n/12 Es-ti-mat-ing ac-cu-racy and area and quan-ti-fy-ing un-cer-tai
 nty us-ing
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 353--365
+Underfull \hbox (badness 2753) in paragraph at lines 367--379
 \OT1/cmr/m/n/12 strat-i-fied es-ti-ma-tion.  Re-mote Sens-ing of En-vi-ron-ment
  129, 122
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 353--365
+Underfull \hbox (badness 3701) in paragraph at lines 367--379
 \OT1/cmr/m/n/12 -- 131.  URL: []$\OT1/cmtt/m/n/12 http : / / www . sciencedirec
 t . com / science / article /
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 353--365
+Underfull \hbox (badness 1735) in paragraph at lines 367--379
 \OT1/cmtt/m/n/12 pii / S0034425712004191$[]\OT1/cmr/m/n/12 , doi:[]$\OT1/cmtt/m
 /n/12 https : / / doi . org / 10 . 1016 / j . rse . 2012 .
  []
@@ -654,36 +650,36 @@ Underfull \hbox (badness 1735) in paragraph at lines 353--365
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 
-Underfull \hbox (badness 2065) in paragraph at lines 423--431
+Underfull \hbox (badness 2065) in paragraph at lines 437--445
 []\OT1/cmr/m/n/12 Thalheimer, M., 2006.  Kartierung der land-wirtschaftlich gen
 utzten
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 423--431
+Underfull \hbox (badness 1052) in paragraph at lines 437--445
 \OT1/cmr/m/n/12 177.  URL: []$\OT1/cmtt/m/n/12 http : / / www . laimburg . it /
  de / projekte-[]publikationen /
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
  [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
  (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
 Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
 (rerunfilecheck)             Checksum: 86AFCA44A31D30A6C7DA27F0BE89D46E;3007.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
  ) 
 Here is how much of TeX's memory you used:
- 6247 strings out of 493304
- 91279 string characters out of 6139871
- 194409 words of memory out of 5000000
- 9505 multiletter control sequences out of 15000+600000
+ 6251 strings out of 493304
+ 91344 string characters out of 6139871
+ 194485 words of memory out of 5000000
+ 9508 multiletter control sequences out of 15000+600000
  9351 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,12n,34p,3417b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,34p,3417b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texliv
@@ -700,10 +696,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (44 pages, 6272271 bytes).
+Output written on PAPIERLZWO.pdf (44 pages, 6273132 bytes).
 PDF statistics:
- 914 PDF objects out of 1000 (max. 8388607)
- 781 compressed objects within 8 object streams
- 144 named destinations out of 1000 (max. 500000)
+ 927 PDF objects out of 1000 (max. 8388607)
+ 794 compressed objects within 8 object streams
+ 145 named destinations out of 1000 (max. 500000)
  295 words of extra memory for PDF output out of 10000 (max. 10000000)
 
