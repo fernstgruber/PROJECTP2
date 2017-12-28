@@ -214,26 +214,26 @@ The connection between the two important soil forming factors, parent material a
 The terrain parameters used in this study were computed using the open source GIS GRASS \citep{GRASS} and SAGA \citep{SAGA}. They were performed at different spatial resolutions (2.5, 10 and 50~m) and, where applicable, at different moving window sizes. Local terrain parameters, including slope and minimal, maximal,profile, longitudinal as well as cross-sectional curvature were computed based on the algorithms of \cite{Wood1996} as implemented in the tool 'r.param.scale' in GRASS, which allows varying the computational window size. Regional terrain parameters, amongst them catchment area, topographic wetness index, height above channel network and others, were computed with SAGA both at high (2.5~m) and low (50~m) spatial resolution.  
 \subsubsection{Surface roughness-related terrain parameters}
 \paragraph{Topographic roughness index} 
-The topographic roughness index was presented by  \cite{Riley1999} in a study. It  compares the elevation of a central pixel to the elevations of cells within a given search window. 
-\cite{McKean2004}
+The topographic roughness index was presented by  \cite{Riley1999} for use in habitat analyses. It  compares the elevation of a central pixel to the elevations of cells within a given search window by calculating the square root of the sum of the squared differences.
 
 \paragraph{Terrain texture}
-
-\cite{Iwahashi2007}
+In their automated landform classification algorithm, \cite{Iwahashi2007} present terrain texture, or feature frequency, which can also be interpreted as a measure for surface roughness. This measure is quantified by the number of features, i.e. pits or peaks, in a specified search window. These features are  extracted by computing the difference between a DTM and its median-filtered version.
 \paragraph{Vector-based roughness measures}
+ In an attempt to decorrelate roughness from slope, \cite{Sappington2007} expanded on the work of \cite{Hobson1972} to introduce vector ruggedness measure (VRM), which is calculated based on the orientation of vectors normal to the surface in a given area. Its implementation as the tool 'r.vector.ruggedness' in GRASS was used for computation in this study.  \cite{Grohmann2010}, who also authored GRASS ('r.rougness.vector') analysed several roughness measures at different resolutions and window sizes with regard to their ability to depict terrain features. They highlight the ability of VRM to detect fine-scale roughness features and attribute low roughness values to steep but smooth slopes, but also acknowledge its inability to delimit slope breaks and identify regional relief.
 
-\cite{Sappington2007}
-
-\cite{Grohmann2010}
 \paragraph{Landform diversity} 
-\citep{Jasiewicz2013}
+
+Landform diversity can also be interpreted as a form of surface roughness, i.e. a high number of landforms in a given search window signifies high terrain roughness. \citep{Jasiewicz2013} present an aoutomated landform classification based on a pattern-recognition approach using  line-of-site calculations. The two main parameters that can be tweeked for landform segmentation are the search radius up to which the surroundings of a central raster cell are scanned and the flatness threshold angle, under which a surface is considered as flat. In this study, the resulting map featuring a maximum of ten landform classes is used as the input for the calculation of patch indices such as edge density or mean patch size (mps) and diversity indices like dominance of richness with the GRASS module 'r.li' for landscape structure analysis. The landform maps were calculated at micro and meso scale(search radii of 7.5 and 50~m, respectively) applying flatness thresholds of 1 and 10$^{\circ}$.
+ \begin{figure}[ht!]
+\includegraphics[width=\textwidth,angle=0]{diversity.png}
+\caption{Richness. }
+\label{fig:richness}
+\end{figure}
+
 \subsection{Random Forest classification }
-Random forests \citep{Breiman2001} belong to the family of machine learning algorithms, meaning that based on test data, statistical patterns between explanatory variables and the dependent variables are sought and then applied to predict the latter based on new data sets comprised of the dependent variables. A comparison of machine learning approaches for classification in soil mapping can be found in \cite{Heung2016}.
+Random forests \citep{Breiman2001} belong to the family of machine learning algorithms, meaning that based on test data, statistical patterns between explanatory variables and the dependent variables are sought and then applied to predict the latter based on new data sets comprised of the dependent variables. A comparison of machine learning approaches for classification in soil mapping can be found in \cite{Heung2016}. Contrary to single classification trees, random forests use an ensemble of classification trees to predict class class affiliation, each based on a bootstrap sample of the test data and a limited number of randomly chosen explanatory variables. Random forest classification as implemented in the R \citep{cran2014} package 'randomForest' also has the advantage of computing variable importance measures such as 'mean decrease accuracy' and 'mean decrease Gini' that provide insight into the role and importance of each predictor variable in a specific model. 
 
-
- Contrary to single classification trees, random forests use an ensemble of classification trees to predict class class affiliation, each based on a bootstrap sample of the test data and a limited number of randomly chosen explanatory variables. Random forest classification as implemented in the R \citep{cran2014} package 'randomForest' also has the advantage of computing importance measures such as... 
-
-A five-fold cross-validated forward step-wise feature selection was performed with random forest classification to produce a parent material map of the study area. Feature selection was performed to identify a small number of parameters capable of turning the geologic map into a parent material map. In contrast to using all possible terrain parameters, this procedure that produces only a limited number of explanatory variables, has the advantage of being easier to interpret, as the main aim is also to identify, highlight, and understand situations were the most confusion between parent material units as documented by surveyors and the geologic map occur. Additionally to a large number of terrain parameters, the geologic map, reclassified to the SGUs in Table~\ref{table:geounits}, was added to the set of explanatory variables from which the random forest classifier could add features to the model. The unit mire deposits removed due to only one class member. The whole feature selection procedure was also performed in 5-fold crossvalidation, and for four parameter sets: 1) all terrain parameters, 2) local terrain parameters, 3) regional terrain parameters, 4) surface roughness-related parameters.
+In this study a five-fold cross-validated forward step-wise feature selection was performed with random forest classification to produce a parent material map of the study area. Feature selection was performed to identify a small number of parameters capable of turning the geologic map into a parent material map. In contrast to using all possible terrain parameters, this procedure that produces only a limited number of explanatory variables, has the advantage of being easier to interpret, as the main aim is also to identify, highlight, and understand situations were the most confusion between parent material units as documented by surveyors and the geologic map occur. Additionally to a large number of terrain parameters, the geologic map, reclassified to the SGUs in Table~\ref{table:geounits}, was added to the set of explanatory variables from which the random forest classifier could add features to the model. The unit mire deposits removed due to only one class member. The whole feature selection procedure was also performed in 5-fold crossvalidation, and for four parameter sets: 1) all terrain parameters, 2) local terrain parameters, 3) regional terrain parameters, 4) surface roughness-related parameters.
 
 
 This feature selection procedure with random forest classifications was performed for several applications in the course of this study:
@@ -243,14 +243,16 @@ This feature selection procedure with random forest classifications was performe
 \item To  analyse which terrain parameters best distinguish between adjacent soil parent material classes as identified by the soil surveyors during field survey
 \item To identify the terrain parameters that best separate and consequently characterise the SGUs as described by the geological map
 \end{itemize}
-Considering the confusion matrices and the accuracy measures calculated, this was performed as if the field observations described by the surveyors had been planned to validate the use of the geologic map as a map of soil parent material.
 
 
 
 \clearpage
 \section{Results and discussion}
 \subsection{Comparison of soil parent material at soil profile sites with geologic map units}
-A comparison of the soil parent material class identified in the field survey and the SGU from the geological map for the same position shows that while these match for 186 of the profile sites, leading to an overall accuracy, or correct classification rate, of 49\%, there is a high number of misclassifications. A first view at the confusion matrix (Table \ref{kartiergegenkarte}) indicates that a considerable amount of theses misclassifications involve the classes till  and slope deposits. 
+For the following results and discussion,  the confusion matrices and the accuracy measures are calculated and interpreted as if the field observations described by the surveyors had been planned to validate the use of the geologic map as a map of soil parent material.
+A comparison of the soil parent material class identified in the field survey and the SGU from the geological map for the same position shows that while these match for 186 of the profile sites, leading to an overall accuracy, or correct classification rate, of 49\%, there is a high number of misclassification. 
+
+ A first view at the confusion matrix (Table \ref{kartiergegenkarte}) indicates that a considerable amount of theses misclassifications involve the classes till  and slope deposits. 
 \begin{table}[ht]
 \centering
 \tabcolsep=0.06cm
