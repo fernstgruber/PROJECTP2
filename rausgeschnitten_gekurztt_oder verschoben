@@ -4,3 +4,28 @@
 This data mining procedure was applied to several groups of terrain parameters. One group included all computed terrain parameters, while other groups focus either on local or regional terrain parameters, or parameters related to surface roughness.
 
  and discuss how they can be related to and interpreted with regard to soil formation and the distribution of soil units. 
+
+
+
+ By applying a forward stepwise feature selection as well as the analysis of the parameter 'mean decrease accuracy', which quantifies the importance of a variable in the prediction procedure, we then identify which terrain parameters best separate parent materials units as well as geological map units.  An emphasis is set on the roughness measures, which are deemed best suited to enhance the geologic map, as the geological units already implicitly contain information with regard to regional and local terrain parameters. The results are presented in detail only for the area-wise most relevant geologic units, focussing on separating those units which share common borders.
+
+
+In this study a five-fold cross-validated forward step-wise feature selection was performed with random forest classification to produce a parent material map of the study area. Feature selection was performed to identify a small number of parameters capable of turning the geologic map into a parent material map. In contrast to using all possible terrain parameters, this procedure that produces only a limited number of explanatory variables, has the advantage of being easier to interpret, as the main aim is also to identify, highlight, and understand situations were the most confusion between parent material units as documented by surveyors and the geologic map occur. Additionally to a large number of terrain parameters, the geologic map, reclassified to the SGUs in Table~\ref{table:geounits}, was added to the set of explanatory variables from which the random forest classifier could add features to the model. The unit mire deposits removed due to only one class member. The whole feature selection procedure was also performed in 5-fold crossvalidation, and for four parameter sets: 1) all terrain parameters, 2) local terrain parameters, 3) regional terrain parameters, 4) surface roughness-related parameters.
+
+
+This feature selection procedure with random forest classifications was performed for several applications in the course of this study:
+\begin{itemize}
+\item To expand the geological map to a parent material map by modeling parent material based on the profile site descriptions, the topography of their location and the information provided by the new geologic map with its detailed information with regard to surficial geology.
+\item To investigate which terrain parameters are best suited to discriminate for each SGU those points that where correctly classified to a parent material class by the geological map from those where this information differed to the parent material identified by the field surveyors.
+\item To  analyse which terrain parameters best distinguish between adjacent soil parent material classes as identified by the soil surveyors during field survey.
+\item To identify the terrain parameters that best separate and consequently characterise the SGUs as described by the geological map.
+\end{itemize}
+
+The results are presented in detail only for the area-wise most relevant geologic units, focussing on separating those units which share common borders.
+
+ (Convexity values) concentrating around 0.42
+
+aus dem text (bei Figure eh dabei): 
+Figure~\ref{fig:boxplots} gives an overview of the distribution of three roughness measures for the most common SGUs from the point of view of both the geologic map (large boxplots) as well as the surveyors (smaller boxplots incorporated in the larger boxplots). It also differentiates between those soil profile sites for which the classification by surveyor and SGU map aggree (green), and those for which this is not the case (red).
+
+

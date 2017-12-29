@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="boxplots_VR57_TRI31_MPS.pdf">
+   sodipodi:docname="boxplots_VR57_TRI31_MPS.svg">
   <defs
      id="defs4">
     <g
@@ -7045,14 +7045,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="512.27544"
+     inkscape:cx="546.9401"
      inkscape:cy="584.00379"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
-     inkscape:window-x="65"
+     inkscape:window-x="1985"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
@@ -7063,7 +7063,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -10918,22 +10918,22 @@
          id="flowPara25036-6-0"
          style="font-size:10px;text-align:center;text-anchor:middle">Vector ruggedness measure</flowPara><flowPara
          style="font-size:10px;text-align:center;text-anchor:middle"
-         id="flowPara7539">(window size of 142.5 m)</flowPara></flowRoot>    <flowRoot
+         id="flowPara7539">(window size = 142.5 m)</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot25030"
        style="font-size:22px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        transform="translate(-567.39014,-93.27436)"><flowRegion
          id="flowRegion25032"><rect
            id="rect25034"
-           width="310.77338"
-           height="45.961903"
+           width="312.18747"
+           height="37.476612"
            x="1205.9706"
            y="677.97998"
            style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
-         id="flowPara25036"
-         style="font-size:10px;text-align:center;text-anchor:middle">mean landform patch size (50 m search radius, 10° flatness,</flowPara><flowPara
          style="font-size:10px;text-align:center;text-anchor:middle"
-         id="flowPara7541">window size of 50 m) </flowPara></flowRoot>    <g
+         id="flowPara7037">mean landform patch size </flowPara><flowPara
+         style="font-size:10px;text-align:center;text-anchor:middle"
+         id="flowPara7541">(search radius = 50 m ; flatness = 10°; window size = 50 m) </flowPara></flowRoot>    <g
        id="g38480"
        transform="translate(-58.145679,5.4267758)">
       <g

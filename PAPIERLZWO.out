@@ -5,11 +5,11 @@
 \BOOKMARK [2][-]{subsection.2.3}{Soil data sets and soil classification}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{Digital terrain model}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Methods}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{General workflow}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Terrain parameters with emphasis on roughness measures}{section.3}% 9
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Local and regional terrain parameters}{subsection.3.2}% 10
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Surface roughness-related terrain parameters}{subsection.3.2}% 11
-\BOOKMARK [2][-]{subsection.3.3}{Random Forest classification }{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Terrain parameters with emphasis on roughness measures}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Local and regional terrain parameters}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Surface roughness-related terrain parameters}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Random Forest classification }{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{General workflow}{section.3}% 12
 \BOOKMARK [1][-]{section.4}{Results and discussion}{}% 13
 \BOOKMARK [2][-]{subsection.4.1}{Comparison of soil parent material at soil profile sites with geologic map units}{section.4}% 14
 \BOOKMARK [2][-]{subsection.4.2}{Geologic-topographic characterisation of the predominant SGUs}{section.4}% 15

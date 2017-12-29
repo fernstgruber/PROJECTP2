@@ -6751,16 +6751,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.39764158"
-     inkscape:cx="1078.1957"
-     inkscape:cy="2045.6527"
+     inkscape:zoom="0.79528316"
+     inkscape:cx="720.59523"
+     inkscape:cy="1690.5935"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1918"
-     inkscape:window-height="1053"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1855"
+     inkscape:window-height="1028"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -8244,79 +8244,67 @@
          id="tspan9583-5"
          x="1184.3441"
          y="-467.70432">D)</tspan></text>
+    <rect
+       style="color:#000000;fill:#f1f1f1;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.355423;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5453"
+       width="784.62512"
+       height="91.790085"
+       x="390.82849"
+       y="-939.38068" />
     <g
        id="g9983"
-       transform="translate(328.18499,-563.32137)">
-      <g
-         id="g9966">
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-           d="m 139.6641,-349.94846 17.3291,0 0,-10.32227 -17.3291,0 z m 0,0"
-           id="path10757-8" />
-        <text
-           xml:space="preserve"
-           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="168.86932"
+       transform="translate(262.18499,-563.32137)">
+      <path
+         id="path10757-8"
+         d="m 139.6641,-349.94846 17.3291,0 0,-10.32227 -17.3291,0 z m 0,0"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text9920"
+         y="-351.24728"
+         x="168.86932"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:16px"
            y="-351.24728"
-           id="text9920"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan9922"
-             x="168.86932"
-             y="-351.24728"
-             style="font-size:14px">soil profile sites with this parent material according to SGU map</tspan></text>
-      </g>
-      <g
-         transform="translate(0.63079,2.1122154)"
-         id="g9971">
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-           d="m 139.03331,-325.28961 17.3292,0 0,-10.32227 -17.3292,0 z m 0,0"
-           id="path10074-3" />
-        <text
-           xml:space="preserve"
-           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
            x="168.86932"
-           y="-326.58844"
-           id="text9920-8"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan9922-3"
-             x="168.86932"
-             y="-326.58844"
-             style="font-size:14px">soil profile sites with this parent material according to soil profile description</tspan></text>
-      </g>
-      <g
-         transform="translate(0.04678,7.5444828)"
-         id="g9976">
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:#00ff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
-           d="m 139.61732,-303.95059 17.4852,0 0,-10.32227 -17.4852,0 z m 0,0"
-           id="path9535-5" />
-        <text
-           xml:space="preserve"
-           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="168.86932"
-           y="-305.24942"
-           id="text9920-8-1"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan9922-3-8"
-             x="168.86932"
-             y="-305.24942"
-             style="font-size:14px">soil profile sites with this parent material according to SGU map AND soil profile description</tspan></text>
-      </g>
-      <rect
-         transform="translate(0,308.2677)"
-         y="-689.35724"
-         x="105.62276"
-         height="108.1376"
-         width="738.10187"
-         id="rect9981"
-         style="opacity:0.35979429;fill:#f2f2f2;stroke:none" />
+           id="tspan9922"
+           sodipodi:role="line">soil profile sites with this parent material according to SGU map</tspan></text>
+      <path
+         id="path10074-3"
+         d="m 139.6641,-323.17739 17.3292,0 0,-10.32227 -17.3292,0 z m 0,0"
+         style="fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text9920-8"
+         y="-324.47623"
+         x="169.50011"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:16px"
+           y="-324.47623"
+           x="169.50011"
+           id="tspan9922-3"
+           sodipodi:role="line">soil profile sites with this parent material according to soil profile description</tspan></text>
+      <path
+         id="path9535-5"
+         d="m 139.6641,-296.40611 17.4852,0 0,-10.32227 -17.4852,0 z m 0,0"
+         style="fill:#00ff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text9920-8-1"
+         y="-297.70493"
+         x="168.91611"
+         style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:16px"
+           y="-297.70493"
+           x="168.91611"
+           id="tspan9922-3-8"
+           sodipodi:role="line">soil profile sites with this parent material according to SGU map AND soil profile description</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -8366,5 +8354,15 @@
          id="tspan11704-38"
          x="653.29541"
          y="1165.7126">soil profile sites</tspan></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4677"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:28px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4679"><rect
+           id="rect4681"
+           width="821.09119"
+           height="154.6619"
+           x="432.55035"
+           y="-1269.6537" /></flowRegion><flowPara
+         id="flowPara4683"></flowPara></flowRoot>  </g>
 </svg>

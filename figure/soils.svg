@@ -25,15 +25,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="540.8365"
-     inkscape:cy="458.8924"
+     inkscape:zoom="1.4"
+     inkscape:cx="595.57895"
+     inkscape:cy="331.28027"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
-     inkscape:window-x="65"
+     inkscape:window-x="1985"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
@@ -53,100 +53,83 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-308.2677)">
-    <g
-       id="g3116">
-      <image
-         transform="matrix(0,-1,1,0,0,0)"
-         width="435.20001"
-         height="290.39999"
-         xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_1455_P39_Profilhochformat.JPG"
-         id="image3015"
-         x="-950.2276"
-         y="6.5143166" />
-      <flowRoot
-         transform="translate(414.65486,602.07633)"
-         style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         id="flowRoot3051"
-         xml:space="preserve"><flowRegion
-           id="flowRegion3053"><rect
-             style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-             y="315.78979"
-             x="-147.48227"
-             height="52.527931"
-             width="56.568542"
-             id="rect3055" /></flowRegion><flowPara
-           id="flowPara3057">A</flowPara></flowRoot>    </g>
-    <g
-       id="g3144"
-       transform="translate(-16.785767,0)">
-      <g
-         id="g3123">
-        <image
-           y="756.62952"
-           x="334.64911"
-           id="image3026"
-           xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_1407_P39Umgebung.JPG"
-           height="193.59805"
-           width="290.13043" />
-        <flowRoot
-           xml:space="preserve"
-           id="flowRoot3051-3"
-           style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-           transform="translate(743.90825,601.79313)"><flowRegion
-             id="flowRegion3053-6"><rect
-               id="rect3055-7"
-               width="56.568542"
-               height="52.527931"
-               x="-147.48227"
-               y="315.78979"
-               style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
-             id="flowPara3057-5">C</flowPara></flowRoot>      </g>
-      <g
-         id="g3130">
-        <image
-           y="515.02759"
-           x="334.64911"
-           id="image3048"
-           xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_3816_P43_Umgebung.JPG"
-           height="193.59805"
-           width="290.13043" />
-        <flowRoot
-           xml:space="preserve"
-           id="flowRoot3051-35"
-           style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-           transform="translate(743.06841,357.50742)"><flowRegion
-             id="flowRegion3053-62"><rect
-               id="rect3055-9"
-               width="56.568542"
-               height="52.527931"
-               x="-147.48227"
-               y="315.78979"
-               style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
-             id="flowPara3057-1">B</flowPara></flowRoot>      </g>
-    </g>
-    <g
-       id="g3137"
-       transform="translate(-40.000031,0)">
-      <image
-         transform="matrix(0,1,-1,0,0,0)"
-         width="435.20001"
-         height="290.39999"
-         xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_3830_P43_Profil.JPG"
-         id="image3037"
-         x="515.02759"
-         y="-959.34283" />
-      <flowRoot
-         transform="translate(1079.1713,602.07633)"
-         style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
-         id="flowRoot3051-2"
-         xml:space="preserve"><flowRegion
-           id="flowRegion3053-7"><rect
-             style="font-size:20px;font-weight:bold;-inkscape-font-specification:Sans Bold"
-             y="315.78979"
-             x="-147.48227"
-             height="52.527931"
-             width="56.568542"
-             id="rect3055-0" /></flowRegion><flowPara
-           id="flowPara3057-9">D</flowPara></flowRoot>    </g>
-  </g>
+    <image
+       y="6.5143166"
+       x="-950.2276"
+       id="image3015"
+       xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_1455_P39_Profilhochformat.JPG"
+       height="290.39999"
+       width="435.20001"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3051"
+       style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="translate(422.65486,608.05566)"><flowRegion
+         id="flowRegion3053"><rect
+           id="rect3055"
+           width="56.568542"
+           height="52.527931"
+           x="-147.48227"
+           y="315.78979"
+           style="font-size:20px;font-weight:bold;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
+         id="flowPara3057">A</flowPara></flowRoot>    <image
+       y="756.62952"
+       x="317.86334"
+       id="image3026"
+       xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_1407_P39Umgebung.JPG"
+       height="193.59805"
+       width="290.13043" />
+    <image
+       y="515.02759"
+       x="317.86334"
+       id="image3048"
+       xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_3816_P43_Umgebung.JPG"
+       height="193.59805"
+       width="290.13043" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3051-35"
+       style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="translate(736.13163,608.05566)"><flowRegion
+         id="flowRegion3053-62"><rect
+           id="rect3055-9"
+           width="56.568542"
+           height="52.527931"
+           x="-147.48227"
+           y="315.78979"
+           style="font-size:20px;font-weight:bold;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
+         id="flowPara3057-1">B</flowPara></flowRoot>    <image
+       y="-919.34277"
+       x="515.02759"
+       id="image3037"
+       xlink:href="file:///media/fabs/Volume/01_PAPERZEUG/PROJECTP2/figure/Fotos/IMG_3830_P43_Profil.JPG"
+       height="290.39999"
+       width="435.20001"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3051-2"
+       style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="translate(1045.1713,608.05566)"><flowRegion
+         id="flowRegion3053-7"><rect
+           id="rect3055-0"
+           width="56.568542"
+           height="52.527931"
+           x="-147.48227"
+           y="315.78979"
+           style="font-size:20px;font-weight:bold;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
+         id="flowPara3057-9">D</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3051-3"
+       style="font-size:20px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       transform="translate(736.97147,365.79313)"><flowRegion
+         id="flowRegion3053-6"><rect
+           id="rect3055-7"
+           width="56.568542"
+           height="52.527931"
+           x="-147.48227"
+           y="315.78979"
+           style="font-size:20px;font-weight:bold;stroke:#ffffff;stroke-opacity:1;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
+         id="flowPara3057-5">C</flowPara></flowRoot>  </g>
 </svg>
