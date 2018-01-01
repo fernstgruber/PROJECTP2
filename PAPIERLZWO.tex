@@ -388,6 +388,10 @@ After considering and evaluating the issues that arise with regard to the indivi
 \begin{itemize}
 \item the landform-diversity measures are all heavily correlated and have the same meaning in the end.
 \item the roughness measures also show high correlations and the various window sizes show similar results. Consequently it cannot be said that one parameter combination is better than the other for separating parent material classes, but only that the feature selection procedure chose this combination over others, with no quantification of the increase in prediction rate, which may have been minimal.
+
+
+The forward stepwise feature selection often compared well to the importance measures, however....
+
 The choice of two different roughness measures next to the SGU  map demonstrates the, in our view, advantage of the forward-stepwise feature selection procedure, as opposed to the ranking of importance measures. In the latter case the top ranked terrain parameters were often the same parameter but at slightly different window sizes, presumably due to autocorrelation.
 \item beware of the different class sizes when using random forest and boxplots to investigate differences. For future studies, a sampling scheme that leads to a more balanced distribution of the samples per parent material unit can decrease the problem of overfitting classes with small sample sizes and high confusion rates.
 \item In general local terrain parameters and regional terrain parameters are only important if the parent material map does not apply the information already implicitly provided in the new detailed geological map.

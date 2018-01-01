@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.18)  1 JAN 2018 15:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  1 JAN 2018 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **PAPIERLZWO.tex
 (./PAPIERLZWO.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 9 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
@@ -494,13 +494,12 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 389.
  [37] [38] [39]
-[40] (./PAPIERLZWO.bbl
+[40] [41] (./PAPIERLZWO.bbl
 Underfull \hbox (badness 1205) in paragraph at lines 16--23
 []\OT1/cmr/m/n/12 APB, 2006.  Wald-typ-isierung S^^?udtirol.  Au-tonome Prov-in
 z Bozen -
  []
 
-[41]
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -667,23 +666,23 @@ Underfull \hbox (badness 1052) in paragraph at lines 434--442
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
  [47]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
  (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
 Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
 (rerunfilecheck)             Checksum: 88E37697D1EC82DD13CE0C1FF4F67E95;2505.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 442.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
  ) 
 Here is how much of TeX's memory you used:
- 6261 strings out of 494935
- 91453 string characters out of 6178122
- 191966 words of memory out of 5000000
- 9285 multiletter control sequences out of 15000+600000
+ 6261 strings out of 493304
+ 91453 string characters out of 6139871
+ 195827 words of memory out of 5000000
+ 9511 multiletter control sequences out of 15000+600000
  9659 words of font info for 34 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 957 hyphenation exceptions out of 8191
  34i,12n,34p,3417b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
@@ -702,7 +701,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (47 pages, 4495740 bytes).
+Output written on PAPIERLZWO.pdf (47 pages, 4495836 bytes).
 PDF statistics:
  885 PDF objects out of 1000 (max. 8388607)
  770 compressed objects within 8 object streams
