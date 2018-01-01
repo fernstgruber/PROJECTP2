@@ -10,37 +10,37 @@ Warning--empty note in waldtypisierungTirol
 Warning--empty pages in Wack2005
 You've used 46 entries,
             2990 wiz_defined-function locations,
-            1096 strings with 17661 characters,
-and the built_in function-call counts, 32222 in all, are:
-= -- 2430
-> -- 1335
+            1094 strings with 17526 characters,
+and the built_in function-call counts, 32107 in all, are:
+= -- 2416
+> -- 1327
 < -- 37
-+ -- 522
-- -- 464
-* -- 3616
-:= -- 4666
++ -- 521
+- -- 461
+* -- 3593
+:= -- 4652
 add.period$ -- 161
 call.type$ -- 46
-change.case$ -- 380
+change.case$ -- 379
 chr.to.int$ -- 46
 cite$ -- 50
-duplicate$ -- 2389
-empty$ -- 2319
-format.name$ -- 601
-if$ -- 6065
+duplicate$ -- 2385
+empty$ -- 2316
+format.name$ -- 594
+if$ -- 6042
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 469
+missing$ -- 468
 newline$ -- 268
 num.names$ -- 190
-pop$ -- 812
+pop$ -- 811
 preamble$ -- 1
-purify$ -- 336
+purify$ -- 335
 quote$ -- 0
-skip$ -- 718
+skip$ -- 719
 stack$ -- 0
-substring$ -- 1181
-swap$ -- 1801
+substring$ -- 1177
+swap$ -- 1794
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
@@ -48,5 +48,5 @@ type$ -- 396
 warning$ -- 4
 while$ -- 175
 width$ -- 0
-write$ -- 731
+write$ -- 730
 (There were 4 warnings)

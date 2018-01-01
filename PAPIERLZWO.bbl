@@ -96,6 +96,14 @@
   \bibinfo{volume}{5}, \bibinfo{pages}{247--266}.
 \newblock \URLprefix \url{http://dx.doi.org/10.4236/ijg.2014.53026}.
 %Type = Article
+\bibitem[{Congalton(1991)}]{Congalton1991}
+\bibinfo{author}{Congalton, R.G.}, \bibinfo{year}{1991}.
+\newblock \bibinfo{title}{A review of assessing the accuracy of classification
+  of remotely sensed data}.
+\newblock \bibinfo{journal}{Remote Sensing of Environment}
+  \bibinfo{volume}{37}, \bibinfo{pages}{35 -- 46}.
+\newblock \DOIprefix\doi{10.1016/0034-4257(91)90048-B}.
+%Type = Article
 \bibitem[{Conrad et~al.(2015)Conrad, Bechtel, Bock, Dietrich, Fischer, Gerlitz,
   Wehberg, Wichmann and B\"ohner}]{SAGA}
 \bibinfo{author}{Conrad, O.}, \bibinfo{author}{Bechtel, B.},
@@ -292,17 +300,6 @@
 \newblock \bibinfo{title}{On digital soil mapping}.
 \newblock \bibinfo{journal}{Geoderma} \bibinfo{volume}{117}, \bibinfo{pages}{3
   -- 52}.
-%Type = Article
-\bibitem[{McKean and Roering(2004)}]{McKean2004}
-\bibinfo{author}{McKean, J.}, \bibinfo{author}{Roering, J.},
-  \bibinfo{year}{2004}.
-\newblock \bibinfo{title}{Objective landslide detection and surface morphology
-  mapping using high-resolution airborne laser altimetry}.
-\newblock \bibinfo{journal}{Geomorphology} \bibinfo{volume}{57},
-  \bibinfo{pages}{331 -- 351}.
-\newblock \URLprefix
-  \url{http://www.sciencedirect.com/science/article/B6V93-48NJ4FP-2/2/ee836438d645363d2ff75f332f2f1eef},
-  \DOIprefix\doi{10.1016/S0169-555X(03)00164-8}.
 %Type = Article
 \bibitem[{Miller and Lee~Burras(2015)}]{Miller2015a}
 \bibinfo{author}{Miller, B.A.}, \bibinfo{author}{Lee~Burras, C.},
