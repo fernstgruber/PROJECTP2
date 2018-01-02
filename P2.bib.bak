@@ -226,7 +226,7 @@
 }
 
 @InCollection{Geitner2017,
-  Title                    = {Chapter 8 - Soil and Land Use in the Alps—Challenges and Examples of Soil-Survey and Soil-Data Use to Support Sustainable Development },
+  Title                    = {{Chapter 8 - Soil and Land Use in the Alps - Challenges and Examples of Soil-Survey and Soil-Data Use to Support Sustainable Development}},
   Author                   = {Clemens Geitner and Jasmin Baruck and Michele Freppaz and Danilo Godone and Sven Grashey-Jansen and Fabian E. Gruber and Kati Heinrich and Andreas Papritz and Alois Simon and Silvia Stanchi and Robert Traidl and Nina von Albertini and Borut Vrščaj},
   Booktitle                = {Soil Mapping and Process Modeling for Sustainable Land Use Management },
   Publisher                = {Elsevier},
@@ -680,7 +680,7 @@
 }
 
 @Article{Scholz2005,
-  Title                    = {Quart{\"a}rgeologische Untersuchungen im {\"U}beretsch},
+  Title                    = {{Quart{\"a}rgeologische Untersuchungen im {\"U}beretsch}},
   Author                   = {Herbert Scholz and Karl-Heinz Bestle and Sebastian Willerich},
   Journal                  = {Geo.Alp},
   Year                     = {2005},
@@ -692,7 +692,7 @@
 }
 
 @Article{Thalheimer2006,
-  Title                    = {Kartierung der landwirtschaftlich genutzten Böden des \"{U}beretsch in S\"{u}dtirol (Italien)},
+  Title                    = {{Kartierung der landwirtschaftlich genutzten B\"oden des \"{U}beretsch in S\"{u}dtirol (Italien)}},
   Author                   = {Martin Thalheimer},
   Journal                  = {Laimburg Journal},
   Year                     = {2006},

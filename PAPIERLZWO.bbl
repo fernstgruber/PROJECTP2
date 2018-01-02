@@ -134,10 +134,10 @@
 \bibitem[{Fracek and Mosimann(2013)}]{Fracek2013}
 \bibinfo{author}{Fracek, K.}, \bibinfo{author}{Mosimann, T.},
   \bibinfo{year}{2013}.
-\newblock \bibinfo{title}{Wissensbasierte modellierung der mächtigkeit des
-  kalkfreien bodenbereiches in den waldböden des kantons basel-landschaft
-  (nordwestschweiz)}.
-\newblock \bibinfo{journal}{Waldökologie, Landschaftsforschung und
+\newblock \bibinfo{title}{{Wissensbasierte Modellierung der M\"achtigkeit des
+  kalkfreien Bodenbereiches in den Waldb\"oden des Kantons Basel-Landschaft
+  (Nordwestschweiz)}}.
+\newblock \bibinfo{journal}{Wald\"okologie, Landschaftsforschung und
   Naturschutz} \bibinfo{volume}{13}, \bibinfo{pages}{5--16}.
 %Type = Inbook
 \bibitem[{Gallant and Wilson(2000)}]{Gallant2000}
@@ -158,9 +158,9 @@
   \bibinfo{author}{Simon, A.}, \bibinfo{author}{Stanchi, S.},
   \bibinfo{author}{Traidl, R.}, \bibinfo{author}{von Albertini, N.},
   \bibinfo{author}{Vrščaj, B.}, \bibinfo{year}{2017}.
-\newblock \bibinfo{title}{Chapter 8 - soil and land use in the
-  alps—challenges and examples of soil-survey and soil-data use to support
-  sustainable development}, in: \bibinfo{editor}{Pereira, P.},
+\newblock \bibinfo{title}{{Chapter 8 - Soil and Land Use in the Alps -
+  Challenges and Examples of Soil-Survey and Soil-Data Use to Support
+  Sustainable Development}}, in: \bibinfo{editor}{Pereira, P.},
   \bibinfo{editor}{Brevik, E.C.}, \bibinfo{editor}{Muñoz-Rojas, M.},
   \bibinfo{editor}{Miller, B.A.} (Eds.), \bibinfo{booktitle}{Soil Mapping and
   Process Modeling for Sustainable Land Use Management}.
@@ -425,25 +425,25 @@
 \bibitem[{Scholz et~al.(2005)Scholz, Bestle and Willerich}]{Scholz2005}
 \bibinfo{author}{Scholz, H.}, \bibinfo{author}{Bestle, K.H.},
   \bibinfo{author}{Willerich, S.}, \bibinfo{year}{2005}.
-\newblock \bibinfo{title}{Quart{\"a}rgeologische untersuchungen im
-  {\"u}beretsch}.
+\newblock \bibinfo{title}{{Quart{\"a}rgeologische Untersuchungen im
+  {\"U}beretsch}}.
 \newblock \bibinfo{journal}{Geo.Alp} \bibinfo{volume}{2},
   \bibinfo{pages}{1--23}.
 %Type = Article
 \bibitem[{Thalheimer(2006)}]{Thalheimer2006}
 \bibinfo{author}{Thalheimer, M.}, \bibinfo{year}{2006}.
-\newblock \bibinfo{title}{Kartierung der landwirtschaftlich genutzten böden
-  des \"{U}beretsch in s\"{u}dtirol (italien)}.
+\newblock \bibinfo{title}{{Kartierung der landwirtschaftlich genutzten B\"oden
+  des \"{U}beretsch in S\"{u}dtirol (Italien)}}.
 \newblock \bibinfo{journal}{Laimburg Journal} \bibinfo{volume}{3},
   \bibinfo{pages}{135--177}.
 \newblock \URLprefix
   \url{http://www.laimburg.it/de/projekte-publikationen/blickpunkte.asp?news_action=300&news_image_id=828290}.
 %Type = Unpublished
-\bibitem[{Amt~der Tiroler~Landesregierung(unknown)}]{waldtypisierungTirol}
+\bibitem[{Amt~der Tiroler~Landesregierung(unpublished)}]{waldtypisierungTirol}
 \bibinfo{author}{Amt~der Tiroler~Landesregierung, A.F.},
-  \bibinfo{year}{unknown}.
-\newblock \bibinfo{title}{Waldtypisierung tirol - system zur
-  substratansprache}.
+  \bibinfo{year}{unpublished}.
+\newblock \bibinfo{title}{{Waldtypisierung Tirol - System zur
+  Substratansprache}}.
 %Type = Inproceedings
 \bibitem[{Wack and Stelzl(2005)}]{Wack2005}
 \bibinfo{author}{Wack, R.}, \bibinfo{author}{Stelzl, H.}, \bibinfo{year}{2005}.
