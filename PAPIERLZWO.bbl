@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -18,6 +18,12 @@
 \newblock \bibinfo{publisher}{Autonome Provinz Bozen - S\"udtirol}.
 \newblock \URLprefix
   \url{http://www.provinz.bz.it/forst/studien-projekte/waldtypisierung.asp}.
+%Type = Misc
+\bibitem[{Autonomous Province~Bolzano(2016)}]{DTM}
+\bibinfo{author}{Autonomous Province~Bolzano, S.T.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Download landeskartographie}.
+\newblock \URLprefix
+  \url{http://www.provinz.bz.it/natur-raum/themen/landeskartografie-download.asp}.
 %Type = Techreport
 \bibitem[{Avanzini et~al.(2006)Avanzini, Bargossi, Borsato, Castiglioni,
   Cucato, Morelli, Prosser and Sapelza}]{Avanzini2006}
