@@ -4,51 +4,51 @@ The top-level auxiliary file: PAPIERLZWO.aux
 The style file: model2-names.bst.bst
 Database file #1: P2.bib.bib
 Warning--entry type for "DTM" isn't style-file defined
---line 26 of file P2.bib.bib
+--line 15 of file P2.bib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty note in waldtypisierungTirol
 Warning--can't use both author and editor fields in Gallant2000
 Warning--can't use both author and editor fields in Hobson1972
-Warning--empty note in waldtypisierungTirol
 Warning--empty pages in Wack2005
-You've used 47 entries,
+You've used 48 entries,
             2990 wiz_defined-function locations,
-            1098 strings with 17679 characters,
-and the built_in function-call counts, 32515 in all, are:
-= -- 2449
-> -- 1337
+            1106 strings with 18056 characters,
+and the built_in function-call counts, 33189 in all, are:
+= -- 2504
+> -- 1363
 < -- 38
-+ -- 525
-- -- 464
-* -- 3624
-:= -- 4718
-add.period$ -- 164
-call.type$ -- 47
-change.case$ -- 385
-chr.to.int$ -- 47
-cite$ -- 51
-duplicate$ -- 2420
-empty$ -- 2349
-format.name$ -- 598
-if$ -- 6118
++ -- 535
+- -- 473
+* -- 3700
+:= -- 4819
+add.period$ -- 168
+call.type$ -- 48
+change.case$ -- 392
+chr.to.int$ -- 48
+cite$ -- 52
+duplicate$ -- 2468
+empty$ -- 2398
+format.name$ -- 610
+if$ -- 6246
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 473
-newline$ -- 273
-num.names$ -- 194
-pop$ -- 826
+missing$ -- 482
+newline$ -- 279
+num.names$ -- 198
+pop$ -- 841
 preamble$ -- 1
-purify$ -- 340
+purify$ -- 347
 quote$ -- 0
-skip$ -- 733
+skip$ -- 747
 stack$ -- 0
-substring$ -- 1188
-swap$ -- 1810
+substring$ -- 1215
+swap$ -- 1845
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 405
+type$ -- 414
 warning$ -- 4
-while$ -- 178
+while$ -- 182
 width$ -- 0
-write$ -- 743
+write$ -- 759
 (There were 5 warnings)

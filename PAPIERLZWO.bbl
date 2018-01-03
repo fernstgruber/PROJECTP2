@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{48}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,6 +11,13 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Unpublished
+\bibitem[{{Amt der Tiroler Landesregierung, Abteilung
+  Forstplanung}(unpublished)}]{waldtypisierungTirol}
+\bibinfo{author}{{Amt der Tiroler Landesregierung, Abteilung Forstplanung}},
+  \bibinfo{year}{unpublished}.
+\newblock \bibinfo{title}{{Waldtypisierung Tirol - System zur
+  Substratansprache}}.
 %Type = Book
 \bibitem[{APB(2006)}]{APB2006}
 \bibinfo{author}{APB}, \bibinfo{year}{2006}.
@@ -19,9 +26,10 @@
 \newblock \URLprefix
   \url{http://www.provinz.bz.it/forst/studien-projekte/waldtypisierung.asp}.
 %Type = Misc
-\bibitem[{Autonomous Province~Bolzano(2016)}]{DTM}
-\bibinfo{author}{Autonomous Province~Bolzano, S.T.}, \bibinfo{year}{2016}.
-\newblock \bibinfo{title}{Download landeskartographie}.
+\bibitem[{{APB}(2016)}]{DTM}
+\bibinfo{author}{{APB}}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Download landeskartographie - autonomous province
+  bolzano, south tyrol}.
 \newblock \URLprefix
   \url{http://www.provinz.bz.it/natur-raum/themen/landeskartografie-download.asp}.
 %Type = Techreport
@@ -32,7 +40,7 @@
   \bibinfo{author}{Cucato, M.}, \bibinfo{author}{Morelli, C.},
   \bibinfo{author}{Prosser, G.}, \bibinfo{author}{Sapelza, A.},
   \bibinfo{year}{2006}.
-\newblock \bibinfo{title}{Erl{\"a}uterungen zur geologischen Karten von Italien
+\newblock \bibinfo{title}{Erl{\"a}uterungen zur geologischen Karte von Italien
   im Ma{\ss}stab 1:50000 Blatt 026 Eppan}.
 \newblock \bibinfo{type}{Technical Report}. Agenzia per la protezione
   dell'ambiente e per i servizi tecnici.
@@ -117,8 +125,8 @@
   \bibinfo{author}{Fischer, E.}, \bibinfo{author}{Gerlitz, L.},
   \bibinfo{author}{Wehberg, J.}, \bibinfo{author}{Wichmann, V.},
   \bibinfo{author}{B\"ohner, J.}, \bibinfo{year}{2015}.
-\newblock \bibinfo{title}{System for automated geoscientific analyses (saga) v.
-  2.1.4}.
+\newblock \bibinfo{title}{{System for Automated Geoscientific Analyses (SAGA)
+  v. 2.1.4}}.
 \newblock \bibinfo{journal}{Geoscientific Model Development}
   \bibinfo{volume}{8}, \bibinfo{pages}{1991--2007}.
 \newblock \URLprefix \url{https://www.geosci-model-dev.net/8/1991/2015/},
@@ -190,6 +198,18 @@
 \newblock \bibinfo{journal}{IEEE Transactions on Geoscience and Remote Sensing}
   \bibinfo{volume}{PP}, \bibinfo{pages}{1 -- 14}.
 \newblock \DOIprefix\doi{10.1109/TGRS.2010.2053546}.
+%Type = Article
+\bibitem[{Gruber et~al.(2017)Gruber, Baruck and Geitner}]{Gruber2017}
+\bibinfo{author}{Gruber, F.E.}, \bibinfo{author}{Baruck, J.},
+  \bibinfo{author}{Geitner, C.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Algorithms vs. surveyors: A comparison of automated
+  landform delineations and surveyed topographic positions from soil mapping in
+  an alpine environment}.
+\newblock \bibinfo{journal}{Geoderma} \bibinfo{volume}{308}, \bibinfo{pages}{9
+  -- 25}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S001670611730664X},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.geoderma.2017.08.017}.
 %Type = Article
 \bibitem[{Heung et~al.(2014)Heung, Bulmer and Schmidt}]{Heung2014}
 \bibinfo{author}{Heung, B.}, \bibinfo{author}{Bulmer, C.E.},
@@ -278,8 +298,6 @@
 \newblock \URLprefix
   \url{http://www.sciencedirect.com/science/article/pii/S0016706115300604},
   \DOIprefix\doi{http://dx.doi.org/10.1016/j.geoderma.2015.08.031}.
-  \bibinfo{note}{soil mapping, classification, and modelling: history and
-  future directions}.
 %Type = Article
 \bibitem[{Juilleret et~al.(2012)Juilleret, Iffly, Hoffmann and
   Hissler}]{Juilleret2012}
@@ -333,24 +351,24 @@
   \bibinfo{author}{Kilian, W.}, \bibinfo{author}{Nelhiebel, P.},
   \bibinfo{author}{G.~Ortner~and, E.P.}, \bibinfo{author}{und J.~Wagner,
   A.P.W.S.}, \bibinfo{year}{2011}.
-\newblock \bibinfo{title}{Systematische gliederung der böden Österreichs.
-  Österreichische bodensystematik 2000 in der revidierten fassung von 2011}.
-\newblock \bibinfo{journal}{Mitt. Österr. Bodenkdl. Ges.}
+\newblock \bibinfo{title}{{Systematische Gliederung der B\"oden \"Osterreichs.
+  \"Osterreichische Bodensystematik 2000 in der revidierten Fassung von 2011}}.
+\newblock \bibinfo{journal}{{Mitt. \"Osterr. Bodenkdl. Ges.}}
   \bibinfo{volume}{79}.
 %Type = Article
-\bibitem[{Nestroy et~al.(2000)Nestroy, Danneberg, Englisch, Geßl, Hager,
+\bibitem[{Nestroy et~al.(2000)Nestroy, Danneberg, Englisch, Ge{\ss}l, Hager,
   Herzberger, Kilian, Nelhiebel, Pecina, Pehamberger, Schneider and
   Wagner}]{Nestroy2000}
 \bibinfo{author}{Nestroy, O.}, \bibinfo{author}{Danneberg, O.},
-  \bibinfo{author}{Englisch, M.}, \bibinfo{author}{Geßl, A.},
+  \bibinfo{author}{Englisch, M.}, \bibinfo{author}{Ge{\ss}l, A.},
   \bibinfo{author}{Hager, H.}, \bibinfo{author}{Herzberger, E.},
   \bibinfo{author}{Kilian, W.}, \bibinfo{author}{Nelhiebel, P.},
   \bibinfo{author}{Pecina, E.}, \bibinfo{author}{Pehamberger, A.},
   \bibinfo{author}{Schneider, W.}, \bibinfo{author}{Wagner, J.},
   \bibinfo{year}{2000}.
-\newblock \bibinfo{title}{{Systematische Gliederung der Böden Österreichs
-  (Österreichische Bodensystematik 2000)}}.
-\newblock \bibinfo{journal}{Mitt. Österr. Bodenkdl. Ges.}
+\newblock \bibinfo{title}{{Systematische Gliederung der B\"oden
+  \"Osterreichischs (\"Osterreichische Bodensystematik 2000)}}.
+\newblock \bibinfo{journal}{{Mitt. \"Osterr. Bodenkdl. Ges.}}
   \bibinfo{volume}{60}.
 %Type = Incollection
 \bibitem[{Olaya(2009)}]{Olaya2009141}
@@ -444,12 +462,6 @@
   \bibinfo{pages}{135--177}.
 \newblock \URLprefix
   \url{http://www.laimburg.it/de/projekte-publikationen/blickpunkte.asp?news_action=300&news_image_id=828290}.
-%Type = Unpublished
-\bibitem[{Amt~der Tiroler~Landesregierung(unpublished)}]{waldtypisierungTirol}
-\bibinfo{author}{Amt~der Tiroler~Landesregierung, A.F.},
-  \bibinfo{year}{unpublished}.
-\newblock \bibinfo{title}{{Waldtypisierung Tirol - System zur
-  Substratansprache}}.
 %Type = Inproceedings
 \bibitem[{Wack and Stelzl(2005)}]{Wack2005}
 \bibinfo{author}{Wack, R.}, \bibinfo{author}{Stelzl, H.}, \bibinfo{year}{2005}.
