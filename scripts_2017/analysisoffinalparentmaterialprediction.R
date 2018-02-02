@@ -21,6 +21,7 @@ fit <- do.call("randomForest",list(as.formula(f),modeldata,cross=10))
 fit$confusion
 fit$err.rate[nrow(fit$err.rate),1]
 modeldata[["preds"]] <- predict(fit,newdata=modeldata)
+write.table(modeldata, file="/home/fabs/PROJECTP3/data/modeled_parentmaterial_frompaper2.txt",sep="\t") ##FÜR DAS DRITTE PAPER!
 table(modeldata$preds,modeldata$SGU_kartiert)
 proj2path="/home/fabs/PROJECTP2/"
 predictors <- c("SGUcode","TRI_hr_ws31","vectorruggedness_hr_ws57")
