@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  11 SEP 2018 21:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  24 SEP 2018 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,26 +311,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-<studyarea_page_cropped.pdf, id=228, 729.20428pt x 789.91112pt>
-File: studyarea_page_cropped.pdf Graphic file (type pdf)
+<studyarea_page_sept18_cropped.pdf, id=229, 724.86807pt x 785.57492pt>
+File: studyarea_page_sept18_cropped.pdf Graphic file (type pdf)
 
-<use studyarea_page_cropped.pdf>
-Package pdftex.def Info: studyarea_page_cropped.pdf used on input line 95.
-(pdftex.def)             Requested size: 390.0pt x 422.47171pt.
- [5] [6] [7 <./studyarea_page_cropped.pdf>]
-Overfull \hbox (4.38112pt too wide) in paragraph at lines 110--143
+<use studyarea_page_sept18_cropped.pdf>
+Package pdftex.def Info: studyarea_page_sept18_cropped.pdf used on input line 9
+5.
+(pdftex.def)             Requested size: 390.0pt x 422.66983pt.
+ [5] [6] [7 <./studyarea_page_sept18_cropped.pdf>]
+Overfull \hbox (2.67001pt too wide) in paragraph at lines 108--141
  [][] 
  []
 
-<soildistro_AOI.pdf, id=264, 481.09259pt x 482.95004pt>
+<soildistro_AOI.pdf, id=263, 499.8316pt x 487.29239pt>
 File: soildistro_AOI.pdf Graphic file (type pdf)
 
 <use soildistro_AOI.pdf>
-Package pdftex.def Info: soildistro_AOI.pdf used on input line 150.
-(pdftex.def)             Requested size: 390.0pt x 391.52638pt.
+Package pdftex.def Info: soildistro_AOI.pdf used on input line 148.
+(pdftex.def)             Requested size: 390.0pt x 380.22781pt.
+
+Overfull \hbox (1.86285pt too wide) in paragraph at lines 158--158
+[]\OT1/cmr/m/n/6 corresponding WRB groups| 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[]\OT1/cmr/m/n/6 corresponding WRB
+[]\OT1/cmr/m/n/6 Feinmaterial-
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 160--160
+[]\OT1/cmr/m/n/6 Leptosol, Regosol, His-
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 160--160
+\OT1/cmr/m/n/6 par-ent ma-te-rial with less than 40 V.-%
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[]\OT1/cmr/m/n/6 Terrestrische
  []
 
 
@@ -349,23 +370,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
-[]\OT1/cmr/m/n/6 Feinmaterial-
- []
-
-
-Underfull \hbox (badness 6094) in paragraph at lines 164--164
-[]\OT1/cmr/m/n/6 Leptosol, Regosol, His-
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 164--164
-\OT1/cmr/m/n/6 par-ent ma-te-rial with less than 40 V.-%
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 []\OT1/cmr/m/n/6 Terrestrische
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]\OT1/cmr/m/n/6 Kalklehm-
  []
 
 
@@ -374,8 +385,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[]\OT1/cmr/m/n/6 Kalklehm-
+Underfull \hbox (badness 4686) in paragraph at lines 168--168
+[]\OT1/cmr/m/n/6 Leptosol, Regosol, Um-
  []
 
 
@@ -384,8 +395,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 170--170
-[]\OT1/cmr/m/n/6 Leptosol, Regosol, Um-
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]\OT1/cmr/m/n/6 Leptosol, Um-brisol,
  []
 
 
@@ -394,28 +405,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
-[]\OT1/cmr/m/n/6 Leptosol, Um-brisol,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-[]\OT1/cmr/m/n/6 Terrestrische
- []
-
-
-Underfull \hbox (badness 1337) in paragraph at lines 180--180
+Underfull \hbox (badness 1337) in paragraph at lines 178--178
 []\OT1/cmr/m/n/6 with a yellow- to red-brown co-he-sive B-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []\OT1/cmr/m/n/6 Farb-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--184
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 []\OT1/cmr/m/n/6 Textur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]\OT1/cmr/m/n/6 Umgelagerte
  []
 
 
@@ -424,63 +430,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-[]\OT1/cmr/m/n/6 Umgelagerte
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []\OT1/cmr/m/n/6 Haftn^^?asse-
  []
 
 [8] [9 <./soildistro_AOI.pdf>] [10]
-Overfull \hbox (1.248pt too wide) in paragraph at lines 205--207
+Overfull \hbox (1.248pt too wide) in paragraph at lines 202--204
  []\OT1/cmr/m/it/12 Soil data base 3: data base of the Forestry Ser-vice of the
  Au-tonomous Province
  []
 
-[11] [12] <diversity_100pi.pdf, id=393, 857.12218pt x 298.47508pt>
-File: diversity_100pi.pdf Graphic file (type pdf)
+[11] [12] <diversity_sept18.pdf, id=403, 1607.46825pt x 621.34607pt>
+File: diversity_sept18.pdf Graphic file (type pdf)
 
-<use diversity_100pi.pdf>
-Package pdftex.def Info: diversity_100pi.pdf used on input line 231.
-(pdftex.def)             Requested size: 390.0pt x 135.81093pt.
- [13 <./diversity_100pi.pdf>] [14] [15] [16
+<use diversity_sept18.pdf>
+Package pdftex.def Info: diversity_sept18.pdf used on input line 228.
+(pdftex.def)             Requested size: 390.0pt x 150.74734pt.
+ [13 <./diversity_sept18.pdf>] [14] [15]
+Overfull \hbox (22.00706pt too wide) in paragraph at lines 264--287
+ [][] 
+ []
 
-]
-<boxplots_roughness.pdf, id=443, 731.20442pt x 221.9725pt>
-File: boxplots_roughness.pdf Graphic file (type pdf)
+[16
 
-<use boxplots_roughness.pdf>
-Package pdftex.def Info: boxplots_roughness.pdf used on input line 302.
-(pdftex.def)             Requested size: 390.0pt x 118.39339pt.
- [17] [18 <./boxplots_roughness.pdf>] [19]
-<soils_110pi.pdf, id=496, 732.81781pt x 349.06412pt>
-File: soils_110pi.pdf Graphic file (type pdf)
- <use soils_110pi.pdf>
-Package pdftex.def Info: soils_110pi.pdf used on input line 316.
-(pdftex.def)             Requested size: 390.0pt x 185.77008pt.
+] <boxplots_roughness_sept18.pdf, id=535, 745.6647pt x 257.8909pt>
+File: boxplots_roughness_sept18.pdf Graphic file (type pdf)
 
-[20] <soildistro_ohneleerebalken.pdf, id=503, 1191.7648pt x 1016.49501pt>
-File: soildistro_ohneleerebalken.pdf Graphic file (type pdf)
+<use boxplots_roughness_sept18.pdf>
+Package pdftex.def Info: boxplots_roughness_sept18.pdf used on input line 301.
+(pdftex.def)             Requested size: 390.0pt x 134.88318pt.
+ [17] [18 <./boxplots_roughness_sept18.pdf>] [19] <soils_110pi_wtext.pdf, id=58
+8, 732.7375pt x 348.30125pt>
+File: soils_110pi_wtext.pdf Graphic file (type pdf)
 
-<use soildistro_ohneleerebalken.pdf>
-Package pdftex.def Info: soildistro_ohneleerebalken.pdf used on input line 323.
+<use soils_110pi_wtext.pdf>
+Package pdftex.def Info: soils_110pi_wtext.pdf used on input line 315.
+(pdftex.def)             Requested size: 390.0pt x 185.38535pt.
+ [20]
+<soildistro_perparent.pdf, id=595, 1194.20518pt x 1024.1187pt>
+File: soildistro_perparent.pdf Graphic file (type pdf)
 
-(pdftex.def)             Requested size: 390.0pt x 332.637pt.
- [21 <./soils_110pi.pdf>] [22] [23 <./soildistro_ohneleerebalken.pdf>] [24] [25
-] [26] [27] [28] [29] [30] [31] [32]
-[33]
-Overfull \hbox (0.48344pt too wide) in paragraph at lines 379--380
+<use soildistro_perparent.pdf>
+Package pdftex.def Info: soildistro_perparent.pdf used on input line 322.
+(pdftex.def)             Requested size: 390.0pt x 334.44418pt.
+ [21] [22 <./soils_110pi_wtext.pdf>] [23 <./soildistro_perparent.pdf>] [24] [25
+] [26] [27] [28] [29] [30] [31] [32] [33]
+Overfull \hbox (0.48344pt too wide) in paragraph at lines 378--379
 []\OT1/cmr/m/n/12 Ice-marginal sed-i-ments are closely as-so-ci-ated with till 
 units and are mostly
  []
 
-[34] <SGUandmodel_100pi.pdf, id=595, 1037.07445pt x 719.08652pt>
+[34] <SGUandmodel_100pi.pdf, id=713, 1037.07445pt x 719.08652pt>
 File: SGUandmodel_100pi.pdf Graphic file (type pdf)
 
 <use SGUandmodel_100pi.pdf>
-Package pdftex.def Info: SGUandmodel_100pi.pdf used on input line 386.
+Package pdftex.def Info: SGUandmodel_100pi.pdf used on input line 385.
 (pdftex.def)             Requested size: 390.0pt x 270.41386pt.
  [35] [36 <./SGUandmodel_100pi.pdf>] [37] [38]
 [39] [40] [41] [42] (./PAPIERLZWO.bbl
@@ -625,24 +629,24 @@ Underfull \hbox (badness 1052) in paragraph at lines 458--466
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
  [49]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
  (./PAPIERLZWO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
 Package rerunfilecheck Info: File `PAPIERLZWO.out' has not changed.
-(rerunfilecheck)             Checksum: EE5B51ACB2748284B7DF7FA99D88E7AC;2282.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
+(rerunfilecheck)             Checksum: 9FADC81DC24186755C6C95ADEECFCEA4;2278.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
  ) 
 Here is how much of TeX's memory you used:
- 6252 strings out of 493304
- 91224 string characters out of 6139871
- 195937 words of memory out of 5000000
- 9502 multiletter control sequences out of 15000+600000
+ 6250 strings out of 493304
+ 91280 string characters out of 6139871
+ 196036 words of memory out of 5000000
+ 9501 multiletter control sequences out of 15000+600000
  9659 words of font info for 34 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,12n,34p,3341b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,34p,3345b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
@@ -659,10 +663,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (49 pages, 4498059 bytes).
+Output written on PAPIERLZWO.pdf (49 pages, 47334193 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 783 compressed objects within 8 object streams
- 153 named destinations out of 1000 (max. 500000)
+ 1018 PDF objects out of 1200 (max. 8388607)
+ 853 compressed objects within 9 object streams
+ 152 named destinations out of 1000 (max. 500000)
  252 words of extra memory for PDF output out of 10000 (max. 10000000)
 
