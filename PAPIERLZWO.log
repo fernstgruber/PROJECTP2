@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  24 SEP 2018 18:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  25 SEP 2018 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,14 +460,14 @@ File: boxplots_roughness_sept18.pdf Graphic file (type pdf)
 Package pdftex.def Info: boxplots_roughness_sept18.pdf used on input line 301.
 (pdftex.def)             Requested size: 390.0pt x 134.88318pt.
  [17] [18 <./boxplots_roughness_sept18.pdf>] [19] <soils_110pi_wtext.pdf, id=58
-8, 732.7375pt x 348.30125pt>
+9, 732.7375pt x 348.30125pt>
 File: soils_110pi_wtext.pdf Graphic file (type pdf)
 
 <use soils_110pi_wtext.pdf>
 Package pdftex.def Info: soils_110pi_wtext.pdf used on input line 315.
 (pdftex.def)             Requested size: 390.0pt x 185.38535pt.
  [20]
-<soildistro_perparent.pdf, id=595, 1194.20518pt x 1024.1187pt>
+<soildistro_perparent.pdf, id=596, 1194.20518pt x 1024.1187pt>
 File: soildistro_perparent.pdf Graphic file (type pdf)
 
 <use soildistro_perparent.pdf>
@@ -480,20 +480,19 @@ Overfull \hbox (0.48344pt too wide) in paragraph at lines 378--379
 units and are mostly
  []
 
-[34] <SGUandmodel_100pi.pdf, id=713, 1037.07445pt x 719.08652pt>
+[34] <SGUandmodel_100pi.pdf, id=714, 1037.07445pt x 719.08652pt>
 File: SGUandmodel_100pi.pdf Graphic file (type pdf)
 
 <use SGUandmodel_100pi.pdf>
 Package pdftex.def Info: SGUandmodel_100pi.pdf used on input line 385.
 (pdftex.def)             Requested size: 390.0pt x 270.41386pt.
- [35] [36 <./SGUandmodel_100pi.pdf>] [37] [38]
-[39] [40] [41] [42] (./PAPIERLZWO.bbl
+ [35] [36] [37 <./SGUandmodel_100pi.pdf>] [38]
+[39] [40] [41] [42] [43] (./PAPIERLZWO.bbl
 Underfull \hbox (badness 1205) in paragraph at lines 23--29
 []\OT1/cmr/m/n/12 APB, 2006.  Wald-typ-isierung S^^?udtirol.  Au-tonome Prov-in
 z Bozen -
  []
 
-[43]
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -642,7 +641,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
 Here is how much of TeX's memory you used:
  6250 strings out of 493304
  91280 string characters out of 6139871
- 196036 words of memory out of 5000000
+ 196209 words of memory out of 5000000
  9501 multiletter control sequences out of 15000+600000
  9659 words of font info for 34 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -663,10 +662,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (49 pages, 47334193 bytes).
+Output written on PAPIERLZWO.pdf (49 pages, 47334711 bytes).
 PDF statistics:
- 1018 PDF objects out of 1200 (max. 8388607)
- 853 compressed objects within 9 object streams
+ 1019 PDF objects out of 1200 (max. 8388607)
+ 854 compressed objects within 9 object streams
  152 named destinations out of 1000 (max. 500000)
  252 words of extra memory for PDF output out of 10000 (max. 10000000)
 
