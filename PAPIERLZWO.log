@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  25 SEP 2018 20:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.24)  27 SEP 2018 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -467,20 +467,21 @@ File: soils_110pi_wtext.pdf Graphic file (type pdf)
 Package pdftex.def Info: soils_110pi_wtext.pdf used on input line 315.
 (pdftex.def)             Requested size: 390.0pt x 185.38535pt.
  [20]
-<soildistro_perparent.pdf, id=596, 1194.20518pt x 1024.1187pt>
+<soildistro_perparent.pdf, id=596, 1202.23605pt x 1032.1487pt>
 File: soildistro_perparent.pdf Graphic file (type pdf)
 
 <use soildistro_perparent.pdf>
 Package pdftex.def Info: soildistro_perparent.pdf used on input line 322.
-(pdftex.def)             Requested size: 390.0pt x 334.44418pt.
+(pdftex.def)             Requested size: 390.0pt x 334.81438pt.
  [21] [22 <./soils_110pi_wtext.pdf>] [23 <./soildistro_perparent.pdf>] [24] [25
 ] [26] [27] [28] [29] [30] [31] [32] [33]
+[34]
 Overfull \hbox (0.48344pt too wide) in paragraph at lines 378--379
 []\OT1/cmr/m/n/12 Ice-marginal sed-i-ments are closely as-so-ci-ated with till 
 units and are mostly
  []
 
-[34] <SGUandmodel_100pi.pdf, id=714, 1037.07445pt x 719.08652pt>
+<SGUandmodel_100pi.pdf, id=715, 1037.07445pt x 719.08652pt>
 File: SGUandmodel_100pi.pdf Graphic file (type pdf)
 
 <use SGUandmodel_100pi.pdf>
@@ -529,18 +530,19 @@ Underfull \hbox (badness 1147) in paragraph at lines 75--87
  com / science / article / pii /
  []
 
-
+[44]
 Underfull \hbox (badness 1325) in paragraph at lines 88--95
 []\OT1/cmr/m/n/12 Breiman, L., 2001.  Ran-dom forests.  Ma-chine Learn-ing 45, 
 5--32.
  []
 
-[44]
+
 Underfull \hbox (badness 1286) in paragraph at lines 149--157
 []\OT1/cmr/m/n/12 Fracek, K., Mosi-mann, T., 2013.  Wis-sens-basierte Mod-el-li
 erung der
  []
 
+[45]
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -553,11 +555,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--186
 000086$[]\OT1/cmr/m/n/12 ,
  []
 
-[45]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [46]
+[46]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
@@ -645,7 +646,7 @@ Here is how much of TeX's memory you used:
  9501 multiletter control sequences out of 15000+600000
  9659 words of font info for 34 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,12n,34p,3345b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,34p,3345b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
@@ -662,10 +663,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PAPIERLZWO.pdf (49 pages, 47334711 bytes).
+Output written on PAPIERLZWO.pdf (49 pages, 47335454 bytes).
 PDF statistics:
- 1019 PDF objects out of 1200 (max. 8388607)
- 854 compressed objects within 9 object streams
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 855 compressed objects within 9 object streams
  152 named destinations out of 1000 (max. 500000)
  252 words of extra memory for PDF output out of 10000 (max. 10000000)
 

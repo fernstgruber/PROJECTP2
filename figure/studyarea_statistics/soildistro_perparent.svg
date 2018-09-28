@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1052.3622"
-   height="744.09448"
+   width="1497.1807"
+   height="1285.3657"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="soildistro_perparent.pdf">
+   sodipodi:docname="soildistro_perparent.svg">
   <defs
      id="defs4">
     <g
@@ -6751,19 +6751,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.47667959"
-     inkscape:cx="733.53893"
-     inkscape:cy="2195.575"
+     inkscape:zoom="0.95335918"
+     inkscape:cx="786.18451"
+     inkscape:cy="450.929"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1053"
-     inkscape:window-x="1366"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:guide-bbox="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-bottom="5"
+     fit-margin-right="5" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -6780,14 +6784,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-308.2677)">
+     transform="translate(-63.146179,1642.0535)">
     <rect
-       style="opacity:0.35979429000000002;fill:#e3f2f2;fill-opacity:1;stroke:none"
+       style="opacity:0.35979429;fill:#e3f2f2;fill-opacity:1;stroke:none"
        id="rect9981"
-       width="872.36395"
-       height="77.718849"
-       x="313.18164"
-       y="-942.41089" />
+       width="734.95508"
+       height="98.697304"
+       x="421.18164"
+       y="-906.41089" />
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -6798,7 +6802,7 @@
          sodipodi:role="line"
          id="tspan5414-0"
          x="409.56995"
-         y="-957.85724">Slope deposits</tspan></text>
+         y="-957.85724">Slope debris</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -7905,7 +7909,7 @@
          y="-1110.3895">B)</tspan></text>
     <g
        id="g5984"
-       transform="translate(-145.80024,-10.684916)">
+       transform="translate(-37.80024,25.315084)">
       <g
          id="g5979">
         <path
@@ -7964,7 +7968,12 @@
              id="tspan9922-3-8"
              x="497.1011"
              y="-859.92279"
-             style="font-size:18px">soil profile sites with this parent material according to SGU map AND soil profile description</tspan></text>
+             style="font-size:18px">soil profile sites with this parent material according to </tspan><tspan
+             sodipodi:role="line"
+             x="497.1011"
+             y="-837.42279"
+             style="font-size:18px"
+             id="tspan6440">SGU map AND soil profile description</tspan></text>
       </g>
     </g>
     <text
